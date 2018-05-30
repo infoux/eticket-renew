@@ -1,0 +1,352 @@
+// out: ./concert.css, compress: true, sourceMap: false
+
+article#content.concert {
+  section.head {
+    div.title {
+      @media (min-width:1024px) {
+        width: 510px;
+      }
+
+      i.right {
+        background: green;
+        @media (min-width:1024px) {
+          float: right;
+        }
+      }
+    }
+
+    div#selectItemArea {
+      padding: 0 0.625rem;
+      @media (min-width:1024px) {
+        padding: 0;
+      }
+
+      div.select-style {
+        border: 1px solid #ccc;
+        position: relative;
+        font-size: 18px;
+        margin-bottom: 10px;
+
+        select {
+          display: block;
+          width: 100%;
+          height: 3.125rem;
+          opacity: 0;
+          @media (min-width:1024px) {
+            height: 60px;
+          }
+        }
+
+        label {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 0 20px;
+          width: 100%;
+          line-height: 3.125rem;
+          @media (min-width:1024px) {
+            line-height: 60px;
+          }
+        }
+
+        i {
+          position: absolute;
+          right: 10px;
+          top: 20px;
+        }
+      }
+
+      div.audience {
+        font-size: 18px;
+
+        input {
+          width: 80px;
+          height: 40px;
+          border: 1px solid #ccc;
+          margin: 0 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  div.concert_div {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+
+    div.outline {
+      background: #fff;
+      margin: 0.625rem;
+      @media (min-width:1024px) {
+        width: 980px;
+        margin: 100px auto 0;
+      }
+
+      h4 {
+        position: relative;
+        margin: 0;
+        height: 3.429rem;
+        line-height: 3.429rem;
+        color: #ffffff;
+        background: #0066cc;
+        font-size: 1.143rem;
+        text-align: center;
+        font-weight: 400;
+        @media (min-width:1024px) {
+          height: 58px;
+          line-height: 58px;
+          font-size: 22px;
+        }
+
+        button {
+          position: absolute;
+          right: 14px;
+          top: 14px;
+          color: #fff;
+          border: none;
+          background: none;
+          font-size: 0;
+          cursor: pointer;
+
+          i {
+            font-size: 24px;
+          }
+        }
+      }
+
+      div.concert_info {
+        position: relative;
+        @media (min-width:1024px) {
+          padding: 40px 0 0 240px;
+          min-height: 270px;
+        }
+
+        p.poster {
+          width: 13.75rem;
+          margin: 1.25rem auto;
+          @media (min-width:1024px) {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        h5 {
+          position: relative;
+          text-align: center;
+          font-size: 1.5rem;
+          margin: 0 0 20px;
+          padding: 0 1.25rem 1.25rem;
+          word-break: keep-all;
+          @media (min-width:1024px) {
+            text-align: left;
+            font-size: 26px;
+            padding: 0 0 20px;
+          }
+
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 40px;
+            height: 2px;
+            background: #0066cc;
+            margin-left: -20px;
+            @media (min-width:1024px) {
+              left: 0;
+              margin: 0;
+            }
+          }
+        }
+
+        dl.concert_data {
+          padding: 0 1.25rem;
+          @media (min-width:1024px) {
+            padding: 0;
+            font-size: 16px;
+          }
+
+          dt {
+            float: left;
+            width: 6.5rem;
+            color: #0066cc;
+          }
+
+          dd {
+            margin-bottom: 0.625rem;
+            @media (min-width:1024px) {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+
+      div.infomation {
+        text-align: center;
+        @media (min-width:1024px) {
+          font-size: 16px;
+        }
+
+        p {
+          display: inline-block;
+          margin: 0 0 1.25;
+          padding-right: 0.625rem;
+
+          &:last-of-type {
+            padding-right: 0;
+          }
+
+          &.complete {
+            color: #ff3300;
+          }
+
+          &.off {
+            color: #999;
+          }
+
+          &.on {
+            color: #0066cc;
+          }
+
+          i {
+            margin-right: 0.625rem;
+          }
+        }
+      }
+
+      div.concert-outline {
+        background: #ccc;
+        width: 100%;
+        padding: 1.25rem 0;
+        text-align: center;
+        overflow: scroll;
+        @media (min-width:1024px) {
+          overflow: hidden;
+        }
+
+        div#orderContent {
+          font-size: 0;
+          margin: 0 auto;
+          text-align: center;
+
+          div.stage {
+            display: block;
+            width: 35.714rem;
+            height: 2.286rem;
+            line-height: 2.286rem;
+            background: #999;
+            margin: 0 auto 1.5rem;
+            font-size: 1rem;
+          }
+
+          .tileview-content {
+            display: inline-block;
+            vertical-align: top;
+            background: #ffffff;
+            font-size: 0.8rem;
+            height: 36px;
+            line-height: 36px;
+            margin: 0 1px 1px 0;
+
+            &.label {
+              background: transparent;
+              font-weight: 600;
+            }
+
+            &.blank {
+              background: #e4e4e4;
+            }
+
+            &.blanks {
+              background: #e4e4e4;
+              height: 6px;
+            }
+
+            &.off {
+              background: #999;
+              font-size: 0;
+              line-height: 42px;
+
+              i {
+                font-size: 0.8rem;
+                color: #fff;
+              }
+            }
+
+            &.complete {
+              background: #ff3300;
+              font-size: 0;
+              line-height: 42px;
+
+              i {
+                font-size: 0.8rem;
+                color: #fff;
+              }
+            }
+
+            &.check {
+              background: #0066cc;
+              color: #fff;
+            }
+          }
+
+          &.hall01-2f {
+            width: 85.714rem;
+            @media (min-width:1024px) {
+              width: 960px;
+            }
+
+            .tileview-content {
+              width: calc(~"(100% - 44px) / 44");
+            }
+          }
+
+          &.hall01-1f {
+            width: 85.714rem;
+            @media (min-width:1024px) {
+              width: 960px;
+            }
+
+            .tileview-content {
+              width: calc(~"(100% - 45px) / 45");
+
+              &.disabled {
+                width: calc(~"(100% - 45px) / 45 * 2 + 1px");
+                background: #d0f9c5;
+              }
+            }
+          }
+        }
+      }
+
+      div.btn-area {
+        background: #ccc;
+        text-align: center;
+        padding: 0 0 2.375rem;
+
+        button {
+          display: inline-block;
+          background: #0066cc;
+          border-color: transparent;
+          color: #fff;
+          padding: 0 1.5rem;
+          height: 2.375rem;
+        }
+      }
+    }
+  }
+}
