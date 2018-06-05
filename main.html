@@ -1,247 +1,453 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>서귀포시 E-Ticket</title>
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/common.js"></script>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/common.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-        <script src="js/respond.min.js"></script>
-        <script src="js/html5shiv.js"></script>
-    <![endif]-->
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>서귀포시 E-Ticket</title>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/common.js"></script>
 
-<body>
-    <!-- S:skip_navi -->
-    <div class="skip_navi"> <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a> <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a> <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a> </div>
-    <!-- E:skip_navi -->
-    <!-- S:header -->
-    <header id="header">
-        <div class="container">
-            <button class="btn mobileMenu">메뉴열기 <i class="fa fa-bars" aria-hidden="true"></i></button>
-            <h1><a href="">서귀포시 E-Ticket</a></h1>
-            <p class="util_menu">
-                <!-- <button class="btn login" href="">비회원로그인 <i class="fa fa-sign-in" aria-hidden="true"></i></button> -->
-                <button class="btn logout" href="">로그아웃 <i class="fa fa-sign-out" aria-hidden="true"></i></button>
-                <button class="btn customer" href="">고객센터 <i class="fa fa-user-o" aria-hidden="true"></i></button>
-                <button class="btn mypage" href="">마이페이지 <i class="fa fa-book" aria-hidden="true"></i></button>
-            </p>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/common.css" rel="stylesheet">
+        <!--[if lt IE 9]> <script src="js/respond.min.js"></script> <script
+        src="js/html5shiv.js"></script> <![endif]-->
+    </head>
+
+    <body>
+        <!-- S:skip_navi -->
+        <div class="skip_navi">
+            <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
         </div>
-        <!-- S:main_menu -->
-        <nav id="main_menu">
-            <p class="mobileClose"><a href="#">메뉴닫기 <i class="fa fa-close" aria-hidden="true"></i></a></p>
-            <ul>
-                <li>
-                    <h2><a href="#">관광지</a></h2>
-                    <ul>
-                        <li> <a href="">천지연폭포</a> </li>
-                        <li> <a href="">용머리해안</a> </li>
-                        <li> <a href="">산방산 암벽식물지대</a> </li>
-                        <li> <a href="">천제연폭포</a> </li>
-                        <li> <a href="">정방폭포</a> </li>
-                        <li> <a href="">주상절리대</a> </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="#">문화시설</a></h2>
-                    <ul>
-                        <li> <a href="">소암기념관</a> </li>
-                        <li> <a href="">이중섭미술관</a> </li>
-                        <li> <a href="">서복전시관</a> </li>
-                        <li> <a href="">기당미술관</a> </li>
-                        <li> <a href="">서귀포예술의전당 <i class="fa fa-external-link" aria-hidden="true"></i></a> </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="#">휴양숙박시설</a></h2>
-                    <ul>
-                        <li> <a href="">붉은오름자연휴양림</a> </li>
-                        <li> <a href="">서귀포자연휴양림</a> </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="#">통합상품권</a></h2>
-                    <ul>
-                        <li> <a href="">산방산통합상품권</a> </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="#">커뮤니티</a></h2>
-                    <ul>
-                        <li> <a href="">공지사항</a> </li>
-                        <li> <a href="">이용후기</a> </li>
-                        <li> <a href="">FAQ</a> </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <!-- E:main_menu -->
-    </header>
-    <!-- E:header -->
-    <!-- S:mainContent -->
-    <article id="content">
-        <section class="main">
+        <!-- E:skip_navi -->
+        <!-- S:header -->
+        <header id="header">
             <div class="container">
-                <ul>
-                    <li class="title lodge">
-                        <h3 class="box">
-                            <p>휴양숙박시설 <i class="fa fa-home" aria-hidden="true"></i></p><button class="btn"><strong>예약확인</strong></button>
-                        </h3> </li>
-                    <li class="goods">
-                        <div class="box">
-                            <a href=""> <img src="images/tmp.PNG">
-                                <h4>붉은오름자연휴양림 입니다 긴 제목 테스트중입니다. <small>★3</small></h4>
-                                <p class="count">구매수 264</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="goods">
-                        <div class="box">
-                            <a href=""> <img src="images/tmp.PNG">
-                                <h4>서귀포자연휴양림 <small>★3</small></h4>
-                                <p class="count">구매수 264</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="dummy"> </li>
-                    <li class="title sight">
-                        <h3 class="box">
-                            <p>관광지 <i class="fa fa-camera-retro" aria-hidden="true"></i></p>
-                        </h3> </li>
-                    <li class="goods">
-                        <div class="box">
-                            <a href=""> <img src="images/tmp.PNG">
-                                <h4>천지연폭포 <small>★3</small></h4>
-                                <p class="count">구매수 264</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="goods">
-                        <div class="box">
-                            <a href=""> <img src="images/tmp.PNG">
-                                <h4>용머리해안 <small>★3</small></h4>
-                                <p class="count">구매수 264</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="goods">
-                        <div class="box">
-                            <a href=""> <img src="images/tmp.PNG">
-                                <h4>산방산 암벽식물지대 <small>★3</small></h4>
-                                <p class="count">구매수 264</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="goods">
-                        <div class="box">
-                            <a href=""> <img src="images/tmp.PNG">
-                                <h4>천제연폭포 <small>★3</small></h4>
-                                <p class="count">구매수 264</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="goods">
-                        <div class="box">
-                            <a href=""> <img src="images/tmp.PNG">
-                                <h4>정방폭포 <small>★3</small></h4>
-                                <p class="count">구매수 264</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="goods">
-                        <div class="box">
-                            <a href=""> <img src="images/tmp.PNG">
-                                <h4>주상절리대 <small>★3</small></h4>
-                                <p class="count">구매수 264</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="title culture">
-                        <h3 class="box">
-                            <p>문화시설 <i class="fa fa-leaf" aria-hidden="true"></i></p>
-                        </h3> </li>
-                    <li class="goods">
-                        <div class="box">
-                            <a href=""> <img src="images/tmp.PNG">
-                                <h4>소암기념관 <small>★3</small></h4>
-                                <p class="count">구매수 264</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="goods">
-                        <div class="box">
-                            <a href=""> <img src="images/tmp.PNG">
-                                <h4>이중섭미술관 <small>★3</small></h4>
-                                <p class="count">구매수 264</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="goods">
-                        <div class="box">
-                            <a href=""> <img src="images/tmp.PNG">
-                                <h4>서복전시관 <small>★3</small></h4>
-                                <p class="count">구매수 264</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="goods">
-                        <div class="box">
-                            <a href=""> <img src="images/tmp.PNG">
-                                <h4>기당미술관 <small>★3</small></h4>
-                                <p class="count">구매수 264</p>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+
+                <h1>
+                    <a href="">서귀포시 E-Ticket</a>
+                </h1>
+                <p class="util-menu">
+                    <a class="customer" href=""><i class="icon-user-o" aria-hidden="true"></i>고객센터
+                    </a>
+                </p>
+                <button class="mobileMenu">메뉴열기
+                    <i class="icon-menu" aria-hidden="true"></i>
+                </button>
             </div>
-        </section>
-    </article>
+            <!-- S:main_menu -->
+            <nav id="main-menu">
+                <div class="container">
 
-    <div class="ltPop">
-        <p>
-            <i class="fa fa-internet-explorer" aria-hidden="true"></i>
-            <h2>본 사이트는 <strong>Initernet Explorer9 이상의 브라우저</strong>에서 이용 가능합니다.</h2>
-            <a href="">최신브라우저 설치하기</a>
-        </p>
-    </div>
+                    <ul class="menu-list">
+                        <li>
+                            <h2>
+                                <a href="http://daum.net">휴양숙박시설</a>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a class="active" href="">서귀포자연휴양림</a>
+                                </li>
+                                <li>
+                                    <a href="">붉은오름자연휴양림</a>
+                                </li>
+                                <li>
+                                    <a href="">서귀포치유의숲</a>
+                                </li>
+                                <li>
+                                    <a href="">모구리야영장</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="#">공연예매</a>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="">예술의전당</a>
+                                </li>
+                                <li>
+                                    <a href="">김정문화회관</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="#">문화시설</a>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="">이중섭미술관</a>
+                                </li>
+                                <li>
+                                    <a href="">기당미술관</a>
+                                </li>
+                                <li>
+                                    <a href="">서복전시관</a>
+                                </li>
+                                <li>
+                                    <a href="">소암기념관</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="#">관광지</a>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="">천지연폭포</a>
+                                </li>
+                                <li>
+                                    <a href="">천제연폭포</a>
+                                </li>
+                                <li>
+                                    <a href="">정방폭포</a>
+                                </li>
+                                <li>
+                                    <a href="">주상절리대</a>
+                                </li>
+                                <li>
+                                    <a href="">산방산암벽식물지대</a>
+                                </li>
+                                <li>
+                                    <a href="">감귤박물관</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="#">커뮤니티</a>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="">이용후기</a>
+                                </li>
+                                <li>
+                                    <a href="">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="check">
+                            <h2>
+                                <a href="#"><i class="icon-check" aria-hidden="true"></i>예약확인</a>
+                            </h2>
+                        </li>
 
 
-    <!-- E:mainContent -->
-    <!-- S:footer -->
-    <footer id="footer">
-        <div class="footer_link">
-            <ul>
-                <li> <a href="" target="_blank">서귀포시 <i class="fa fa-external-link" aria-hidden="true"></i></a> </li>
-                <li> <a href="" target="_blank">기당미술관 <i class="fa fa-external-link" aria-hidden="true"></i></a> </li>
-                <li> <a href="" target="_blank">이중섭미술관 <i class="fa fa-external-link" aria-hidden="true"></i></a> </li>
-                <li> <a href="" target="_blank">상예정보화마을 <i class="fa fa-external-link" aria-hidden="true"></i></a> </li>
-                <li> <a href="" target="_blank">월평정보화마을 <i class="fa fa-external-link" aria-hidden="true"></i></a> </li>
-                <li> <a href="" target="_blank">알토산정보화마을 <i class="fa fa-external-link" aria-hidden="true"></i></a> </li>
-                <li> <a href="" target="_blank">한강정보화마을 <i class="fa fa-external-link" aria-hidden="true"></i></a> </li>
-            </ul>
+                    </ul>
+
+                </div>
+            </nav>
+            <!-- E:main_menu -->
+        </header>
+        <!-- E:header -->
+        <!-- S:mainContent -->
+        <div id="content">
+            <section class="main-issue">
+                <div class="container">
+                    <h2>
+                        <strong>편리한 서귀포시 통합예약발권 시스템</strong>
+                        <small>휴양시설, 문화시설, 관광지 등 예약부터 결제까지</small>
+                    </h2>
+
+                    <div class="lodge">
+                        <h3>휴양숙박시설예약</h3>
+
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <p class="image">
+                                        <img src="images/lodge01.jpg" alt="서귀포자연휴양림">
+                                    </p>
+                                    <h4>
+                                        <strong class="lodge01">서귀포자연휴양림</strong>
+                                        <small>
+                                            <i>숙박권</i>
+                                            <i>데크</i>
+                                        </small>
+                                    </h4>
+                                    <strong>예약가능</strong>
+                                    <u><i><strong>예약</strong>하기</i></u>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="image">
+                                        <img src="images/lodge02.jpg" alt="붉은오름자연휴양림">
+                                    </p>
+                                    <h4>
+                                        <strong class="lodge02">붉은오름자연휴양림</strong>
+                                        <small>
+                                            <i>숙박권</i>
+                                        </small>
+                                    </h4>
+                                    <strong>예약가능</strong>
+                                    <u><i><strong>예약</strong>하기</i></u>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="image">
+                                        <img src="images/lodge03.jpg" alt="서귀포 치유의 숲">
+                                    </p>
+                                    <h4>
+                                        <strong class="lodge03">서귀포 치유의 숲</strong>
+                                        <small>
+                                            <i>숲길힐링</i>
+                                            <i>산림치유</i>
+                                        </small>
+                                    </h4>
+                                    <!-- <strong>예약가능</strong> -->
+                                    <u><i><strong>예약</strong>하기</i></u>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="image">
+                                        <img src="images/lodge04.jpg" alt="모구리 야영장">
+                                    </p>
+                                    <h4>
+                                        <strong class="lodge04">모구리 야영장</strong>
+                                        <small>
+                                            <i>숙박권</i>
+                                            <i>데크</i>
+                                        </small>
+                                    </h4>
+                                    <!-- <strong>예약가능</strong> -->
+                                    <u><i><strong>예약</strong>하기</i></u>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="show">
+                        <h3>공연예매</h3>
+
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <p class="image">
+                                        <img src="" alt="오리지널 어린이 CAT">
+                                    </p>
+                                    <h4>
+                                        오리지널 어린이 CAT
+                                        <small>
+                                            서귀포 예술의전당
+                                        </small>
+                                    </h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="image">
+                                        <img src="" alt="효(孝) 한마당">
+                                    </p>
+                                    <h4>
+                                        효(孝) 한마당
+                                        <small>
+                                            서귀포 예술의전당
+                                        </small>
+                                    </h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="image">
+                                        <img src="" alt="희망음악회">
+                                    </p>
+                                    <h4>
+                                        희망음악회
+                                        <small>
+                                            서귀포 예술의전당
+                                        </small>
+                                    </h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="image">
+                                        <img src="" alt="2018 월드 콰이어 페스티벌">
+                                    </p>
+                                    <h4>
+                                        2018 월드 콰이어 페스티벌
+                                        <small>
+                                            서귀포 예술의전당
+                                        </small>
+                                    </h4>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <button class="prev">이전</button>
+                        <button class="next">다음</button>
+                    </div>
+                </div>
+            </section>
+            <section class="main-list">
+                <div class="container">
+                    <h2>주요 관광지 소개</h2>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <p class="image">
+                                    <img src="" alt="천지연폭포">
+                                </p>
+                                <h4>천지연폭포</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="image">
+                                    <img src="" alt="용머리해안">
+                                </p>
+                                <h4>용머리해안</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="image">
+                                    <img src="" alt="감귤박물관">
+                                </p>
+                                <h4>감귤박물관</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="image">
+                                    <img src="" alt="산방산 암벽식물지대">
+                                </p>
+                                <h4>산방산 암벽식물지대</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="image">
+                                    <img src="" alt="주상절리대">
+                                </p>
+                                <h4>주상절리대</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="image">
+                                    <img src="" alt="천제연폭포">
+                                </p>
+                                <h4>천제연폭포</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="image">
+                                    <img src="" alt="정방폭포">
+                                </p>
+                                <h4>정방폭포</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h4>VISIT JEJU</h4>
+                                <p>제주도 공식 관강정보 포털</p>
+                                <strong>바로가기</strong>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <section class="customer">
+                <div class="container">
+
+                    <div class="tel">
+                        <h2>문의처</h2>
+
+                        <dl>
+                            <dt>서귀포 자연휴양림</dt>
+                            <dd>064-738-4544</dd>
+                            <dt>모구리야영장</dt>
+                            <dd>064-760-3408</dd>
+                            <dt>붉은오름자연휴양림</dt>
+                            <dd>064-760-3481</dd>
+                            <dt>서귀포 예술의전당</dt>
+                            <dd>064-760-3351</dd>
+                            <dt>서귀포 치유의숲</dt>
+                            <dd>064-760-3068</dd>
+                            <dt>김정문화회관</dt>
+                            <dd>064-760-3579</dd>
+                        </dl>
+                    </div>
+
+                    <div class="notice">
+                        <h2>공지사항
+                            <small>more</small>
+                        </h2>
+
+                        <ul>
+                            <li>
+                                모구리 야영장 가정의달 기념 5월 행사안내
+                                <i>18.04.30</i>
+                            </li>
+                            <li>
+                                서귀포 예술의 전당 5월 공연 현황 안내
+                                <i>18.04.30</i>
+                            </li>
+                            <li>
+                                서귀포시 이티켓 홈페이지를 방문해주신 여러분을 환영합니다.
+                                <i>18.04.30</i>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
         </div>
-        <div class="footer_util">
-            <ul>
-                <li> <a href="">개인정보취급방침</a> </li>
-                <li> <a href="">저작권보호정책</a> </li>
-                <li> <a href="">운영자메일</a> </li>
-            </ul>
-        </div> <address>
-            <p class="tel">제주안내 콜센터 (064) 120 생활민원 모바일 신고 : #1110-2114</p>
-            <p>제1청사 : (63584) 제주특별자치도 서귀포시 중앙로 105(서홍동)</p>
-            <p>제2청사 : (63565) 제주특별자치도 서귀포시 신중로 55(법환동)</p>
-            <p>1st Building. 105, Jungang-ro, Seogwipo-si, Jeju-do. Republic of Korea 63584</p>
-            <p>2nd Building. 55, Sinjung-ro, Seogwipo-si, Jeju-do. Republic of Korea 63565</p>
-        </address>
-        <p class="copyright">Copyright© Seogwipo-si, All right Reserved.</p>
-    </footer>
-    <!-- E:footer -->
-</body>
+
+        <!-- div class="ltPop"> <p> <i class="fa fa-internet-explorer"
+        aria-hidden="true"></i> <h2>본 사이트는 <strong>Initernet Explorer9 이상의
+        브라우저</strong>에서 이용 가능합니다.</h2> <a href="">최신브라우저 설치하기</a> </p> </div -->
+
+        <!-- E:mainContent -->
+        <!-- S:footer -->
+        <footer id="footer">
+            <div class="container">
+                <h2>
+                    제주특별자치도 서귀포시
+                </h2>
+                <div class="footer_util">
+                    <ul>
+                        <li>
+                            <a href="">개인정보취급방침</a>
+                        </li>
+                        <li>
+                            <a href="">저작권보호정책</a>
+                        </li>
+                        <li>
+                            <a href="">제주안내 콜센터
+                                <strong>064-120</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <address>
+                    <p>제1청사 : (63584) 제주특별자치도 서귀포시 중앙로 105(서홍동)</p>
+                    <p>제2청사 : (63565) 제주특별자치도 서귀포시 신중로 55(법환동)</p>
+                    <p>1st Building. 105, Jungang-ro, Seogwipo-si, Jeju-do. Republic of Korea 63584</p>
+                    <p>2nd Building. 55, Sinjung-ro, Seogwipo-si, Jeju-do. Republic of Korea 63565</p>
+                </address>
+                <p class="copyright">Copyright© Seogwipo-si, All right Reserved.</p>
+            </div>
+        </footer>
+        <!-- E:footer -->
+    </body>
 
 </html>

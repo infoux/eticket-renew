@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="menu" unicode="&#xe800;" d="M931 620h-853v95h853v-95z m0-222h-853v-96h853v96z m0-318h-853v-95h853v95z" horiz-adv-x="1000" />
+
+<glyph glyph-name="check" unicode="&#xe801;" d="M499 793c-244 0-442-198-442-442 0-244 198-442 442-442s442 198 442 442c0 244-198 442-442 442z m-36-590l-151 151 34 34 117-117 184 184 34-34-218-218z" horiz-adv-x="1000" />
+
+<glyph glyph-name="user-o" unicode="&#xf2c0;" d="M670 413q26-8 50-22t50-40 44-65 31-96 12-132q0-86-56-147t-134-61h-477q-78 0-134 61t-56 147q0 73 12 132t31 96 44 65 50 40 50 22q-44 69-44 151 0 58 23 111t61 91 91 61 111 23 110-23 92-61 61-91 22-111q0-82-44-151z m-241 366q-89 0-152-63t-63-152 63-151 152-63 151 63 63 151-63 152-151 63z m238-858q49 0 84 40t35 97q0 134-44 211t-126 80q-81-70-187-70t-188 70q-82-3-126-80t-44-211q0-57 35-97t84-40h477z" horiz-adv-x="857.1" />
+</font>
+</defs>
+</svg>

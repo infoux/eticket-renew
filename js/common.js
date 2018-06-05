@@ -1,60 +1,110 @@
 $(document).ready(function() {
 
-  var toRem = function(count) {
-    var unit = $('html').css('font-size');
 
-    if (typeof count !== 'undefined' && count > 0) {
-      return (parseInt(unit) * count);
-    } else {
-      return parseInt(unit);
-    }
+  function clear() {
+    $("#header nav").removeAttr("style");
   }
 
 
-
-  function navPc() {
+  function modeChange() {
     var windowWidth = $(window).width();
-    if (windowWidth > 1023) {
-      $("body").addClass("pcMode");
-      $("body").removeClass("mobileMode");
-    } else {
-      $("body").removeClass("pcMode");
-      $("body").addClass("mobileMode");
+    if (windowWidth < 1199) {
+      /* mobile */
+      $("body").addClass("mobile");
+      $("body").removeClass("pc");
 
-    }
-    $('.pcMode #header nav').hover(function() {
-      $(this).addClass('active');
-      var maxHeight = 0;
-      $('.pcMode #header nav>ul>li').each(function() {
-        maxHeight = Math.max(maxHeight, $(this).height());
+
+
+
+      $(".mobile #header .mobileMenu").click(function() {
+        if ($(".mobile #header nav").hasClass("on")) {
+          $(".mobile #header nav").removeClass("on");
+        } else {
+          $(".mobile #header nav").addClass("on");
+        }
+
       });
-      $('.pcMode #header nav>ul>li').css("height", maxHeight);
-    }, function() {
-      $(this).removeClass('active');
-      $('.pcMode #header nav>ul>li').css("height", "");
-    });
-    $('.pcMode #header nav>ul>li').hover(function() {
-      $(this).addClass('over');
-    }, function() {
-      $(this).removeClass('over');
-    });
+    
+      $(".mobile #header nav h2 a").click(function(e) {
+        e.preventDefault();
+    
+        $("#header nav ul.menu-list>li").removeClass("on");
+        $(this).parent().parent().addClass("on");
+      });
+
+
+
+
+
+
+      /* e:mobile */
+
+    } else {
+      /* pc */
+      $("body").addClass("pc");
+      $("body").removeClass("mobile");
+
+
+
+
+      $("#header nav h2 a").click(function() {
+        window.location = this.href;
+      });
+
+
+
+      $("#header nav").hover(function() {
+        $(this).addClass("on");
+      }, function() {
+        $(this).removeClass("on");
+      });
+
+
+      $("#header nav h2 a").hover(function() {
+        $(this).parent().parent().find("ul").addClass("on");
+      }, function() {
+        $("#header nav ul ul").removeClass("on");
+      });
+
+      $("#header nav ul ul").hover(function() {
+        $(this).addClass("on");
+      }, function() {
+        $("#header nav ul ul").removeClass("on");
+      });
+
+
+      /* e:pc */
+    }
   }
 
 
 
 
-  navPc();
+  modeChange();
+
   $(window).resize(function() {
-    navPc();
+    modeChange();
+    clear();
   });
-  $("#header .mobileMenu").click(function() {
-    $("#header nav").css("display", "block");
-    $('#content').addClass("mobile_navOn");
+
+
+  $(".main-issue .image").each(function() {
+    $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
   });
-  $("#header nav .mobileClose").click(function() {
-    $("#header nav").css("display", "");
-    $('#content').removeClass("mobile_navOn");
-  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   $('section.main .goods').each(function() {
     $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
   });
@@ -92,7 +142,7 @@ $(document).ready(function() {
   $(window).scroll(function() {
 
     var h = $(window).scrollTop();
-    var hm = $(".tab-data.active .table-cover").offset().top;
+    var hm = $(".tab-data.active .table-cover").offset(top);
     var hm2 = $(".tab-data.active tbody").height() + 280;
     if (h > hm && h < hm2) {
       $(".mobileMode .active .table-cover").addClass("fixT");
@@ -103,9 +153,11 @@ $(document).ready(function() {
     }
 
 
-    var y = $(".tab-data.active .table-cover").offset().top;
+    var y = $(".tab-data.active .table-cover").offset(top);
     var ym = $(".tab-data.active tbody").height() + 280;
-    console.log(ym, h);
+
+    // console.log(ym, h);
+
     if (h > y && h < ym) {
       $(".pcMode .active .table-cover").addClass("fixOn");
       $(".pcMode .active .table-cover thead").css("width", $(".pcMode .active .table-cover table").width());
