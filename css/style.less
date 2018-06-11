@@ -1,6 +1,7 @@
 // out: ./style.css, compress: true, sourceMap: false
 @import "normalize.css";
 @import "rem.less";
+@import "font-awesome.min.css";
 @import "fontello.css";
 
 
@@ -227,6 +228,15 @@
     box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
 }
 
+
+.inner-shadow (@x:0, @y: 2px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+    -webkit-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+    box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+
+
 .drop-shadowW (@x:0, @y: 2px, @blur: 2px, @spread: 0, @alpha: 0.25) {
     -webkit-box-shadow: @x @y @blur @spread rgba(255, 255, 255, @alpha);
     -moz-box-shadow: @x @y @blur @spread rgba(255, 255, 255, @alpha);
@@ -443,11 +453,16 @@ body {
     /* header */
     header {
         .center;
+        .drop-shadow(0, 5px, 10px, 0, 0.1);
+        .relative;
+        z-index:100;
+
+
         &>.container {
             .rem(height, 52);
             .relative;
 
-            @media all and (min-width: 1200px) {
+            @media all and (min-width: 1200px) {  
                 height:120px;
                 margin-bottom:60px;
             }
@@ -750,9 +765,10 @@ body {
             
 
             .container {
-                .rem(height, 785);
+                .rem(min-height, 785);
                 @media all and (min-width: 1200px) {
                     height:1152px;
+                    padding:0 60px;
                 }
                 
                 h2 {
@@ -1009,39 +1025,1327 @@ body {
 
                 
                 div.show {
-                    
+                    .relative;
+                    .rem(padding, 0 0 25 0);
+                    .hidden;
+
 
                     h3 {
-                          .rem(width, 61);
-                          .rem(height, 18.5);
-                          .rem(margin, 30 auto 16);
-                          .zero;
-                          background:url("../images/main-show.svg") no-repeat center / 100%;
+                        .rem(width, 61);
+                        .rem(height, 18.5);
+                        .rem(margin, 30 auto 16);
+                        .zero;
+                        background:url("../images/main-show.svg") no-repeat center / 100%;
 
-                          @media all and (min-width: 1200px) {
-                              width:109px;
-                              height:32px;
-                              margin:40px auto 24px;
-                          }
+                        @media all and (min-width: 1200px) {
+                            width:109px;
+                            height:32px;
+                            margin:40px auto 24px;
+                        }
+                    }
 
+                    ul {
+                        .zero;
+                        .no-list;
+                        .mapazero;
+
+                        li {
+                            .inline-block;
+                            margin-right:12px;
+
+                            @media all and (min-width: 1200px) {
+                                margin-right:30px;
+                            }
+
+
+                            a {
+                                p.image {
+                                    padding-top:140%;
+                                    img {
+                                        .none;
+                                    }
+                                }
+
+                                h4 {
+                                    background:@white;
+                                    margin:0;
+                                    .rem(padding, 14 0);
+                                    .center;
+
+                                    @media all and (min-width: 1200px) {
+                                        padding:26px 0;
+                                    }
+
+                                    
+                                    strong {
+                                        .rem(font-size, 12);
+                                        .ellipse;
+
+                                        @media all and (min-width: 1200px) {
+                                            font-size:19px;
+                                        }
+            
+                                        
+                                    }
+
+                                    small {
+                                        .rem(font-size, 10);
+                                        .rem(padding, 4 0 0);
+                                        color:#555;
+                                        .block;
+                                        .ellipse;
+
+                                        @media all and (min-width: 1200px) {
+                                            font-size:15px;
+                                        }
+            
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .slick-dots {
+                        .absolute;
+                        right:0;
+                        .rem(top, 40);
+
+                        @media all and (min-width: 1200px) {
+                            top:50px;
+                            right:10px;
+                        }
+
+                        li {
+                            .inline-block;
+                            background:rgba(255,255,255,0.5);
+                            .rem(width, 8);
+                            .rem(height, 8);
+                            border-radius:50%;
+                            .rem(margin, 0 0 0 4);
+
+                            @media all and (min-width: 1200px) {
+                                width:15px;
+                                height:15px;
+                                margin:0 0 0 6px;
+                            }
+
+                            &.slick-active {
+                                .gradient(#f4830c, #f3780b,#f26e0a);
+
+                            }
+                        }
+                    }
+
+                }
+
+                button {
+                    .none;
+
+                    @media all and (min-width: 1200px) {
+                        .zero;
+                        .block;
+                        border:none;
+                        background:@white;
+                        width:35px;
+                        height:35px;
+                        border-radius:50%;
+                        .mapazero;
+                        .absolute;
+                        bottom:260px;
+                        outline:none;
+                        cursor:pointer;
+
+                        &.prev {
+                            left:0px;
+                        }
+
+                        &.next {
+                            right:0px;
+                        }
+
+                        i {
+                            font-size:18px;
+
+                            &::before {
+                                .mapazero;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        section.main-list {
+            .center;
+            background:#f7f7f7;
+            .rem(padding, 0 0 10);
+
+            @media all and (min-width: 1200px) {
+                padding:0 0 35px;
+            }
+
+            .container {
+
+                &::before {
+                    content:"";
+                    .block;
+                    .rem(width, 44);
+                    .rem(height, 2);
+                    .rem(margin, 20 auto 0);
+                    .gradient(#ff8800, #ffa800, #ffce00);
+
+                    @media all and (min-width: 1200px) {
+                        margin:46px 0 0;
+                    }
+                }
+
+                h2 {
+                    .rem(width, 116);
+                    .rem(height, 18.5);
+                    .rem(margin, 10 auto 16);
+                    .zero;
+                    background:url("../images/main-list.svg") no-repeat center / 100%;
+
+                    @media all and (min-width: 1200px) {
+                        width:205px;
+                        height:32px;
+                        margin:14px 0 24px;
+                    }
+                }
+
+                ul {
+                    .no-list;
+                    .mapazero;
+                    .zero;
+
+                    li {
+                        .relative;
+                        .rem(margin, 0 0 10);
+
+                        @media all and (min-width: 1200px) {
+                            .inline-block;
+                            width:calc(~"(100% - 36px) / 4");
+                            margin-right:12px;
+
+                            &:nth-child(4n) {
+                                margin-right:0;
+                            }
+                        }
+
+                        a {
+
+
+                            p.image {
+                                padding:50% 0 0;
+
+                                @media all and (min-width: 1200px) {
+                                    padding:255px 0 0;
+                                }
+
+                                img {
+                                    .none;
+                                }
+                            }
+
+                            h4 {
+                                .absolute;
+                                .mapazero;
+                                .ellipse;
+                                .rem(left, 50);
+                                .rem(right, 50);
+                                .rem(bottom, 10);
+                                .rem(font-size, 12);
+                                .rem(line-height, 25);
+                                background:rgba(255,255,255,0.85);
+                                .center;
+                                border-radius:5px;
+
+                                @media all and (min-width: 1200px) {
+                                    line-height:40px;
+                                    font-size:16px;
+                                }
+
+                                i {
+                                    .rem(font-size, 16);
+                                    .relative;
+                                    .rem(top, 2);
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size:20px;
+                                    }
+                                }
+                            }
+
+                            @media all and (min-width: 1200px) {
+                                &:hover {
+                                    h4 {
+                                        line-height:inherit;
+                                        background:rgba(0,0,0,0.7);
+                                        border-radius:0;
+                                        height:auto;
+                                        .full-position();
+                                        color:@white;
+                                        padding:80px 0 0;
+    
+                                        i {
+                                            .block;
+                                            margin:20px auto 0;
+                                            background:#000;
+                                            width:58px;
+                                            height:58px;
+                                            line-height:58px;
+                                            font-size:30px;
+                                            border-radius:50%;
+                                            .drop-shadowW(@x:1px, @y: 1px, @blur: 1px, @spread: 0, @alpha: 0.15);
+                                        }
+                                    }
+                                }
+                            }
+
+
+
+
+                        }
+
+                        &.banner {
+                            .top;
+                            .inline-block;
+                            width:100%;
+                            background:#ffab00;
+                            .rem(height, 48);
+
+                            @media all and (min-width: 1200px) {
+                                width:calc(~"(100% - 36px) / 4");
+                                height:255px;
+                            }
+
+
+                            a {
+                                .inline-block;
+                                width:100%;
+                                height:100%;
+
+                                h4 {
+                                    .static;
+                                    .zero;
+                                    .rem(width, 137);
+                                    .rem(height, 29);
+                                    .rem(margin, 10 0 0 10);
+                                    background:url("../images/visitjeju-mobile.svg") no-repeat center / 100%;
+
+                                    @media all and (min-width: 1200px) {
+                                        .block;
+                                        margin:30px auto 10px;
+                                        width:208px;
+                                        height:105px;
+                                        background:url("../images/visitjeju-pc.svg") no-repeat center / 100%;
+                                    }
+        
+                                }
+
+                                p {
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size:15px;
+                                        .center;
+                                        .mapazero;
+                                    }
+                                }
+
+                                strong {
+                                    .block;
+                                    .absolute;
+                                    .rem(right, 10);
+                                    .rem(top, 10);
+                                    .rem(line-height, 28);
+                                    .rem(padding, 0 10);
+                                    background:#ff8200;
+                                    .rem(font-size, 12);
+
+                                    @media all and (min-width: 1200px) {
+                                        .static;
+                                        .center;
+                                        margin:30px 60px 0;
+                                        font-size:15px;
+                                        line-height:40px;
+                                    }
+
+                                }
+                            }
+
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+        section.customer {
+            .center;
+
+            .container {
+
+                .rem(margin-top, 15);
+                color:#404040;
+
+                @media all and (min-width: 1200px) {
+                    border-top:2px solid #000;
+                    margin:40px 0;
+                    .zero;
+                    border-bottom:1px solid #e5e5e5;
+                }
+
+
+                div.tel {
+
+                    border-top:2px solid #000;
+                    .rem(padding, 15 8);
+
+                    @media all and (min-width: 1200px) {
+                        border:none;
+                        border-right:1px solid #e5e5e5;
+                        .inline-block;
+                        .top;
+                        width:58%;
+                        padding:20px 50px 20px 20px;
+                        
+                    }
+
+                    h2 {
+                        .zero;
+                        .rem(width, 78);
+                        .rem(height, 26);
+                        background:url("../images/main-customer.svg") no-repeat center / 100%;
+
+                        @media all and (min-width: 1200px) {
+                            width:115px;
+                            height:38px;
+                        }
+
+                    }
+
+
+                    ul {
+                        .no-list;
+                        padding:0;
+                        .rem(margin, 15 0 0);
+                        .zero;
+
+                        @media all and (min-width: 1200px) {
+                            padding:20px 0 0;
+                        }
+
+                        li {
+                            .relative;
+                            .rem(margin-bottom, 14);
+
+                            @media all and (min-width: 1200px) {
+                                .inline-block;
+                                width:calc(~"50% - 15px");
+                                margin-bottom:20px;
+
+                                &:nth-child(odd) {
+                                    margin-right:30px;
+                                }
+                            }
+
+                            
+                            &::before {
+                                .block;
+                                content:"";
+                                .absolute;
+                                .rem(top, 7);
+                                width:100%;
+                                height:1px;
+                                border-top:1px dotted #999;
+                            }
+
+                            strong {
+                                .relative;
+                                z-index:100;
+                                background:@white;
+                                .rem(font-size, 12);
+                                .rem(padding, 0 8 0 0);
+                                font-weight:100;
+
+                                @media all and (min-width: 1200px) {
+                                    font-size:18px;
+                                }
+                            }
+
+
+                                u {
+                                    float:right;
+                                    .relative;
+                                    .rem(font-size, 13);
+                                    z-index:100;
+                                    background:@white;
+                                    text-decoration:none;
+                                    .bold;
+                                    color:#404040;
+                                    .rem(padding, 0 0 0 8);
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size:18px;
+                                    }
+                                }
+
+                                &::before {
+                                    .block;
+                                    content:"";
+                                    .absolute;
+                                    .rem(top, 7);
+                                    width:100%;
+                                    height:1px;
+                                    border-top:1px dotted #999;
+                                }
+                            }
+
+                    }
+                }
+
+
+                div.notice {
+
+                    border-top:1px solid #e5e5e5;
+                    .rem(padding, 15 8 0 8);
+                    .relative;
+
+                    @media all and (min-width: 1200px) {
+                        border:none;
+                        .inline-block;
+                        .top;
+                        width:42%;
+                        padding:20px 20px 20px 40px;
+                        
+                    }
+                    h2 {
+                        .zero;
+                        .rem(width, 59);
+                        .rem(height, 26);
+                        background:url("../images/main-notice.svg") no-repeat center / 100%;
+
+                        @media all and (min-width: 1200px) {
+                            width:86px;
+                            height:38px;
+                        }
+                    }
+
+
+                    ul {
+                        .no-list;
+                        .rem(margin, 15 0 0);
+                        .rem(padding, 20 0 10);
+                        border-top:1px dotted #ccc;
+
+                        @media all and (min-width: 1200px) {
+                            padding:30px 0 0;
+                        }
+
+                        li {
+                            a {
+                                .block;
+                                .zero;
+                                .rem(margin-bottom, 8);
+
+                                @media all and (min-width: 1200px) {
+                                    margin-bottom:16px;
+                                }
+
+                                p {
+                                    .inline-block;
+                                    .remCalc(width, 60);
+                                    .ellipse;
+                                    .mapazero;
+                                    .rem(font-size, 11);
+                                    
+                                    @media all and (min-width: 1200px) {
+                                        font-size:16px;
+                                        padding-right:20px;
+                                    }
+                                }
+
+                                i {
+                                    .inline-block;
+                                    .rem(width, 60);
+                                    .rem(font-size, 11);
+                                    .top;
+                                    font-style:normal;
+                                    .right;
+                                    font-weight:100;
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size:16px;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+                    a.more {
+                        .absolute;
+                        right:0;
+                        .rem(top, 24);
+                        .rem(font-size, 11);
+
+                        @media all and (min-width: 1200px) {
+                            right:20px;
+                            top:30px;
+                            font-size:14px;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        /* SUB */
+        section.sub-head {
+            .block;
+            .zero;
+
+            @media all and (min-width: 1200px) {
+                .inline-block;
+                width:100%;
+                .center;
+                background:#f7f7f7;
+            }
+
+            ul {
+                .none;
+
+                @media all and (min-width: 1200px) {
+                    .block;
+                    width:1200px;
+                    margin:50px auto 20px;
+                    .right;
+                    padding:0;
+                    .no-list;
+                    font-size:16px;
+
+                    li {
+                        .inline-block;
+                        color:#939393;
+
+                        &::after {
+                            content: ">";
+                            .inline-block;
+                            padding:0 6px;
+                            color:#999;
+                        }
+
+                        &:last-child {
+                            strong {
+                                color: #1e1e1e;
+                            }
+
+
+                            &::after {
+                                content:"";
+                            }
+                        }
                     }
                 }
 
             }
         }
 
-        /* SUB */
-        &.sub {
-            .container {
+        section.detail-head {
+            .center;
+            background:#f7f7f7;
 
+            .container {
+                background:@white;
+                .relative;
+                .zero;
+
+                @media all and (min-width: 1200px) {
+                    padding:130px 70px 70px 572px;
+                    
+                }
+                
+                div.mobile-outline {
+                    .relative;
+
+                    @media all and (min-width: 1200px) {
+                        .absolute;
+                        left:70px;
+                        top:70px;
+                        width:455px;
+                        height:455px;
+                    }
+
+                    div.big-image {
+                        .rem(margin, 0 -10);
+
+
+                        @media all and (min-width: 1200px) {
+                            margin:0;
+                            width:100%;
+                            height:100%;
+                        }
+
+
+                        img {
+                            .none;
+                        }
+                    }
+                    div.title {
+                        .absolute;
+                        z-index: 600;
+                        .rem(left, -10);
+                        .rem(right, -10);
+                        bottom: 0;
+                        .center;
+                        color: @white;
+                        .rem(padding, 0 0 60);
+                        background: url(../images/img_gradient.png) no-repeat center / 100% 100%;
+
+                        @media all and (min-width: 1200px) {
+                            left:502px;
+                            top:0;
+                            bottom:auto;
+                            width:558px;
+                            color:#333;
+                            background:none;
+                            .left;
+                        }
+
+
+                        h2 {
+                            font-weight:200;
+                            .rem(font-size, 18);
+
+                            @media all and (min-width: 1200px) {
+                                .mapazero;
+                                font-size:40px;
+                                .ellipse;
+                            }
+    
+
+                        }
+                    }
+                }
+
+                div.ticket {
+                    div.type {
+                        .rem(margin, 20 0);
+                        ul {
+                            .mapazero;
+                            .no-list;
+
+                            li {
+                                .inline-block;
+
+                                input {
+                                    .none;
+                                }
+
+                                label {
+                                    .rem(margin, 0 20 0 0);
+                                    .rem(font-size, 12);
+
+                                    &::before {
+                                        content:"";
+                                        .inline-block;
+                                        .rem(width, 6);
+                                        .rem(height, 6);
+                                        .rem(margin, 0 4 0 0);
+                                        background:#eee;
+                                        border:6px solid @white;
+                                        border-radius:50%;
+                                        .drop-shadow();
+                                    }
+                                }
+
+                                input:checked + label {
+
+                                    &::before {
+                                        background:#f3740b;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    div.calendar {
+                        h3 {
+                            border:1px solid #dddede;
+                            .rem(font-size, 12);
+                            .rem(line-height, 40);
+                            .rem(padding, 0 10);
+                            color:#919191;
+                            .normal;
+                            .pointer;
+                            .inner-shadow(-1px, -1px, 2px, 0, 0.15);
+
+                            u {
+                                text-decoration:none;
+                                color:#ff7800;
+                            }
+
+                            i {
+                                float:right;
+                                color:#070002;
+                            }
+                        }
+
+                        div#selectItemArea {
+                            .rem(font-size, 12);
+
+                            div.lodge {
+                                border:1px solid #ff7800;
+                                background:#fafafa;
+                                .rem(padding, 10);
+                                .rem(margin, 0 0 10);
+                                .relative;
+
+                                h4 {
+                                    .rem(margin, 0 0 10);
+                                    .rem(padding, 0 0 10);
+                                    border-bottom:1px solid #7a3900;
+                                    color:#7a3900;
+                                }
+
+                                p {
+                                    .rem(margin, 10 0 0);
+                                    .rem(font-size, 10);
+                                    color:#555;
+                                    
+                                }
+
+                                ul {
+                                    .no-list;
+                                    padding:0;
+                                    .rem(margin, 20 0);
+                                    .center;
+
+                                    li {
+                                        .inline-block;
+                                        .rem(margin, 0 0 6);
+                                        .zero;
+
+                                        &:first-child {
+                                            .rem(margin, 0 10 6 0);
+                                        }
+
+
+                                        h5 {
+                                            .inline-block;
+                                            .mapazero;
+                                            .left;
+                                            .rem(padding, 0 6 0 0);
+                                            .rem(font-size, 10);
+                                        }
+
+                                        strong {
+                                            .inline-block;
+                                            .rem(line-height, 20);
+                                            .rem(font-size, 10);
+                                            .center;
+                                            background:@white;
+                                            .rem(min-width, 40);
+                                        }
+
+                                        button {
+                                            border:none;
+                                            .zero;
+                                            .mapazero;
+                                            background:#ff7800;
+                                            color:@white;
+                                            .rem(width, 18);
+
+                                            i {
+                                                .rem(font-size, 12);
+                                                .rem(line-height, 20);
+                                                &::before {
+                                                    .mapazero;
+                                                }
+                                            }
+                                        }
+
+                                        input[type="text"] {
+                                            
+                                            .rem(line-height, 20);
+                                            .rem(width, 50);
+                                            background:@white;
+                                            .rem(font-size, 10);
+                                            .rem(padding, 0 6);
+                                        }
+                                    }
+                                }
+
+                                p.productPrice {
+                                    .absolute;
+                                    .rem(right, 10);
+                                    .rem(bottom, 10);
+                                    .rem(font-size, 12);
+                                    color:#ff7800;
+
+                                    strong {
+                                        .rem(font-size, 14);
+                                    }
+                                }
+
+                                button.productDelete {
+                                    .absolute;
+                                    .rem(right, 10);
+                                    .rem(top, 10);
+                                    background:#555;
+                                    border:none;
+                                    color:@white;
+                                    .rem(font-size, 10);
+                                    .rem(line-height, 16);
+
+                                }
+                            }
+                        }
+                    }
+
+                    ul.discount_item {
+                        .no-list;
+                        .mapazero;
+
+                        li {
+                            .relative;
+                            background:#efefef;
+                            .rem(font-size, 10);
+                            .rem(margin, 0 0 10);
+                            .rem(padding, 10);
+
+                            strong {
+                                .block;
+                                color:#0066cc;
+                                .rem(margin, 4 0 0);
+                                .rem(font-size, 12);
+
+                                button {
+                                    .absolute;
+                                    .rem(right, 10);
+                                    .rem(bottom, 10);
+                                    background:#555;
+                                    border:none;
+                                    color:@white;
+                                    .rem(font-size, 10);
+                                    .rem(line-height, 16);
+                                }
+                            }
+                        }
+                    }
+
+                    div#discount {
+                        .rem(font-size, 10);
+                        .rem(margin, 20 0);
+                        .center;
+
+                        &>p {
+                            .mapazero;
+                            .inline-block;
+
+                            button {
+                                background:#555;
+                                border:none;
+                                color:@white;
+                                .rem(font-size, 10);
+                                .rem(line-height, 14);
+                                border-radius:5px;
+                            }
+
+                            &.result {
+                                .block;
+                                .rem(margin, 6 0 0);
+                                .rem(font-size, 14);
+                                color:#ff7800;
+
+                                strong {
+                                    .rem(font-size, 18);
+                                }
+
+                            }
+
+                            i {
+                                .rem(margin, 0 6);
+                                color:#999;
+                            }
+                        }
+
+
+                        div.discount_div {
+                            .none;
+                            .inline-block;
+                            width:100%;
+                            background:#333;
+                            .rem(margin, 20 0 0);
+                            .relative;
+
+                            &::before {
+                                content:"";
+                                .block;
+                                .absolute;
+                                left:50%;
+                                .rem(top, -19);
+
+                                width:0;
+                                height:0;
+                                border:15px solid @white;
+                                border-bottom-color:#ff7800;
+
+
+                            }
+
+                            div.outline {
+                                .relative;
+
+                                button.close {
+                                    .absolute;
+                                    .rem(right, 5);
+                                    .rem(top, 5);
+                                    background:none;
+                                    border:none;
+                                    .zero;
+
+                                    i {
+                                        .rem(font-size, 16);
+                                        color:@white;
+                                    }
+                                }
+
+                                h3 {
+                                    margin:0;
+                                    .rem(line-height, 32);
+                                    .rem(padding, 0 10);
+                                    .rem(font-size, 12);
+                                    background:#ff7800;
+                                    color:@white;
+                                }
+
+                                div.item {
+                                    background:@white;
+                                    .rem(margin, 10 20);
+
+                                    h4 {
+                                        color:#7a3900;
+                                        margin:0;
+                                        .rem(padding, 10 0);
+                                        .rem(font-size, 12);
+
+                                        small {
+                                            .block;
+                                            .rem(margin, 6 0 0);
+                                            .rem(font-size, 10);
+                                            color:#555;
+                                        }
+                                    }
+
+                                    div {
+                                        .price {
+                                            .rem(font-size, 10);
+                                        }
+
+                                        select {
+                                            .rem(height, 26);
+                                            .rem(padding, 0 10);
+                                        }
+                                        button {
+                                            .rem(line-height, 26);
+                                            .rem(padding, 0 4);
+                                            color:@white;
+                                            border:none;
+                                            background:#333;
+                                            border-radius:5px;
+
+                                            &.ok {
+                                                background:#ff7800;
+                                            }
+                                        }
+
+
+                                        &>strong {
+                                            .block;
+                                            color:#0066cc;
+                                            .rem(padding, 10 0);
+                                            .rem(font-size, 12);
+                                        }
+                                    }
+
+                                    &.no {
+                                        background:#999;
+
+                                        h4 {
+                                            color:#777;
+
+                                            small {
+                                                color:#777;
+                                            }
+                                        }
+
+                                        div {
+
+                                            p.price {
+                                                color:#777;
+                                            }
+    
+                                            &>strong {
+                                                color:#666;
+                                            }
+                                        }
+
+                                    }
+                                }
+
+                                .info-text {
+                                    .rem(font-size, 9);
+                                    color:#ccc;
+                                    word-break:keep-all;
+                                    line-height:1.6;
+                                    .rem(padding, 10);
+                                }
+
+                                div.discount_result {
+                                    p {
+                                        .inline-block;
+                                        color:@white;
+                                        .rem(margin, 4 0 2);
+
+                                        i {
+                                            .rem(margin, 0 4);
+                                        }
+
+                                        &.result {
+                                            .block;
+                                            .rem(margin, 6 0 0);
+                                            .rem(font-size, 12);
+                                            color:#ff7800;
+            
+                                            strong {
+                                                .rem(font-size, 14);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                div.btn-area {
+                                    .rem(margin, 10 0 20);
+
+                                    button {
+                                        .rem(line-height, 26);
+                                        .rem(padding, 0 10);
+                                        color:@white;
+                                        border:none;
+                                        background:#555;
+                                        border-radius:5px;
+    
+                                        &.ok {
+                                            background:#ff7800;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
 
             }
         }
 
+
+
+
     }
 
     footer#footer {
+        .center;
+        background:#2b2b2b;
+
         .container {
+            color:#c3c3c3;
+
+            h2 {
+                .none;
+                
+                @media all and (min-width: 1200px) {
+                    .block;
+                    .absolute;
+                    .zero;
+                    left:10px;
+                    top:30px;
+                    width:162px;
+                    height:70px;                    
+                    background:url("../images/footer-logo.png") no-repeat center / 100%;
+                }
+            }
+
+            .footer-util {
+                
+                @media all and (min-width: 1200px) {
+                    
+                    .absolute;
+                    right:0;
+                    top:30px;
+                    
+                }
+
+                ul {
+                    .no-list;
+                    margin:0;
+                    .rem(padding, 20 0 0);
+                    .zero;
+                
+                    @media all and (min-width: 1200px) {
+                        padding:0;
+                    }
+                    
+                    li {
+                        .inline-block;
+                        width:calc(~"50% - 5px");
+                
+                        @media all and (min-width: 1200px) {
+                            .block;
+                            width:160px;
+                        
+                        }
+
+                        a {
+                            .block;
+                            color:@white;
+                            background:#1a1a1a;
+                            .rem(font-size, 13);
+                            .rem(line-height, 27);
+                            .center;
+                
+                            @media all and (min-width: 1200px) {
+                                line-height:35px;
+                                font-size:15px;
+                                margin-bottom:10px;
+                            }
+                        }
+
+                        &:first-child {
+                            margin-right:10px;
+                                            
+                            @media all and (min-width: 1200px) {
+                                margin-right:0;
+                            }
+                        }
+
+                        &:last-child {
+
+                            width:100%;
+                            margin-top:16px;
+
+                            a {
+                                background:#323232;
+                                .relative;
+
+                                @media all and (min-width: 1200px) {
+                                    background:none;
+                                    border:1px solid  #414141;
+                                    margin-top:20px;
+                                }
+
+                                i {
+                                    font-style:normal;
+
+                                    @media all and (min-width: 1200px) {
+                                        .inline-block;
+                                        .relative;
+                                        top:-16px;
+                                        margin-bottom:20px;
+                                        background:#2b2b2b;
+                                        padding:0 4px;
+                                        font-size:16px;
+
+                                    }
+                                }
+
+                                strong{
+
+                                    color:#eb992b;
+                                    .rem(font-size, 15);
+                                    .rem(line-height, 30);
+
+                                    @media all and (min-width: 1200px) {
+                                        .block;
+                                        .absolute;
+                                        left:0;
+                                        right:0;
+                                        bottom:8px;
+                                        .center;
+                                        font-size:23px;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            address {
+                .rem(font-size, 12);
+                .rem(margin, 20 0 0);
+                font-style:normal;
+                .relative;
+
+                @media all and (min-width: 1200px) {
+                    margin:30px 180px 0 230px;
+                    font-size:15px;
+                    
+                    &::before {
+                        content:"";
+                        .block;
+                        .absolute;
+                        left:-30px;
+                        top:0;
+                        height:160px;
+                        width:1px;
+                        background:#414141;
+                    }
+
+
+                }
+
+                p {
+                    .rem(margin, 0 0 10);
+                    line-height:1.4;
+                    color:#979797;
+                    word-break:keep-all;
+                        
+                    @media all and (min-width: 1200px) {
+                        margin:0 0 4px;
+
+                        &:nth-child(2) {
+                            margin:0 0 14px;
+                        }
+                    }
+
+                    strong {
+                        .normal;
+                        .block;
+                        color:#c3c3c3;
+                        
+                        @media all and (min-width: 1200px) {
+                            .inline-block;
+                        }
+                    }
+                }
+            }
+
+            p.copyright {
+                .rem(font-size, 13);
+                word-break:keep-all;
+                .normal;
+
+                                        
+                @media all and (min-width: 1200px) {
+                    font-size:15px;
+                    margin:30px 0 30px 230px;
+                }
+            }
 
 
         }

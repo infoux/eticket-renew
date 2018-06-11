@@ -1,375 +1,393 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>서귀포시 E-Ticket</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/common.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-        <script src="js/respond.min.js"></script>
-        <script src="js/html5shiv.js"></script>
-    <![endif]-->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
-    <script src="js/common.js"></script>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>서귀포시 E-Ticket</title>
 
-<body>
-    <!-- S:skip_navi -->
-    <div class="skip_navi">
-        <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
-        <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
-        <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
-    </div>
-    <!-- E:skip_navi -->
-    <!-- S:header -->
-    <header id="header">
-        <div class="container">
-            <button class="btn mobileMenu">메뉴열기
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </button>
-            <h1>
-                <a href="">서귀포시 E-Ticket</a>
-            </h1>
-            <p class="util_menu">
-                <!-- <button class="btn login" href="">비회원로그인 <i class="fa fa-sign-in" aria-hidden="true"></i></button> -->
-                <button class="btn logout" href="">로그아웃
-                    <i class="fa fa-sign-out" aria-hidden="true"></i>
-                </button>
-                <button class="btn customer" href="">고객센터
-                    <i class="fa fa-user-o" aria-hidden="true"></i>
-                </button>
-                <button class="btn mypage" href="">마이페이지
-                    <i class="fa fa-book" aria-hidden="true"></i>
-                </button>
-            </p>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/common.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <!-- S:skip_navi -->
+        <div class="skip_navi">
+            <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
         </div>
-        <!-- S:main_menu -->
-        <nav id="main_menu">
-            <p class="mobileClose">
-                <a href="#">메뉴닫기
-                    <i class="fa fa-close" aria-hidden="true"></i>
-                </a>
-            </p>
-            <ul>
-                <li>
-                    <h2>
-                        <a href="#">관광지</a>
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="">천지연폭포</a>
-                        </li>
-                        <li>
-                            <a href="">용머리해안</a>
-                        </li>
-                        <li>
-                            <a href="">산방산 암벽식물지대</a>
-                        </li>
-                        <li>
-                            <a href="">천제연폭포</a>
-                        </li>
-                        <li>
-                            <a href="">정방폭포</a>
-                        </li>
-                        <li>
-                            <a href="">주상절리대</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>
-                        <a href="#">문화시설</a>
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="">소암기념관</a>
-                        </li>
-                        <li>
-                            <a href="">이중섭미술관</a>
-                        </li>
-                        <li>
-                            <a href="">서복전시관</a>
-                        </li>
-                        <li>
-                            <a href="">기당미술관</a>
-                        </li>
-                        <li>
-                            <a href="">서귀포예술의전당
-                                <i class="fa fa-external-link" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>
-                        <a href="#">휴양숙박시설</a>
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="">붉은오름자연휴양림</a>
-                        </li>
-                        <li>
-                            <a href="">서귀포자연휴양림</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>
-                        <a href="#">통합상품권</a>
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="">산방산통합상품권</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>
-                        <a href="#">커뮤니티</a>
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="">공지사항</a>
-                        </li>
-                        <li>
-                            <a href="">이용후기</a>
-                        </li>
-                        <li>
-                            <a href="">FAQ</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <!-- E:main_menu -->
-    </header>
-    <!-- E:header -->
-    <!-- S:mainContent -->
-    <article id="content">
-        <section class="sub detail head">
-            <ul class="sub_navigation">
-                <li>HOME</li>
-                <li>숙박시설</li>
-                <li>
-                    <strong>붉은오름자연휴양림</strong>
-                </li>
-            </ul>
+        <!-- E:skip_navi -->
+        <!-- S:header -->
+        <header id="header">
             <div class="container">
-                <div class="slider_outline">
-                    <div class="image_slider">
-                        <ul class="bx">
-                            <li>
-                                <img src="images/tmp.PNG">
-                            </li>
-                            <!-- <li><img src="images/tmp.PNG"></li>
-                            <li><img src="images/tmp.PNG"></li> -->
-                        </ul>
-                        <!-- <div id="bx-pager">
-                            <a data-slide-index="0" href=""><img src="images/tmp.PNG" /></a>
-                            <a data-slide-index="1" href=""><img src="images/tmp.PNG" /></a>
-                            <a data-slide-index="2" href=""><img src="images/tmp.PNG" /></a>
-                        </div> -->
-                    </div>
-                    <div class="title">
-                        <h3>붉은오름자연휴양림</h3>
-                        <p class="tag">
-                            <i>서귀포 대표 관광지</i>
-                            <i>숙박시설</i>
-                        </p>
-                    </div>
-                </div>
-                <div class="ticket">
-                    <p class="tel">문의전화
-                        <strong>0647606361</strong>
-                    </p>
-                    <div class="lodge calendar">
-                        <h4>이용일자를 선택하세요
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </h4>
-                        <div id="selectItemArea">
-                            <div class="lodge">
-                                <h5>삼나무동금불초(2층)[4인실]</h5>
-                                <p>입실 : 2017-02-12 / 퇴실 : 2017-02-13</p>
-                                <ul>
-                                    <li>
-                                        <h6>숙박일</h6>
-                                        <button class="minus" href="" data="0">감소
-                                            <i class="fa fa-minus" aria-hidden="true"></i>
-                                        </button>
-                                        <strong>1박</strong>
-                                        <button class="plus" href="" data="0">증가
-                                            <i class="fa fa-plus" aria-hidden="true"></i>
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <h6>
-                                            <label for="count">인원수</label>
-                                        </h6>
-                                        <input id="count" type="text">명 </li>
-                                </ul>
-                                <p class="productPrice">
-                                    <span>32,000원</span>
-                                </p>
-                                <button class="productDelete" data="0">선택취소</button>
-                            </div>
 
-                            <div class="lodge">
-                                <h5>삼나무동금불초(2층)[4인실]</h5>
-                                <p>입실 : 2017-02-12 / 퇴실 : 2017-02-13</p>
-                                <ul>
-                                    <li>
-                                        <h6>숙박일</h6>
-                                        <button class="minus" href="" data="0">감소
-                                            <i class="fa fa-minus" aria-hidden="true"></i>
-                                        </button>
-                                        <strong>1박</strong>
-                                        <button class="plus" href="" data="0">증가
-                                            <i class="fa fa-plus" aria-hidden="true"></i>
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <h6>
-                                            <label for="count">인원수</label>
-                                        </h6>
-                                        <input id="count" type="text">명 </li>
-                                </ul>
-                                <p class="productPrice">
-                                    <span>32,000원</span>
-                                </p>
-                                <button class="productDelete" data="0">선택취소</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <ul class="discount_item">
-                        <li> 때죽나무동억새꽃실 502호 [20%할인] 20%
-                            <strong>-6,400원
-                                <button>적용취소</button>
-                            </strong>
-                        </li>
-                        <li> 때죽나무동억새꽃실 502호 [20%할인] 20%
-                            <strong>-6,400원
-                                <button>적용취소</button>
-                            </strong>
-                        </li>
-                    </ul>
-                    <div id="discount">
-                        <p>합계
-                            <strong>32,000원</strong>
-                        </p>
-                        <p class="minus">
-                            <i class="fa fa-minus-circle" aria-hidden="true"></i>할인금액
-                            <strong>100원</strong>
-                        </p>
-                        <button class="btn toggle">할인적용</button>
-                        <p class="result">
-                            <i class="fa fa-pause-circle fa-rotate-90" aria-hidden="true"></i>최종금액
-                            <strong>32,000원</strong>
-                        </p>
-                        <div class="discount_div">
-                            <div class="outline">
-                                <button class="close">창닫기
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </button>
-                                <h4>적용할 할인쿠폰을 선택하세요</h4>
-                                <div class="item">
-                                    <h5>삼나무동금불초(2층)
-                                        <small>2017-02-12일 부터 3박</small>
-                                    </h5>
-                                    <div>
-                                        <p class="price">상품금액
-                                            <strong>376,000원</strong>
-                                        </p>
-                                        <select>
-                                            <option>[특별할인] 30%할인</option>
-                                        </select>
-                                        <button class="btn ok">적용</button>
-                                        <button class="btn cancle">적용취소</button>
-                                        <strong>할인금액 -1,200원</strong>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <h5>삼나무동금불초(2층)
-                                        <small>2017-02-12일 부터 3박</small>
-                                    </h5>
-                                    <div>
-                                        <p class="price">상품금액
-                                            <strong>376,000원</strong>
-                                        </p>
-                                        <select>
-                                            <option>[특별할인] 30%할인</option>
-                                        </select>
-                                        <button class="btn ok">적용</button>
-                                        <button class="btn cancle">적용취소</button>
-                                        <strong>할인금액 -1,200원</strong>
-                                    </div>
-                                </div>
-                                <div class="item none">
-                                    <h5>삼나무동금불초(2층)
-                                        <small>2017-02-12일 부터 3박</small>
-                                    </h5>
-                                    <div>
-                                        <p class="price">상품금액
-                                            <strong>376,000원</strong>
-                                        </p>
-                                        <strong>적용가능한 쿠폰이 없습니다.</strong>
-                                    </div>
-                                </div>
-                                <div class="info-text">
-                                    <i class="fa fa-info-circle" aria-hidden="true"></i> 선택하신 날짜중 성수기,주말요금에 포함되는 날짜에는 할인 적용이 되지 않습니다.</div>
-                                <div class="discount_result">
-                                    <p>상품금액합계
-                                        <strong>32,000원</strong>
-                                    </p>
-                                    <p class="minus">
-                                        <i class="fa fa-minus-circle" aria-hidden="true"></i>할인금액합계
-                                        <strong>100원</strong>
-                                    </p>
-                                    <p class="result">
-                                        <i class="fa fa-pause-circle fa-rotate-90" aria-hidden="true"></i>최종결제금액
-                                        <strong>32,000원</strong>
-                                    </p>
-                                </div>
-                                <div class="btn-area">
-                                    <button class="btn ok">할인적용하기</button>
-                                    <button class="btn cancle">돌아가기</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-area submit">
-                        <a herf="#" class="btn">주문하기</a>
-                    </div>
-                </div>
+                <h1>
+                    <a href="">서귀포시 E-Ticket</a>
+                </h1>
+                <p class="util-menu">
+                    <a class="customer" href="">
+                        <i class="icon-user-o" aria-hidden="true"></i>고객센터
+                    </a>
+                </p>
+                <button class="mobileMenu">메뉴열기
+                    <i class="icon-menu" aria-hidden="true"></i>
+                </button>
             </div>
-        </section>
-        <section class="sub detail view">
-            <div class="container">
-                <div class="infoBox">
-                    <h5>이용안내</h5>
-                    <div>
-                        <p>
-                            <strong>※ 장애우 예약 우대 상품안내</strong>
-                        </p>
-                        <p>- 대상 : 숲속의집(솔비나무 동) 1동</p>
-                        <p>- 우대예약기간 : 매월1일 ~ 10일까지</p>
-                        <p>- 예약자준수사항</p>
-                        <p class="small"> · 매월 10일이전 예약자는 예약일로부터 3일이내 복지카드 사본을 팩스(064-782-9170) 송부 후 전화(064-782-9171)로 확인하여야 합니다.</p>
-                        <p class="small"> · 장애인 등록증 미도달 시에는 예약이 취소됩니다.</p>
-                        <p>- 매월 11일부터는 일반 이용객도 예약을 하실 수 있습니다.</p>
-                        <p>
-                            <strong>※ 예약 시 주의사항 및 위약금은 하단 요금안내를 참고 바랍니다.</strong>
-                        </p>
-                        <p>
-                            <strong>※ 2017년 2월 1일 부터 개인 세면도구(수건, 치약, 비누)는 반드시 지참후 입실하시기 바랍니다.</strong>
-                        </p>
-                        <p>붉은오름휴양림에서는 비품이 지급되지 않으므로 객실 이용시 반드시 준비하셔야 합니다.
-                            <br>이용에 참고하시기 바랍니다. </p>
+            <!-- S:main_menu -->
+            <nav id="main-menu">
+                <div class="container">
+
+                    <ul class="menu-list">
+                        <li>
+                            <h2>
+                                <a href="http://daum.net">휴양숙박시설</a>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a class="active" href="">서귀포자연휴양림</a>
+                                </li>
+                                <li>
+                                    <a href="">붉은오름자연휴양림</a>
+                                </li>
+                                <li>
+                                    <a href="">서귀포치유의숲</a>
+                                </li>
+                                <li>
+                                    <a href="">모구리야영장</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="#">공연예매</a>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="">예술의전당</a>
+                                </li>
+                                <li>
+                                    <a href="">김정문화회관</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="#">문화시설</a>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="">이중섭미술관</a>
+                                </li>
+                                <li>
+                                    <a href="">기당미술관</a>
+                                </li>
+                                <li>
+                                    <a href="">서복전시관</a>
+                                </li>
+                                <li>
+                                    <a href="">소암기념관</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="#">관광지</a>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="">천지연폭포</a>
+                                </li>
+                                <li>
+                                    <a href="">천제연폭포</a>
+                                </li>
+                                <li>
+                                    <a href="">정방폭포</a>
+                                </li>
+                                <li>
+                                    <a href="">주상절리대</a>
+                                </li>
+                                <li>
+                                    <a href="">산방산암벽식물지대</a>
+                                </li>
+                                <li>
+                                    <a href="">감귤박물관</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="#">커뮤니티</a>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="">이용후기</a>
+                                </li>
+                                <li>
+                                    <a href="">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="check">
+                            <h2>
+                                <a href="#">
+                                    <i class="icon-check" aria-hidden="true"></i>예약확인</a>
+                            </h2>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </nav>
+            <!-- E:main_menu -->
+        </header>
+        <!-- E:header -->
+        <!-- S:mainContent -->
+        <div id="content">
+
+            <section class="sub-head">
+                <ul >
+                    <li>HOME</li>
+                    <li>숙박시설</li>
+                    <li>
+                        <strong>붉은오름자연휴양림</strong>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="detail-head">
+                <div class="container">
+                    <div class="mobile-outline">
+                        <div class="big-image">
+                            <img src="images/tmp.png">
+                        </div>
+                        <div class="title">
+                            <h2>붉은오름자연휴양림</h2>
+                        </div>
+                    </div>
+
+                    <div class="ticket">
+
+                        <div class="type">
+                            <ul>
+                                <li>
+                                    <input id="select-type01" name="select-type" type="radio" checked>
+                                    <label for="select-type01">숙박권</label>
+                                </li>
+                                <li>
+                                    <input id="select-type02" name="select-type" type="radio">
+                                    <label for="select-type02">데크</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="lodge calendar">
+
+                            <h3><u>이용일자</u>를 선택하세요
+                                <i class="icon-right-open" aria-hidden="true"></i>
+                            </h3>
+
+
+                            <div id="selectItemArea">
+                                <div class="lodge">
+                                    <h4>삼나무동금불초(2층)[4인실]</h4>
+                                    <p>입실 : 2017-02-12 / 퇴실 : 2017-02-13</p>
+                                    <ul>
+                                        <li>
+                                            <h5>숙박일</h5>
+                                            <button class="minus" href="" data="0">감소
+                                                <i class="icon-minus" aria-hidden="true"></i>
+                                            </button>
+                                            <strong>1박</strong>
+                                            <button class="plus" href="" data="0">증가
+                                                <i class="icon-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <h5>
+                                                <label for="count">인원수(명)</label>
+                                            </h5>
+                                            <input id="count" type="text" placeholder="1">
+                                        </li>
+                                    </ul>
+                                    <p class="productPrice">
+                                        <strong>32,000</strong>원
+                                    </p>
+                                    <button class="productDelete" data="0">선택취소</button>
+                                </div>
+
+                                <div class="lodge">
+                                    <h4>삼나무동금불초(2층)[4인실]</h4>
+                                    <p>입실 : 2017-02-12 / 퇴실 : 2017-02-13</p>
+                                    <ul>
+                                        <li>
+                                            <h5>숙박일</h5>
+                                            <button class="minus" href="" data="0">감소
+                                                <i class="icon-minus" aria-hidden="true"></i>
+                                            </button>
+                                            <strong>1박</strong>
+                                            <button class="plus" href="" data="0">증가
+                                                <i class="icon-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <h5>
+                                                <label for="count">인원수(명)</label>
+                                            </h5>
+                                            <input id="count" type="text" placeholder="1">
+                                        </li>
+                                    </ul>
+                                    <p class="productPrice">
+                                        <strong>32,000</strong>원
+                                    </p>
+                                    <button class="productDelete" data="0">선택취소</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <ul class="discount_item">
+                            <li>
+                                때죽나무동억새꽃실 502호 [20%할인] 20%
+                                <strong>-6,400원
+                                    <button>적용취소</button>
+                                </strong>
+                            </li>
+                            <li>
+                                때죽나무동억새꽃실 502호 [20%할인] 20%
+                                <strong>-6,400원
+                                    <button>적용취소</button>
+                                </strong>
+                            </li>
+                        </ul>
+                        <div id="discount">
+
+
+                            <p>합계
+                                <strong>32,000원</strong>
+                            </p>
+                            <p class="minus">
+                                <i class="fa fa-minus-circle" aria-hidden="true"></i>할인금액
+                                <strong>100원</strong>
+                                <button class="btn toggle">할인적용</button>
+                                <i class="fa fa-pause-circle fa-rotate-90" aria-hidden="true"></i>
+                            </p>
+                            <p class="result">
+                               최종금액
+                                <strong>32,000</strong>원
+                            </p>
+
+
+
+
+                            <div class="discount_div">
+                                <div class="outline">
+                                    <button class="close">창닫기
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </button>
+                                    <h3>적용할 할인쿠폰을 선택하세요</h3>
+                                    <div class="item">
+                                        <h4>삼나무동금불초(2층)
+                                            <small>2017-02-12일 부터 3박</small>
+                                        </h4>
+                                        <div>
+                                            <p class="price">상품금액
+                                                <strong>376,000원</strong>
+                                            </p>
+                                            <select>
+                                                <option>[특별할인] 30%할인</option>
+                                            </select>
+                                            <button class="btn ok">적용</button>
+                                            <button class="btn cancle">적용취소</button>
+                                            <strong>할인금액 -1,200원</strong>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <h4>삼나무동금불초(2층)
+                                            <small>2017-02-12일 부터 3박</small>
+                                        </h4>
+                                        <div>
+                                            <p class="price">상품금액
+                                                <strong>376,000원</strong>
+                                            </p>
+                                            <select>
+                                                <option>[특별할인] 30%할인</option>
+                                            </select>
+                                            <button class="btn ok">적용</button>
+                                            <button class="btn cancle">적용취소</button>
+                                            <strong>할인금액 -1,200원</strong>
+                                        </div>
+                                    </div>
+                                    <div class="item no">
+                                        <h4>삼나무동금불초(2층)
+                                            <small>2017-02-12일 부터 3박</small>
+                                        </h4>
+                                        <div>
+                                            <p class="price">상품금액
+                                                <strong>376,000원</strong>
+                                            </p>
+                                            <strong>적용가능한 쿠폰이 없습니다.</strong>
+                                        </div>
+                                    </div>
+                                    <div class="info-text">
+                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                        선택하신 날짜중 성수기,주말요금에 포함되는 날짜에는 할인 적용이 되지 않습니다.</div>
+                                    <div class="discount_result">
+                                        <p>상품금액합계
+                                            <strong>32,000원</strong>
+                                        </p>
+                                        <p class="minus">
+                                            <i class="fa fa-minus-circle" aria-hidden="true"></i>할인금액합계
+                                            <strong>100원</strong>
+                                        </p>
+                                        <p class="result">
+                                            <i class="fa fa-pause-circle fa-rotate-90" aria-hidden="true"></i>최종결제금액
+                                            <strong>32,000원</strong>
+                                        </p>
+                                    </div>
+                                    <div class="btn-area">
+                                        <button class="btn ok">할인적용하기</button>
+                                        <button class="btn cancle">돌아가기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-area submit">
+                            <a herf="#" class="btn">주문하기</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sub detail view">
+                <div class="container">
+                    <div class="infoBox">
+                        <h5>이용안내</h5>
+                        <div>
+                            <p>
+                                <strong>※ 장애우 예약 우대 상품안내</strong>
+                            </p>
+                            <p>- 대상 : 숲속의집(솔비나무 동) 1동</p>
+                            <p>- 우대예약기간 : 매월1일 ~ 10일까지</p>
+                            <p>- 예약자준수사항</p>
+                            <p class="small">
+                                · 매월 10일이전 예약자는 예약일로부터 3일이내 복지카드 사본을 팩스(064-782-9170) 송부 후 전화(064-782-9171)로
+                                확인하여야 합니다.</p>
+                            <p class="small">
+                                · 장애인 등록증 미도달 시에는 예약이 취소됩니다.</p>
+                            <p>- 매월 11일부터는 일반 이용객도 예약을 하실 수 있습니다.</p>
+                            <p>
+                                <strong>※ 예약 시 주의사항 및 위약금은 하단 요금안내를 참고 바랍니다.</strong>
+                            </p>
+                            <p>
+                                <strong>※ 2017년 2월 1일 부터 개인 세면도구(수건, 치약, 비누)는 반드시 지참후 입실하시기 바랍니다.</strong>
+                            </p>
+                            <p>붉은오름휴양림에서는 비품이 지급되지 않으므로 객실 이용시 반드시 준비하셔야 합니다.
+                                <br>이용에 참고하시기 바랍니다.
+                            </p>
                         </p>
                     </div>
                 </div>
@@ -391,21 +409,27 @@
                     <div id="productInfoWrap">
                         <h5>상품설명</h5>
                         <div id="productExplain">
-                            <p>붉은오름자연휴양림은 자연을 전혀 훼손하지 않은 자연 그대로의 휴양림으로 서귀포시와 제주시 경계 지점 남조로변에 위치하고 있습니다. </p>
-                            <p>총 190ha의 광활한 면적 아래 40~50년 된 곰솔과 삼나무가 숙박동 좌. 우에 자리 잡고 있으며 숙박동 뒤편으로는 고사리류를 비롯한 활엽수림대의 곶자왈이 널리 분표되어
-                                있습니다. </p>
+                            <p>붉은오름자연휴양림은 자연을 전혀 훼손하지 않은 자연 그대로의 휴양림으로 서귀포시와 제주시 경계 지점 남조로변에 위치하고 있습니다.
+                            </p>
+                            <p>총 190ha의 광활한 면적 아래 40~50년 된 곰솔과 삼나무가 숙박동 좌. 우에 자리 잡고 있으며 숙박동 뒤편으로는 고사리류를 비롯한
+                                활엽수림대의 곶자왈이 널리 분표되어 있습니다.
+                            </p>
                             <p>또한 외곽지역에는 노루, 꿩, 복수초, 단풍나무, 구찌뽕나무, 참식나무등 다양한 동. 식물들이 분포하고 있습니다.</p>
-                            <p>한라산 표고버섯, 벌꿀 생산지가 곳곳에 산재하고 있어 자연관광지로 최적의 조건을 갖추고 있으며, 제주도 중산간의 전형적인 전경과 독특한 풍경이 어우러져 모든 이의 고향처럼
-                                아늑함과 더불어 평화롭고 정겨움을 줄 수 있는 곳으로 인근에 붉은오름, 물찻오름, 가문이 오름과 사려니 숲길 등이 자리 잡고 있습니다.</p>
-                            <p>주요 접근도로는 지방도 1118호선(남조로)이 있으며, 북쪽에 국가지원지방도 97호선(번영로), 지방도 1112호선(비자림로), 남쪽에 1116번 중산간도로가 위치하고
-                                있습니다. </p>
-                            <p>위와 같은 접근로로 제주시에서 약 40여분, 서귀포시에서 약 45분 정도가 소요되고, 제주도 서쪽에서도 1시간 거리에 위치하고 있으므로 제주도 전 지역에서 접근이 용이합니다.
-                                뿐만 아니라, 전국 유명관광지인 성산일출봉, 만장굴, 비자림, 돌문화공원, 성읍민속마을, 삼다수 생산 공장이 인근 지역에 위치해 있습니다.</p>
-                            <p>휴양림 내에는 숲속의 집, 산림문화휴양관, 생태연못, 산림욕장, 잔디광장, 세미나실, 방문자센타, 맨발로 거닐 수 있는 산책로와 야자수 매트 탐방로등 다양한 시설을 지속적으로
-                                갖추어 나가고 있습니다. 남. 여. 노. 소 누구나 자유롭고 여유로운 시간을 보낼 수 있는 곳으로 맑고 깨끗한 물, 청아한 공기, 울창한 산림이 한 조각을 이루는
-                                자연의 추억을 만들어 줄 붉은오름자연휴양림에 여러분을 초대합니다.</p>
-                            <p>세월을 먹고 자연을 먹는 자연스런 자연공간, 사랑과 정을 나누는 추억 공간, 가고 싶고 머물고 싶은 공간, 남.여.노.소 누구나 자유롭고 여유로운 시간을 보낼 수 있는
-                                곳, 맑고 깨끗한 물, 청아한 공기, 울창한 산림이 한 조각을 이루는 자연의 영원한 추억을 만들어 줄 붉은오름 자연휴양림에 여러분을 초대합니다.</p>
+                            <p>한라산 표고버섯, 벌꿀 생산지가 곳곳에 산재하고 있어 자연관광지로 최적의 조건을 갖추고 있으며, 제주도 중산간의 전형적인 전경과 독특한
+                                풍경이 어우러져 모든 이의 고향처럼 아늑함과 더불어 평화롭고 정겨움을 줄 수 있는 곳으로 인근에 붉은오름, 물찻오름, 가문이 오름과 사려니 숲길
+                                등이 자리 잡고 있습니다.</p>
+                            <p>주요 접근도로는 지방도 1118호선(남조로)이 있으며, 북쪽에 국가지원지방도 97호선(번영로), 지방도 1112호선(비자림로), 남쪽에
+                                1116번 중산간도로가 위치하고 있습니다.
+                            </p>
+                            <p>위와 같은 접근로로 제주시에서 약 40여분, 서귀포시에서 약 45분 정도가 소요되고, 제주도 서쪽에서도 1시간 거리에 위치하고 있으므로
+                                제주도 전 지역에서 접근이 용이합니다. 뿐만 아니라, 전국 유명관광지인 성산일출봉, 만장굴, 비자림, 돌문화공원, 성읍민속마을, 삼다수 생산
+                                공장이 인근 지역에 위치해 있습니다.</p>
+                            <p>휴양림 내에는 숲속의 집, 산림문화휴양관, 생태연못, 산림욕장, 잔디광장, 세미나실, 방문자센타, 맨발로 거닐 수 있는 산책로와 야자수
+                                매트 탐방로등 다양한 시설을 지속적으로 갖추어 나가고 있습니다. 남. 여. 노. 소 누구나 자유롭고 여유로운 시간을 보낼 수 있는 곳으로 맑고
+                                깨끗한 물, 청아한 공기, 울창한 산림이 한 조각을 이루는 자연의 추억을 만들어 줄 붉은오름자연휴양림에 여러분을 초대합니다.</p>
+                            <p>세월을 먹고 자연을 먹는 자연스런 자연공간, 사랑과 정을 나누는 추억 공간, 가고 싶고 머물고 싶은 공간, 남.여.노.소 누구나 자유롭고
+                                여유로운 시간을 보낼 수 있는 곳, 맑고 깨끗한 물, 청아한 공기, 울창한 산림이 한 조각을 이루는 자연의 영원한 추억을 만들어 줄 붉은오름
+                                자연휴양림에 여러분을 초대합니다.</p>
                         </div>
                         <h5>요금정보</h5>
                         <div id="priceInfo">
@@ -523,25 +547,26 @@
                                     </tr>
                                     <tr>
                                         <td>야외공연장</td>
-                                        <td colspan="5">원형무대 113㎡(최대수용인원 180인) 30,000원 </td>
+                                        <td colspan="5">원형무대 113㎡(최대수용인원 180인) 30,000원
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <div class="attention">
                                 <h6>예약 시 주의사항</h6>
                                 <ul>
-                                    <li>예약자와 입금자가 동일하여야 하며 동일하지 않을 시에는 확인이 불가능하여 취소 될 수 있으므로 입실자가 다른 경우는 사전에 연락하여 주시기 바랍니다. 입실시에
-                                        신분증 제시를 요청할 수 있습니다.</li>
+                                    <li>예약자와 입금자가 동일하여야 하며 동일하지 않을 시에는 확인이 불가능하여 취소 될 수 있으므로 입실자가 다른 경우는 사전에 연락하여
+                                        주시기 바랍니다. 입실시에 신분증 제시를 요청할 수 있습니다.</li>
                                     <li>숙박시설의 입실은 당일 15시 부터이며, 퇴실은 익일 12시 까지입니다.</li>
                                     <li>입실은 당일 22시(오후 10시)까지 완료하셔야 합니다.</li>
                                     <li>자연휴양림내에는 애완동물 출입을 금합니다.</li>
                                     <li>숙박시설 내에서는 설치된 전기레인지만 사용하여야 하며, 어떠한 다른 화기도 사용할 수 없습니다.</li>
-                                    <li>붉은오름휴양림 숙소는 숲속에 위치하고 있어 방역을 철저히 하고 있지만 개미 등이 나타나고 있습니다. 개미 등 곤충에 민감하신 분들께서는 휴양림 숙소 예약에
-                                        참고 하시기 바랍니다.</li>
-                                    <li>솔비나무동의 경우 장애우 우대동(예약우대) 입니다. 예약우대(숙박일이 아니고 예약일) : 매월 1일부터 10일(11일 이후는 일반인도 예약 가능)까지는
-                                        장애우만 예약이 가능합니다.</li>
-                                    <li>매월 10일이전 예약자는 예약일로부터 3일이내 장애인등록증 사본을 팩스 (064-782-9170)송부 후 전화(064-782-9171)로 확인하여야 합니다.
-                                        ※ 장애인 등록증 미 도달 시에는 예약이 취소됩니다.</li>
+                                    <li>붉은오름휴양림 숙소는 숲속에 위치하고 있어 방역을 철저히 하고 있지만 개미 등이 나타나고 있습니다. 개미 등 곤충에 민감하신 분들께서는
+                                        휴양림 숙소 예약에 참고 하시기 바랍니다.</li>
+                                    <li>솔비나무동의 경우 장애우 우대동(예약우대) 입니다. 예약우대(숙박일이 아니고 예약일) : 매월 1일부터 10일(11일 이후는 일반인도
+                                        예약 가능)까지는 장애우만 예약이 가능합니다.</li>
+                                    <li>매월 10일이전 예약자는 예약일로부터 3일이내 장애인등록증 사본을 팩스 (064-782-9170)송부 후 전화(064-782-9171)로
+                                        확인하여야 합니다. ※ 장애인 등록증 미 도달 시에는 예약이 취소됩니다.</li>
                                 </ul>
                                 <h6>예약취소 환급규정</h6>
                                 <ul>
@@ -558,29 +583,36 @@
                                     <strong>다자녀 가정은 1가정 1일 1실(8인실 제외)에 한해서 예약 가능합니다.</strong>
                                 </p>
                                 <ul>
-                                    <li>다자녀 혜택 대상자일 경우 입실시 본인 확인을 위한 신분증 및 증명서류(주민등록등본 또는 가족관계증명서 또는 의료보험카드, 셋째 임신 가정의 경우 산모수첩
-                                        등 ) </li>
+                                    <li>다자녀 혜택 대상자일 경우 입실시 본인 확인을 위한 신분증 및 증명서류(주민등록등본 또는 가족관계증명서 또는 의료보험카드, 셋째 임신
+                                        가정의 경우 산모수첩 등 )
+                                    </li>
                                     <li>(1월1일 기준으로 막내가 만15세이하 기재 : 2016년 - 2001년1월1일이후 출생자)사본 등을 관리사무소에 제출해 주셔야 합니다.
-                                        <br> ※ ( 미 제출시 입실 불가 또는 일반요금 적용).</li>
+                                        <br>
+                                        ※ ( 미 제출시 입실 불가 또는 일반요금 적용).</li>
                                     <li>쓰레기종량제봉투(서귀포시 용) 및 세면도구(면도기, 칫솔 등)는 반드시 지참하셔야 합니다.</li>
                                     <li>휴양림에서 밖으로의 왕래 시는 입장권을 지참하셔야 합니다.
-                                        <br> ※ 휴양림에 도착하신 후에는 매표소에서 예약자임을 미리 말씀하셔야 주차료를 내지 않습니다.</li>
+                                        <br>
+                                        ※ 휴양림에 도착하신 후에는 매표소에서 예약자임을 미리 말씀하셔야 주차료를 내지 않습니다.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="tab02" class="tab-contents"> 반응형임을 고려하여 지도넣어주세염 </div>
+                <div id="tab02" class="tab-contents">
+                    반응형임을 고려하여 지도넣어주세염
+                </div>
                 <div id="tab03" class="tab-contents qna">
                     <h5>상품 문의</h5>
                     <div class="write">
-                        <textarea placeholder="주민번호, 전화번호, 이메일 등 개인정보를 남기면 타인에 의해 도용 될 수 있습니다. 개인정보는 상품문의에 남기지 말아주세요."></textarea>
+                        <textarea
+                            placeholder="주민번호, 전화번호, 이메일 등 개인정보를 남기면 타인에 의해 도용 될 수 있습니다. 개인정보는 상품문의에 남기지 말아주세요."></textarea>
                         <button class="submit" href="#LINK" onclick="saveQna()">문의하기</button>
                     </div>
                     <h5>상품 문의보기</h5>
                     <div id="qnaWrap">
                         <ul>
-                            <li> 로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
+                            <li>
+                                로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
                                 <p>
                                     <span>16.12.21 16:51</span>
                                 </p>
@@ -591,40 +623,47 @@
                                     <span>16.12.21 16:53</span>
                                 </p>
                             </li>
-                            <li> 비회원로그인 상태임.
+                            <li>
+                                비회원로그인 상태임.
                                 <br>글 작성 잘됨. 아이디도 넘어감?
                                 <p>
                                     <span>16.12.21 16:31</span>
                                 </p>
                             </li>
-                            <li> 비회원로그인으로 상품문의 글 작성
+                            <li>
+                                비회원로그인으로 상품문의 글 작성
                                 <br>내가 입력한 글은 내가 볼수 있는거야?
                                 <p>
                                     <span>16.12.21 15:26</span>
                                 </p>
                             </li>
                             <li class="reply">
-                                <i class="fa fa-level-up fa-rotate-90" aria-hidden="true"></i> 볼수 있네요
+                                <i class="fa fa-level-up fa-rotate-90" aria-hidden="true"></i>
+                                볼수 있네요
                                 <p>관리자 테스트
                                     <span>16.12.21 15:29</span>
                                 </p>
                             </li>
-                            <li> 8인실 숙박 상품에 대한 질문입니다.
+                            <li>
+                                8인실 숙박 상품에 대한 질문입니다.
                                 <p>양우건
                                     <span>16.11.07 14:41</span>
                                 </p>
                             </li>
-                            <li> 숙박 상품에 대한 질문입니다.
+                            <li>
+                                숙박 상품에 대한 질문입니다.
                                 <p>양우건
                                     <span>16.11.07 14:40</span>
                                 </p>
                             </li>
-                            <li> 숙박 상품에 대한 질문입니다.
+                            <li>
+                                숙박 상품에 대한 질문입니다.
                                 <p>양우건
                                     <span>16.11.07 14:40</span>
                                 </p>
                             </li>
-                            <li> 븕은오름자연휴양림 Q&amp;A
+                            <li>
+                                븕은오름자연휴양림 Q&amp;A
                                 <p>김명길
                                     <span>16.10.24 13:26</span>
                                 </p>
@@ -650,17 +689,23 @@
                         <div class="star">
                             <h6>별점선택</h6>
                             <button class="btn star" data="1">
-                                <i class="fa fa-star-o" aria-hidden="true"></i> 1점</button>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                1점</button>
                             <button class="btn star" data="2">
-                                <i class="fa fa-star-o" aria-hidden="true"></i> 2점</button>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                2점</button>
                             <button class="btn star" data="3">
-                                <i class="fa fa-star-o" aria-hidden="true"></i> 3점</button>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                3점</button>
                             <button class="btn star" data="4">
-                                <i class="fa fa-star-o" aria-hidden="true"></i> 4점</button>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                4점</button>
                             <button class="btn star" data="5">
-                                <i class="fa fa-star-o" aria-hidden="true"></i> 5점</button>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                5점</button>
                         </div>
-                        <textarea placeholder="주민번호, 전화번호, 이메일 등 개인정보를 남기면 타인에 의해 도용 될 수 있습니다. 개인정보는 상품문의에 남기지 말아주세요."></textarea>
+                        <textarea
+                            placeholder="주민번호, 전화번호, 이메일 등 개인정보를 남기면 타인에 의해 도용 될 수 있습니다. 개인정보는 상품문의에 남기지 말아주세요."></textarea>
                         <button class="submit" href="#LINK" onclick="saveQna()">문의하기</button>
                     </div>
                     <div id="commentWrap">
@@ -682,9 +727,11 @@
                                     <p>
                                         <i class="fa fa-star-o" aria-hidden="true"></i>
                                     </p>
-                                </div> 로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
+                                </div>
+                                로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
                                 <p>
-                                    <span>16.12.21 15:29</span>관리자 테스트 </p>
+                                    <span>16.12.21 15:29</span>관리자 테스트
+                                </p>
                             </li>
                             <li>
                                 <div class="star">
@@ -703,9 +750,11 @@
                                     <p>
                                         <i class="fa fa-star-o" aria-hidden="true"></i>
                                     </p>
-                                </div> 로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
+                                </div>
+                                로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
                                 <p>
-                                    <span>16.12.21 15:29</span>관리자 테스트 </p>
+                                    <span>16.12.21 15:29</span>관리자 테스트
+                                </p>
                             </li>
                             <li>
                                 <div class="star">
@@ -724,9 +773,11 @@
                                     <p>
                                         <i class="fa fa-star-o" aria-hidden="true"></i>
                                     </p>
-                                </div> 로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
+                                </div>
+                                로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
                                 <p>
-                                    <span>16.12.21 15:29</span>관리자 테스트 </p>
+                                    <span>16.12.21 15:29</span>관리자 테스트
+                                </p>
                             </li>
                             <li>
                                 <div class="star">
@@ -745,9 +796,11 @@
                                     <p>
                                         <i class="fa fa-star-o" aria-hidden="true"></i>
                                     </p>
-                                </div> 로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
+                                </div>
+                                로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
                                 <p>
-                                    <span>16.12.21 15:29</span>관리자 테스트 </p>
+                                    <span>16.12.21 15:29</span>관리자 테스트
+                                </p>
                             </li>
                             <li>
                                 <div class="star">
@@ -766,9 +819,11 @@
                                     <p>
                                         <i class="fa fa-star-o" aria-hidden="true"></i>
                                     </p>
-                                </div> 로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
+                                </div>
+                                로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
                                 <p>
-                                    <span>16.12.21 15:29</span>관리자 테스트 </p>
+                                    <span>16.12.21 15:29</span>관리자 테스트
+                                </p>
                             </li>
                             <li>
                                 <div class="star">
@@ -787,9 +842,11 @@
                                     <p>
                                         <i class="fa fa-star-o" aria-hidden="true"></i>
                                     </p>
-                                </div> 로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
+                                </div>
+                                로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
                                 <p>
-                                    <span>16.12.21 15:29</span>관리자 테스트 </p>
+                                    <span>16.12.21 15:29</span>관리자 테스트
+                                </p>
                             </li>
                         </ul>
                         <div class="pagination">
@@ -809,14 +866,12 @@
             </div>
         </section>
 
-
         <div class="loadingPop">
             <p>
                 <i class="fa fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
                 <h2>데이터를 불러오는 중 입니다.</h2>
             </p>
         </div>
-
 
         <div class="lodge_div bg popup">
             <div class="outline">
@@ -843,11 +898,16 @@
                     <div class="selectArea">
                         <select class="staOption" name="staPerson" id="person" style="display: block;">
                             <option value="">인실 전체</option>
-                            <option value="4"> 4인실</option>
-                            <option value="5"> 5인실</option>
-                            <option value="6"> 6인실</option>
-                            <option value="8"> 8인실</option>
-                            <option value="25"> 25인실</option>
+                            <option value="4">
+                                4인실</option>
+                            <option value="5">
+                                5인실</option>
+                            <option value="6">
+                                6인실</option>
+                            <option value="8">
+                                8인실</option>
+                            <option value="25">
+                                25인실</option>
                         </select>
                     </div>
                     <div class="infomation">
@@ -2958,7 +3018,6 @@
                                     </td>
                                 </tr>
 
-
                                 <tr>
                                     <td>삼나무동 연산홍(1층)</td>
                                     <td>
@@ -3629,7 +3688,6 @@
                                 </tr>
                                 <tr>
                                     <td>삼나무동 연산홍(1층)</td>
-
 
                                     <td>
                                         <p class="complete">
@@ -4083,6 +4141,173 @@
                                 <tr>
                                     <td>삼나무동 연산홍(1층)</td>
 
+                                    <td>
+                                        <p class="complete">
+                                            <i class="fa fa-times" aria-hidden="true"></i>예약됨</p>
+                                    </td>
+                                    <td>
+                                        <p class="off">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>예약불가</p>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>삼나무동 연산홍(1층)</td>
 
                                     <td>
                                         <p class="complete">
@@ -4252,6 +4477,173 @@
                                 <tr>
                                     <td>삼나무동 연산홍(1층)</td>
 
+                                    <td>
+                                        <p class="complete">
+                                            <i class="fa fa-times" aria-hidden="true"></i>예약됨</p>
+                                    </td>
+                                    <td>
+                                        <p class="off">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>예약불가</p>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>삼나무동 연산홍(1층)</td>
 
                                     <td>
                                         <p class="complete">
@@ -4421,7 +4813,6 @@
                                 <tr>
                                     <td>삼나무동 연산홍(1층)</td>
 
-
                                     <td>
                                         <p class="complete">
                                             <i class="fa fa-times" aria-hidden="true"></i>예약됨</p>
@@ -4589,345 +4980,6 @@
                                 </tr>
                                 <tr>
                                     <td>삼나무동 연산홍(1층)</td>
-
-
-                                    <td>
-                                        <p class="complete">
-                                            <i class="fa fa-times" aria-hidden="true"></i>예약됨</p>
-                                    </td>
-                                    <td>
-                                        <p class="off">
-                                            <i class="fa fa-lock" aria-hidden="true"></i>예약불가</p>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>삼나무동 연산홍(1층)</td>
-
-
-                                    <td>
-                                        <p class="complete">
-                                            <i class="fa fa-times" aria-hidden="true"></i>예약됨</p>
-                                    </td>
-                                    <td>
-                                        <p class="off">
-                                            <i class="fa fa-lock" aria-hidden="true"></i>예약불가</p>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>삼나무동 연산홍(1층)</td>
-
 
                                     <td>
                                         <p class="complete">
@@ -5101,73 +5153,54 @@
             </div>
         </div>
 
-
-    </article>
+    </div>
     <!-- E:mainContent -->
     <!-- S:footer -->
     <footer id="footer">
-        <div class="footer_link">
-            <ul>
-                <li>
-                    <a href="" target="_blank">서귀포시
-                        <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank">기당미술관
-                        <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank">이중섭미술관
-                        <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank">상예정보화마을
-                        <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank">월평정보화마을
-                        <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank">알토산정보화마을
-                        <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank">한강정보화마을
-                        <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
+        <div class="container">
+            <h2>
+                제주특별자치도 서귀포시
+            </h2>
+            <div class="footer-util">
+                <ul>
+                    <li>
+                        <a href="">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="">저작권보호정책</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i>제주안내 콜센터</i>
+                            <strong>064-120</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <address>
+                <p>
+                    <strong>제1청사</strong>
+                    (63584) 제주특별자치도 서귀포시 중앙로 105(서홍동)</p>
+                <p>
+                    <strong>제2청사</strong>
+                    (63565) 제주특별자치도 서귀포시 신중로 55(법환동)</p>
+                <p>
+                    <strong>1st Building</strong>
+                    105, Jungang-ro, Seogwipo-si, Jeju-do. Republic of Korea 63584</p>
+                <p>
+                    <strong>2nd Building</strong>
+                    55, Sinjung-ro, Seogwipo-si, Jeju-do. Republic of Korea 63565</p>
+            </address>
+            <p class="copyright">Copyright© Seogwipo-si, All right Reserved.</p>
         </div>
-        <div class="footer_util">
-            <ul>
-                <li>
-                    <a href="">개인정보취급방침</a>
-                </li>
-                <li>
-                    <a href="">저작권보호정책</a>
-                </li>
-                <li>
-                    <a href="">운영자메일</a>
-                </li>
-            </ul>
-        </div>
-        <address>
-            <p class="tel">제주안내 콜센터 (064) 120 생활민원 모바일 신고 : #1110-2114</p>
-            <p>제1청사 : (63584) 제주특별자치도 서귀포시 중앙로 105(서홍동)</p>
-            <p>제2청사 : (63565) 제주특별자치도 서귀포시 신중로 55(법환동)</p>
-            <p>1st Building. 105, Jungang-ro, Seogwipo-si, Jeju-do. Republic of Korea 63584</p>
-            <p>2nd Building. 55, Sinjung-ro, Seogwipo-si, Jeju-do. Republic of Korea 63565</p>
-        </address>
-        <p class="copyright">Copyright© Seogwipo-si, All right Reserved.</p>
     </footer>
     <!-- E:footer -->
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/common.js"></script>
+    <!--[if lt IE 9]> <script src="js/respond.min.js"></script> <script
+    src="js/html5shiv.js"></script> <![endif]-->
 </body>
 
 </html>
