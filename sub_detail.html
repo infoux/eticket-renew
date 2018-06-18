@@ -215,6 +215,9 @@
                                             <input id="count" type="text" placeholder="1">
                                         </li>
                                     </ul>
+
+
+
                                     <p class="productPrice">
                                         <strong>32,000</strong>원
                                     </p>
@@ -242,12 +245,78 @@
                                             <input id="count" type="text" placeholder="1">
                                         </li>
                                     </ul>
+                                    <ul class="car">
+                                        <li>
+                                            <h5>자동차</h5>
+                                            <select>
+                                                <option>1대</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <h5>
+                                                <label for="count">차종</label>
+                                            </h5>
+                                            <select>
+                                                <option>승용차</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+
+
                                     <p class="productPrice">
                                         <strong>32,000</strong>원
                                     </p>
                                     <button class="productDelete" data="0">선택취소</button>
                                 </div>
 
+                                <div class="lodge">
+                                    <h4>삼나무동금불초(2층)[4인실]</h4>
+                                    <p>입실 : 2017-02-12 / 퇴실 : 2017-02-13</p>
+                                    <ul>
+                                        <li>
+                                            <h5>숙박일</h5>
+                                            <button class="minus" href="" data="0">감소
+                                                <i class="icon-minus" aria-hidden="true"></i>
+                                            </button>
+                                            <strong>1박</strong>
+                                            <button class="plus" href="" data="0">증가
+                                                <i class="icon-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <h5>
+                                                <label for="count">인원수(명)</label>
+                                            </h5>
+                                            <input id="count" type="text" placeholder="1">
+                                        </li>
+                                    </ul>
+                                    <ul class="person">
+                                        <li>
+                                            <h5>
+                                                <label for="count">성인</label>
+                                            </h5>
+                                            <input id="count" type="text" placeholder="1">
+                                        </li>
+                                        <li>
+                                            <h5>
+                                                <label for="count">청소년</label>
+                                            </h5>
+                                            <input id="count" type="text" placeholder="1">
+                                        </li>
+                                        <li>
+                                            <h5>
+                                                <label for="count">아동</label>
+                                            </h5>
+                                            <input id="count" type="text" placeholder="1">
+                                        </li>
+                                    </ul>
+
+
+                                    <p class="productPrice">
+                                        <strong>32,000</strong>원
+                                    </p>
+                                    <button class="productDelete" data="0">선택취소</button>
+                                </div>
                             </div>
                         </div>
                         <ul class="discount_item">
@@ -365,7 +434,7 @@
             <section class="sub detail view">
                 <div class="container">
                     <div class="infoBox">
-                        <h5>이용안내</h5>
+                        <h5><strong>이용</strong>안내</h5>
                         <div>
                             <p>
                                 <strong>※ 장애우 예약 우대 상품안내</strong>
@@ -407,7 +476,7 @@
                 </ul>
                 <div id="tab01" class="tab-contents active">
                     <div id="productInfoWrap">
-                        <h5>상품설명</h5>
+                        <h5><strong>상품</strong>설명</h5>
                         <div id="productExplain">
                             <p>붉은오름자연휴양림은 자연을 전혀 훼손하지 않은 자연 그대로의 휴양림으로 서귀포시와 제주시 경계 지점 남조로변에 위치하고 있습니다.
                             </p>
@@ -431,7 +500,7 @@
                                 여유로운 시간을 보낼 수 있는 곳, 맑고 깨끗한 물, 청아한 공기, 울창한 산림이 한 조각을 이루는 자연의 영원한 추억을 만들어 줄 붉은오름
                                 자연휴양림에 여러분을 초대합니다.</p>
                         </div>
-                        <h5>요금정보</h5>
+                        <h5><strong>요금</strong>정보</h5>
                         <div id="priceInfo">
                             <h6>입장료</h6>
                             <table class="price">
@@ -669,7 +738,7 @@
                                 </p>
                             </li>
                         </ul>
-                        <div class="pagination">
+                        <div class="pagenation">
                             <a class="arrow" href="#">
                                 <i class="fa fa-angle-left" aria-hidden="true"></i>
                             </a>
@@ -849,7 +918,7 @@
                                 </p>
                             </li>
                         </ul>
-                        <div class="pagination">
+                        <div class="pagenation">
                             <a class="arrow" href="#">
                                 <i class="fa fa-angle-left" aria-hidden="true"></i>
                             </a>
@@ -925,13 +994,13 @@
                             <thead>
                                 <tr>
                                     <th>시설명</th>
-                                    <th>1
+                                    <th>01
                                         <strong>수</strong>
                                     </th>
-                                    <th>2
+                                    <th>02
                                         <strong>목</strong>
                                     </th>
-                                    <th>3
+                                    <th>03
                                         <strong>금</strong>
                                     </th>
                                     <th class="sat">4
@@ -1009,6 +1078,7 @@
                                     <th>28
                                         <strong>화</strong>
                                     </th>
+                                    
                                 </tr>
                             </thead>
                             <tbody>
@@ -5197,7 +5267,6 @@
     <!-- E:footer -->
 
     <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/slick.min.js"></script>
     <script src="js/common.js"></script>
     <!--[if lt IE 9]> <script src="js/respond.min.js"></script> <script
     src="js/html5shiv.js"></script> <![endif]-->
