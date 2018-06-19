@@ -110,7 +110,7 @@ $(document).ready(function() {
 
 try {
   $('.main-issue .show ul').slick({
-    speed: 2000,
+    speed: 1000,
     respondTo: "slider",
     prevArrow: ".main-issue .prev",
     nextArrow: ".main-issue .next",
@@ -129,7 +129,8 @@ try {
     ]
 
   });
-} catch {
+  
+} catch(e) {
 
 }
 
@@ -214,7 +215,7 @@ try {
     var ym = $(".tab-data.active tbody").height() + 280;
 
 
-} catch {
+} catch(e) {
 
 }
 
