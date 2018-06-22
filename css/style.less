@@ -1127,11 +1127,11 @@ body {
                             border-radius:20px;
 
                             &.mypage {
-                                left:0;
+                                left:110px;
                             }
 
                             &.login {
-                                left:140px;
+                                left:0;
                             }
 
                             &.customer {
@@ -2848,7 +2848,28 @@ body {
                                 }
                             }
                         }
+
                     }
+
+                    div.submit {
+                        .rem(margin, 0 0 20);
+                        a {
+                            .block;
+                            .center;
+                            .rem(font-size, 16);
+                            .rem(line-height, 40);
+                            .gradient(#ffa306, #ff8900, #ff7506);
+                            color:@white;
+                            border:1px solid #d0720a;
+                            width:100%;
+                            
+                            @media all and (min-width: 1200px) {
+                                font-size: 25px;
+                                line-height:60px;
+                            }
+                        }
+                    }
+
                 }
 
                 div.sight-info {
@@ -3177,7 +3198,7 @@ body {
 
 
                                 ul {
-                                    .rem(margin, 10 0);
+                                    .rem(margin, 0);
         
                                     li {
                                         .rem(padding, 0 0 6 20);
