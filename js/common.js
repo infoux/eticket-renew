@@ -59,10 +59,10 @@ $(document).ready(function() {
 
 
 
-      $("#header nav").hover(function() {
-        $(this).addClass("on");
+      $("#header nav ul.menu-list").hover(function() {
+        $(this).parent().parent().addClass("on");
       }, function() {
-        $(this).removeClass("on");
+        $(this).parent().parent().removeClass("on");
       });
 
 
