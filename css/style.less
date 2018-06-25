@@ -437,6 +437,79 @@ body {
 
 
 
+article.popup-notice {
+    .absolute;
+    z-index:2000;
+    left:0;
+    .rem(top, 100);
+    width:100%;
+    .remCalc(max-width, 20);
+    .rem(margin, 10);
+    background:#ff8200;
+    .drop-shadow();
+
+    @media all and (min-width: 1200px) {
+        left:50%;
+        top:280px;
+        width:500px;
+        margin:0 0 0 -250px;
+    }
+
+    h1 {
+        .relative;
+        color:@white;
+        .rem(font-size, 16);
+        margin:0;
+        .rem(line-height, 40);
+        .rem(padding, 0 10);
+
+        @media all and (min-width: 1200px) {
+            font-size:22px;
+            padding:0 10px;
+            line-height:50px;
+        }
+
+        button {
+            .absolute;
+            .rem(right, 10);
+            .rem(top, 10);
+            border:none;
+            background:none;
+            .mapazero;
+            .zero;
+            color:@white;
+
+            @media all and (min-width: 1200px) {
+                right:20px;
+                top:10px;
+            }
+
+            i {
+                .rem(font-size, 16);
+
+                @media all and (min-width: 1200px) {
+                    font-size:24px;
+                }
+            }
+        }
+    }
+
+    div.text {
+        background:@white;
+        .rem(margin, 0 10 10);
+        .rem(min-height, 300);
+        .rem(font-size, 12);
+        .rem(padding, 20);
+
+
+        @media all and (min-width: 1200px) {
+            font-size:14px;
+        }
+    }
+
+
+}
+
 
 
 
