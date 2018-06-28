@@ -2184,11 +2184,11 @@ body {
                 @media all and (min-width: 1200px) {
                     .block;
                     width: 1200px;
-                    margin: 50px auto 20px;
+                    margin: 46px auto 26px;
                     .right;
                     padding: 0;
                     .no-list;
-                    font-size: 16px;
+                    font-size: 17px;
 
                     li {
                         .inline-block;
@@ -2498,7 +2498,7 @@ body {
                                             @media all and (min-width: 1200px) {
                                                 font-size: 14px;
                                                 height: 32px;
-                                                padding: 0 10px;
+                                                padding: 0 0 0 10px;
                                             }
                                         }
                                         button {
@@ -3681,12 +3681,13 @@ body {
                 .none;
 
                 @media all and (min-width: 1200px) {
-                    .inline-block;
+                    .block;
                     width: 1200px;
-                    padding: 30px 0 10px;
+                    padding: 46px 0 26px;
+                    margin:0 auto;
                     .right;
                     .no-list;
-                    font-size: 16px;
+                    font-size: 17px;
 
                     li {
                         .inline-block;
@@ -3921,7 +3922,7 @@ body {
                             border: none;
                             .bottom;
                             .rem(padding, 0 10);
-                            .rem(line-height, 32);
+                            .rem(height, 32);
                             .rem(font-size, 10);
                             .rem(margin, 6 0 0);
                             .remCalc(width, 140);
@@ -3931,7 +3932,7 @@ body {
                                 width: 200px;
                                 margin: 0;
                                 font-size: 16px;
-                                line-height: 42px;
+                                height: 42px;
                             }
                         }
 
@@ -4757,6 +4758,7 @@ body {
                                 .rem(padding, 10);
                                 .rem(margin, 0 0 10);
                                 line-height: 1.6;
+                                .relative;
 
                                 @media all and (min-width: 1200px) {
                                     font-size: 16px;
@@ -4770,7 +4772,7 @@ body {
                                     .rem(margin, 0 0 20 30);
                                     .remCalc(width, 30);
 
-                                    i.fa {
+                                    i.fa-level-up {
                                         .block;
                                         .absolute;
                                         .rem(left, -30);
@@ -4802,6 +4804,33 @@ body {
                                         .rem(font-size, 9);
                                     }
                                 }
+
+
+
+                                button.del {
+                                    .absolute;
+                                    .rem(right, -8);
+                                    .rem(top, -8);
+                                    .mapazero;
+                                    .rem(width, 24);
+                                    border-radius:50%;
+                                    background:#333;
+                                    color:@white;
+                                    border:none;
+                                    .zero;
+
+                                    i {
+                                        .rem(font-size, 14);
+                                        .mapazero;
+
+                                        &::before {
+                                            .mapazero;
+                                            .rem(line-height, 24);
+                                        }
+                                    }
+
+                                }
+
                             }
                         }
 
