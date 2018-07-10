@@ -2216,6 +2216,543 @@ body {
             }
         }
 
+        /* arthall */
+        section.arthall-head {
+            .inline-block;
+            width: 100%;
+            .center;
+            background: #f7f7f7;
+
+            .container {
+                background: @white;
+                .relative;
+                .zero;
+                padding: 0;
+
+                @media all and (min-width: 1200px) {
+                    padding: 0 70px;
+                }
+
+                div.arthall-wrap {
+                    
+                    @media all and (min-width: 1200px) {
+                        padding-top: 70px;
+                    }
+                    
+                    p.img {
+                        .hidden;
+                        .mapazero;
+                        width: 100%;
+                        .rem(height, 240);
+                        
+                        @media all and (min-width: 1200px) {
+                            height: 280px;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+
+                            @media all and (min-width: 1200px) {
+                                width: 100%;
+                                height: auto;
+                                .center;
+                            }
+                        }
+                    }
+
+                    div.title {
+                        width: 100%;
+                        .rem(padding-bottom, 20);
+                        border-bottom: 1px solid #b2b2b2;
+
+                        @media all and (min-width: 1200px) {
+                            padding: 50px 0;
+                            margin-bottom: 25px;
+                            .relative;
+                        }
+                       
+
+                        h3 {
+                            .rem(font-size, 18);
+                            .rem(margin, 20 0 10 0);
+                            .center;
+
+                            @media all and (min-width: 1200px) {
+                                .inline-block;
+                                width: 300px;
+                                .mapazero;
+                                .left;
+                                font-size: 38px;
+                                .normal;
+                            }
+                        }
+
+                        h4 {
+                            .rem(font-size, 12);
+                            .center;
+                            .rem(width, 185);
+                            .rem(height, 25);
+                            .rem(line-height, 25);
+                            border-radius: 30px;
+                            margin: 0 auto;
+                            background: #eee;
+                            color: #666;
+
+                            b{
+                                .rem(padding, 5);
+                                color: #ff7800;
+                                .bold;
+                            }
+
+                            @media all and (min-width: 1200px) {
+                                .inline-block;
+                                font-size: 18px;
+                                background: none;
+                                width: 200px;
+                                .absolute;
+                                right: 0;
+                                top: 65px;
+                            }
+                        }
+                    }
+                }
+
+                div.ready-wrap {
+                    .rem(height, 100);
+                    .rem(margin, 10);
+                    background: #f7f7f7;
+
+                    @media all and (min-width: 1200px) {
+                        height: 120px;
+                    }
+
+                    h3 {
+                        .rem(font-size, 12);                        
+                        .center;
+                        .rem(padding, 40 0);
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 18px;
+                            margin: 0;
+                            padding: 50px 0;
+                        }
+                    }
+
+                }
+
+
+                div.poster {
+                    .rem(margin, 0 10);
+
+                    @media all and (min-width: 1200px) {
+                        margin-bottom: 50px;
+                    }
+
+                    h5 {
+                        .rem(font-size, 14);
+                        .center;
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 24px;
+                            margin-bottom: 40px;
+                        }
+                    }
+
+                    ul {
+                        .no-list;
+                        padding: 0;
+                        .zero;
+                        .center;
+                        
+
+                        li {
+                            .inline-block;
+                            .relative;
+                            width: calc(~"(50% - 5px)");
+                            .center;
+
+                            @media all and (min-width: 1200px) {
+                                width:calc(~"(100% - 20px) / 4");
+                                margin-bottom: 35px;
+                            }
+
+                            &:nth-child(odd) {
+                                margin-right: 6px;
+                            }
+
+                            a {
+                                .inline-block;
+                            
+                                p.poster-img {
+                                    .mapazero;
+                                    .hidden;
+                                    width:100%;
+                                    .rem(height, 200);
+
+                                    @media all and (min-width: 1200px) {
+                                        height: 300px;             
+                                    }
+
+                                    img  {
+                                        width: 100%;
+                                        
+                                        @media all and (min-width: 1200px) {
+                                            width: auto;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+
+                                h6 {
+                                    .rem(font-size, 12);
+                                    .mapazero;
+                                    .rem(margin, 20 0);
+
+                                    span {
+                                        white-space: nowrap;
+
+                                        @media all and (min-width: 1200px) {
+                                            white-space: normal;
+                                        }
+                                    }
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+
+                            div.ready {
+                                .rem(height, 200);
+                                background: rgba(0, 0, 0, 0.7);
+                                z-index: 999;
+                                .absolute;
+                                top: 0;
+                                right: 0;
+                                left: 0;
+                                bottom: 0;
+                                .full-position;
+                                
+
+                                @media all and (min-width: 1200px) {
+                                    left: 22px;
+                                    width: 210px;
+                                    height: 300px;
+                                }
+
+                                h3 {
+                                    .rem(font-size, 12);
+                                    color: @white;
+                                    .normal;
+                                    vertical-align: middle;
+                                    .rem(padding, 80 0);
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size: 18px;
+                                        padding: 120px 0;
+                                    }
+                                    
+                                    i:before {
+                                        .rem(font-size, 10);
+                                        .rem(padding, 0 3);
+                                        color: #ff7800;
+
+                                        @media all and (min-width: 1200px) {
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        /* arthall-ticket */
+        section.arthall-ticket-head {
+            .inline-block;
+            width: 100%;
+            .center;
+            background: #f7f7f7;
+
+            .container {
+                background: @white;
+                .relative;
+                .zero;
+                padding: 0;
+
+                @media all and (min-width: 1200px) {
+                    .relative;
+                    padding: 70px 70px;
+                }
+
+                div.slider_outline {
+                    display: inline-block;
+                    width: 100%;
+                    position: relative;
+
+                    @media all and (min-width: 1200px) {
+                        .relative;
+                        width: 100%;
+                    }
+
+                    div.image_slider .bx {
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+
+                        @media all and (min-width: 1200px) {
+                            width: 350px;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    div.title {
+                        position: absolute;
+                        z-index: 600;
+                        width: 100%;
+                        .rem(height, 120);
+                        bottom: 0;
+                        text-align: center;
+                        color: #fff;     
+                        background: rgba(0, 0, 0, 0.8);
+
+                        @media all and (min-width: 1200px) {
+                            width: 700px;
+                            background: @white;
+                            color: #000;
+                            .absolute;
+                            top: 20px;
+                            right: 0;
+                        }
+
+                        h3 {
+                            display: inline-block;
+                            .rem(padding, 30 0 0 0);
+                            width: 100%;
+                            margin: 0;
+                            font-weight: 200;
+                            .rem(font-size, 22);
+                            white-space: nowrap;
+
+                            @media all and (min-width: 1200PX) {
+                                font-size: 40px;
+                            }
+                        }
+
+                        p.tag i {
+                            display: inline-block;
+                            background: #ff8200;
+                            color: #fff;
+                            font-size: 0.875rem;
+                            .rem(padding, 7 7);
+                            .rem(margin, 10 4 0 4);
+                            border-radius: 5px;
+                            .rem(font-size, 12);
+                            font-style: normal;
+
+                            &:last-child {
+                                color: #000;
+                                background: #ffb700;
+                            }
+
+                            @media all and (min-width: 1200px) {
+                                padding: 10px 12px;
+                                margin-top: 20px;
+                                font-size: 15px;
+
+                                &:last-child {
+                                    .bold;
+                                }
+                            }
+                        }
+                    }
+                } 
+
+                div.arthall-ticket {
+                    .rem(padding, 0 10);
+                    .rem(margin-bottom, 30);
+                    width: 100%;
+                    .rem(font-size, 10);
+
+                    @media all and (min-width: 1200px) {
+                        .absolute;
+                        width: 550px;
+                        bottom: 40px;
+                        right: 150px;
+                        .mapazero;
+                    }
+
+                    div.select-style {
+                        .relative;
+                        border: 1px solid #ccc;
+                        border-radius: 8px;
+                        .rem(height, 40);
+                        .rem(margin-top, 10);
+
+                        &:first-child {
+                            .rem(margin-top, 20);
+                        }
+
+                        @media all and (min-width: 1200px) {
+                            height: 50px;
+                            margin-top: 10px;
+                        }
+
+                        select {
+                            .block;
+                            .rem(font-size, 12);
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 8px;
+                            border: 0 solid #ccc;
+                            color: #555;
+                            background: transparent;
+                            .rem(padding, 7);
+                            -webkit-appearance: none; 
+                            -moz-appearance: none;   
+                            appearance: none;  
+                            
+                            @media all and (min-width: 1200px) {
+                                font-size: 18px;
+                            }
+                        }
+
+                        select::-ms-expand {
+                            display:none
+                        }
+
+                        i:before {
+                            vertical-align: middle;
+                            background: @white;
+                            color: #f3780b;
+                            .rem(font-size, 20);
+                            .absolute;
+                            .rem(top, 9);
+                            .rem(right, 10);
+
+                            @media all and (min-width: 1200px) {
+                                top: 13px;
+                                right: 10px;
+                            }
+                        }
+                    }
+
+                    div.person {
+                        .no-list;
+                        .rem(height, 45);
+                        .center;
+                        .rem(line-height, 45);
+                        padding: 0;
+                        .rem(margin, 10 0 0);
+
+                        @media all and (min-width: 1200px) {
+                            height: 70px;
+                            line-height: 80px;
+                            width: 200px;
+                            margin: 0 auto;
+                        }
+
+                        strong {
+                            .rem(font-size, 12);
+
+                            @media all and (min-width: 1200px) {
+                                font-size: 16px;
+                            }
+                        }
+
+                        input {
+                            .rem(width, 35);
+                            .rem(height, 30);
+                            border: 1px solid #ccc;
+                            border-radius: 7px;
+                            .center;
+                            .rem(font-size, 12);
+                            .rem(margin, 0 7);
+                            .rem(padding, 8);
+
+                            @media all and (min-width: 1200px) {
+                                width: 50px;
+                                height: 45px;
+                                font-size: 16px;
+                                padding: 12px;
+                            }
+                        }
+
+                        span {
+                            .rem(font-size, 12);
+                            .bold;
+
+                            @media all and (min-width: 1200px) {
+                                font-size: 16px;
+                            }
+                        }
+                      
+                    }
+
+                    div#discount {
+                        width: 100%;
+                        .center;
+                        .rem(margin-bottom, 10);
+                        .rem(font-size, 12);
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 18px;
+                        }
+
+                        p {
+                            .inline-block;
+                        }
+
+                        p.result {
+                            
+                            
+                            i:before {
+                                .rem(padding, 0 7);
+                                color: #f3780b;
+                            }
+
+                            strong#lastPayment {
+                                .rem(padding-left, 8);
+                                color: #f3780b;
+                            }
+                        }
+
+                        strong#totalPriceView {
+                            .rem(padding-left, 5);
+                        }
+                    }
+                    
+                    
+                    a.arthall-btn {
+                        .block;
+                        .center;
+                        .rem(font-size, 16);
+                        .rem(line-height, 40);
+                        .gradient(#ffa306, #ff8900, #ff7506);
+                        color:@white;
+                        border:1px solid #d0720a;
+                        width:100%;
+                        .rem(margin-bottom, 30);
+                        
+                        @media all and (min-width: 1200px) {
+                            width: 550px;
+                            font-size: 25px;
+                            line-height:60px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
         section.detail-head {
 
             .inline-block;
@@ -3121,6 +3658,150 @@ body {
                     }
                 }
 
+                /* arthall-explain */
+                div.border {
+                    width:100%;
+                    .rem(height, 30);
+                    border-top: 1px solid #c4c4c4;
+
+                    @media all and (min-width: 1200px) {
+                        width:100%;
+                        height: 50px;
+                    }
+                }
+
+                div.arthall {
+                    width: 100%;
+                    .relative;
+                    .inline-block;
+                    .rem(padding, 10);
+                    .rem(font-size, 12);
+                    color: #555;
+                    line-height: 1.6;
+                    background: #f7f7f7;
+                    .rem(padding-bottom, 50);
+                    
+
+                    @media all and (min-width: 1200px) {
+                        padding: 30px 50px 0 50px;
+                        font-size: 18px;
+                        padding-bottom: 80px;
+                        margin-bottom: 50px;
+
+                        &::after {
+                            content: "";
+                            display: block;
+                            clear: both;
+                        }
+                    }
+
+                    dl {
+                        .relative;
+                        .mapazero;
+
+                        @media all and (min-width: 1200px) {
+                            width: 400px;
+                            .inline-block;
+                        }
+
+                        &::after {
+                            content: "";
+                            display:block;
+                            clear: both;
+                        }
+
+                        dt {
+                            .rem(width, 120);
+                            float: left;
+                            .bold;
+                            color: #222;
+                            .rem(padding, 4);
+
+                            @media all and (min-width: 1200px) {
+                                width: 120px;
+                            }
+                        }
+
+                        dd {
+                            margin: 0;
+                            .rem(padding, 4);
+                            white-space: normal;
+
+                           span {
+                               width: 100%;
+                               .block;
+
+                               @media all and (min-width: 1200px) {
+                                   display: inline;
+                               }
+                           }
+                        }
+
+                        dd.block {
+                            width: 100%;
+                            float: left;
+                            
+                            @media all and (min-width: 1200px) {
+                                width: calc(~"100% - 200px");
+                                padding-left: 0;
+                            }
+                        } 
+   
+                    }
+
+                    dl.right_box {
+                        
+                        @media all and (min-width: 1200px) {
+                            float: right;
+                        }
+
+                        dt {
+                            
+                            @media all and (min-width: 1200px) {
+                                width: 160px;
+                            }
+                        }
+                    }
+
+                    dl.use {
+                        width: 100%;
+                    }
+
+                    a.join-btn {
+                        .rem(width, 120);
+                        .rem(height, 20);
+                        .inline-block;
+                        .absolute;
+                        left: 50%;
+                        .rem(margin-left, -60);
+                        
+                        @media all and (min-width: 1200px) {
+                            width: 200px;
+                            height: 30px;
+                            margin-bottom: 30px;
+                            margin-left: -90px;
+                        }
+
+                        p {
+                            .rem(width, 120);
+                            .rem(height, 20);
+                            .rem(padding, 3 0);
+                            background: #f37b0b;
+                            color: @white;
+                            .rem(font-size, 10);
+                            .center;
+                            border-radius: 20px;
+
+                            @media all and (min-width: 1200px) {
+                                width: 200px;
+                                height: 30px;
+                                line-height: 25px;
+                                font-size: 14px;
+                            }
+                        }   
+                    }
+                }
+
                 ul.tabs {
                     .zero;
                     list-style: none;
@@ -3147,7 +3828,6 @@ body {
                             }
 
                             &.active {
-
                                 border: 1px solid #ff7800;
                                 border-bottom-color: @white;
                                 background: @white;
@@ -3260,6 +3940,45 @@ body {
                             word-break: keep-all;
                             width: 100%;
                             .rem(margin, 0 0 10);
+                        }
+                    }
+
+                    dl#arthall-ticket-explain {
+
+                        @media all and (min-width: 1200px) {
+                            width: 100%;
+
+                            &::after {
+                                content: "";
+                                display: block;
+                                clear: both;
+                            }
+                        }
+                        
+                        dt {
+                            .rem(width, 120);
+                            .bold;
+                            color: #222;
+                            .rem(padding, 4 0);
+                            .rem(font-size, 12);
+
+                            @media all and (min-width: 1200px) {
+                                width: 170px;
+                                font-size: 18px;
+                                float: left;
+                                padding: 10px;
+                            }
+                        }
+
+                        dd {
+                            margin: 0;
+                            .rem(padding, 4 0);
+                            .rem(font-size, 12);
+
+                            @media all and (min-width: 1200px) {
+                                font-size: 18px;
+                                padding: 10px;
+                            }
                         }
                     }
 
@@ -3485,6 +4204,48 @@ body {
 
                     }
 
+                    &#tab01 {
+
+                        dl#arthall-main {
+
+                            @media all and (min-width: 1200px) {
+                                width: 100%;
+    
+                                &::after {
+                                    content: "";
+                                    display: block;
+                                    clear: both;
+                                }
+                            }
+                            
+                            dt {
+                                .rem(width, 120);
+                                .bold;
+                                color: #222;
+                                .rem(padding, 4 0);
+                                .rem(font-size, 12);
+    
+                                @media all and (min-width: 1200px) {
+                                    width: 170px;
+                                    font-size: 18px;
+                                    float: left;
+                                    padding: 10px;
+                                }
+                            }
+    
+                            dd {
+                                margin: 0;
+                                .rem(padding, 4 0);
+                                .rem(font-size, 12);
+    
+                                @media all and (min-width: 1200px) {
+                                    font-size: 18px;
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+
                     &#tab04 {
 
                         div.write {
@@ -3662,6 +4423,39 @@ body {
                         }
                     }
 
+                }
+
+                div.top-btn {
+                    width: 100%;
+                    .center;
+        
+                    a {
+                        .inline-block;
+                        .rem(width, 50);
+                        .rem(height, 50);
+                        border: 1px solid #ff7800;
+                        border-radius: 50px;
+                        vertical-align: middle;
+                        .rem(margin, 20 0);
+        
+                        @media all and (min-width: 1200px) {
+                            display: none;
+                        }
+        
+                        i {
+                            color: #ff7800;
+                            .rem(font-size, 30);
+
+                            &::before {
+                                .center;
+                                margin: 12px 10px 10px 10px;
+                            }
+                        }
+                
+                        @media all and (min-width: 1200px) {
+                            display: none;
+                        }         
+                    }
                 }
 
             }
@@ -5451,11 +6245,51 @@ body {
                                     }
 
                                     h6 {
+                                        float: left;
                                         .rem(font-size, 12);
-                                        .rem(margin, 0 0 10);
+                                        .rem(margin, 3 0 10 0);
 
                                         @media all and (min-width: 1200px) {
                                             font-size: 18px;
+                                        }
+                                    }
+
+                                    div {
+                                        .inline-block;
+                                        float: right;
+                                        vertical-align: top;
+                                        .rem(margin, 0 0 10);
+
+                                        select {
+                                            .rem(width, 35);
+                                            .rem(height, 17);
+                                            .rem(font-size, 8);
+                                            vertical-align: bottom;
+
+                                            @media all and (min-width: 1200px) {
+                                                width: 60px;
+                                                height: 27px;
+                                                font-size: 14px;
+                                                margin-right: 2px;
+                                            }
+                                        }
+
+                                        button {
+                                            .rem(width, 45);
+                                            .rem(height, 18);
+                                            .rem(font-size, 8);
+                                            vertical-align: top;
+                                            background: #fb771f;
+                                            color: @white;
+                                            border: none;
+                                            border-radius: 5px;
+                                            .pointer;
+
+                                            @media all and (min-width: 1200px) {
+                                                width: 80px;
+                                                height: 29px;
+                                                font-size: 14px;
+                                            }
                                         }
                                     }
 
@@ -5674,6 +6508,17 @@ body {
                             &.essential {
                                 dl {
                                     border-color: #fb771f;
+                                }
+                            }
+
+                            &.fellow {
+                                input {
+                                    .rem(margin-bottom, 5);
+
+                                    @media all and (min-width: 1200px) {
+                                        margin-bottom: 0;
+                                        margin-right: 8px;
+                                    }
                                 }
                             }
                         }
