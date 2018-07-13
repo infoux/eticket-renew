@@ -6958,6 +6958,448 @@ body {
 
     }
 
+    section.seat-check {
+        .rem(font-size, 20);
+
+        div.popup {
+            width: 100%;
+            height: 3532px;
+            margin: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+            .absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+
+            @media all and (min-width: 1200px) {
+                padding: 160px 100px;
+                height: 2646px;
+            }
+            
+            div.outline {
+                .relative;
+                .rem(height, 1100);
+                background: #fff;
+                .rem(margin, 50 15 0 15);
+                
+
+                @media all and (min-width: 1200px) {
+                    width: 1342px;
+                    height: 1200px;
+                    margin: 0 auto;
+                }
+
+                ul.tabs {
+                    .gradient(#ffad00, #ff8b00, #ff7506);
+                    .no-list;
+                    .rem(height, 30);
+                    .mapazero;
+
+                    @media all and (min-width: 1200px) {
+                        height: 50px;
+                    }
+                    
+                    li {
+                        .center;
+                        .rem(height, 30);
+                        .rem(line-height, 30);
+                        color: @white;
+                        .rem(font-size, 14);
+
+                        @media all and (min-width: 1200px) {
+                            height: 50px;
+                            line-height: 50px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                button.close {
+                    .absolute;
+                    top: 0px;
+                    right: 0px;
+                    .rem(width, 30);
+                    .rem(height, 30);
+                    background: transparent;
+                    border: none;
+                    overflow: hidden;
+
+                    @media all and (min-width: 1200px) {
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    i:before {
+                        .rem(font-size, 14);
+                        color: @white;
+                        .center;
+                        .rem(line-height, 30);
+                        .pointer;
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                div.sub-title {
+                    .rem(height, 170);
+                    background: #f2f2f2;
+                    .rem(margin, 20 20 0 20);
+
+                    @media all and (min-width: 1200px) {
+                        width: 1200px;
+                        height: 60px;
+                        margin: 50px auto;
+
+                        &::after {
+                            content: "";
+                            display: block;
+                            clear: both;
+                        }
+                    }
+
+                    h5 {
+                        .rem(padding, 20 0 10 0);
+                        margin: 0;
+                        .center;
+                        .rem(font-size, 12);
+
+                        span {
+                            .none;
+
+                            @media all and (min-width: 1200px) {
+                                display: inline;
+                                padding: 10px;
+                                .normal;
+                                line-height: 60px;
+                            }
+                        }
+
+                        @media all and (min-width: 1200px) {
+                            display: inline;
+                            .left;
+                            font-size: 16px;
+                            margin: 20px 0  20px 30px;
+                            .middle;
+                        }
+                    }
+
+                    p {
+                        .rem(font-size, 12);
+                        margin: 0;
+                        .center;
+
+                        @media all and (min-width: 1200px) {
+                            width: 200px;
+                            display: inline;
+                            
+                        }
+
+                        span {
+                            .none;
+
+                            @media all and (min-width: 1200px) {
+                                display: inline;
+                                padding: 10px;
+                                
+                            }
+                        }
+                    }
+
+                    div.tileview-sub-title {
+                        .center;
+                        .rem(padding, 5 0 20 0);
+                        border-bottom: 1px solid #ccc;
+
+                        @media all and (min-width: 1200px) {
+                            border: none;
+                            display: inline;
+                        }
+
+                        strong {
+                            .rem(font-size, 12);
+                            .normal;
+
+                            span {
+                                .rem(padding, 10);
+                            }
+                        }
+                    }
+
+                    div.infomation {
+                        .rem(width, 220);
+                        .rem(height, 60);
+                        .center;
+                        .rem(padding, 8 0 8 12);
+                        margin: 0 auto;
+
+                        &::after {
+                            content: "";
+                            display: block;
+                            clear: both;
+                        }
+
+                        @media all and (min-width: 1200px) {
+                            width: 290px;
+                            height: 60px;
+                            float: right;
+                            padding: 0;
+                        }
+
+                        div {
+                            .rem(width, 60);  
+                            .rem(padding, 15 0 15 0);
+                            .rem(margin, 0 3);
+                            
+                            float: left;
+                            .center;
+
+                            &::after {
+                                content: "";
+                                display: block;
+                                clear: both;
+                            }
+
+                            @media all and (min-width: 1200px) {
+                                width: 70px;
+                                height: 70px;
+                                .right;
+                            }
+
+                            p.square { 
+                                .rem(width, 16);
+                                .rem(height, 16);
+                                background: #ffb700;
+                                float: left; 
+
+                                @media all and (min-width: 1200px) {
+                                    .middle;
+                                    margin-top: 5px;
+                                    margin-right: 5px;
+                                }
+                            }
+
+                            p.two {
+                                background: #ccc;
+                            }
+
+                            p.three {
+                                background: transparent;
+                                border: 1px solid #bbb;
+                            }
+
+                            p.right {
+                                .rem(padding, 2 0);
+                                .rem(font-size, 10);
+                                .rem(line-height, 15);
+                                .bold;
+
+                                @media all and (min-width: 1200px) {
+                                    font-size: 12px;
+                                }
+                            }
+
+                            &.complete {
+                                width: 20px;
+                            }
+                        }
+                    }
+                }
+
+                div.area_move {
+                    width: 100%;
+                    .rem(height, 60);
+                    .rem(line-height, 30);
+                    .rem(margin-top, 5);
+                    .rem(padding, 10);
+                    .center;
+
+                    @media all and (min-width: 1200px) {
+                        .none;
+                    }
+
+                    span {
+                        .gradient(#5d5d5d, #545454, #4c4c4c);
+                        border-radius: 6px;
+                        color: @white;
+                        .rem(font-size, 10);
+                        .rem(padding, 5 9);
+                        .rem(margin, 0 2);
+                        .pointer;
+                    }
+                }
+
+                div.tab-data {
+                    width: 100%;
+                    .rem(height, 50);
+                    .rem(line-height, 50);
+                    background: #404040;
+                    color: @white;
+                    .center;
+                    .rem(font-size, 18);
+
+                    @media all and (min-width: 1200px) {
+                        margin: 0 auto;
+                        width: 1000px;
+                    }
+
+                    h5 {
+                        margin: 0;
+                    }
+                }
+
+                div#orderContent {
+                    width: 100%;
+                    height: 100%;
+                  
+                    @media all and (min-width: 1200px) {
+                        height: 672px;
+                    }
+
+                    div.seatView_wrap {
+                        overflow-x: scroll;
+                    
+                        ul#seatsView {
+                            width: 1450px;
+                            .rem(height, 750);
+                            .rem(padding, 50 20);
+                            .no-list;       
+                            .center;
+                            .zero;
+
+                            @media all and (min-width: 1200px) {
+                                max-width: 100%;
+                                height: 930px;
+                                padding: 30px 70px;
+                            }
+
+                            li {
+                                .inline-block;
+                                vertical-align: middle;
+                                .center;
+                                margin-bottom: 10px;  
+
+                                input[type="checkbox"] + label {
+                                    .block;
+                                    width: 100%;
+                                    height: 100%;
+                                    .pointer;
+                                }
+                                
+                                input[type="checkbox"]:checked + label {
+                                    background: #ffb700;
+                                }
+
+                                input[type="checkbox"]:disabled + label {
+                                    background: url(../images/off_seat.svg) no-repeat center center;
+                                }
+
+                                input {
+                                    display: none;
+                                }
+
+                                label {
+                                    line-height: 40px;
+                                }
+
+                                
+                            }
+                
+                            li.tileview-content {
+                                .rem(width, 30);
+                                .rem(height, 30);
+                                line-height: 40px;
+                                .rem(font-size, 8);
+                                border: 1px solid #ddd;
+                                .pointer;
+                                background: transparent;
+                                text-align: center;
+
+                                
+
+                                @media all and (min-width: 1200px) {
+                                    width: 40px;
+                                    height: 40px;
+                                }
+                            }
+
+                            li.s_blank {
+                                .rem(width, 3);
+                                .rem(height, 20);
+
+                                @media all and (min-width: 1200px) {
+                                    width: 5px;
+                                    height: 40px;
+                                }
+                            }
+
+                            li.m_blank {
+                                .rem(width, 10);
+                                .rem(height, 20);
+
+                                @media all and (min-width: 1200px) {
+                                    width: 20px;
+                                    height: 40px;
+                                }
+                            }
+
+                            li.l_blank {
+                                .rem(width, 30);
+                                .rem(height, 30);
+
+                                @media all and (min-width: 1200px) {
+                                    width: 40px;
+                                    height: 40px;
+                                }
+                            }
+
+                            li.wheel {
+                                .rem(width, 74);
+                                .rem(height, 30);
+
+                                @media all and (min-width: 1200px) {
+                                    width: 100px;
+                                    height: 40px;
+                                }
+
+                                img {
+                                    width: 20px;
+                                    height: 20px;
+                                    .middle;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .seat-btn {
+                .absolute;
+                .inline-block;
+                .rem(width, 200);
+                .rem(font-size, 12);
+                .rem(padding, 7 60);
+                .rem(margin, 20 10);
+                color: @white;
+                background: #f37d0b;
+                .pointer;
+                .center;
+                left: 50%;
+                .rem(margin-left, -100);
+                
+
+                @media all and (min-width: 1200px) {
+                    padding: 12px 100px;
+                    width: 300px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
     footer#footer {
         .center;
         background: #2b2b2b;
