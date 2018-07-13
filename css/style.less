@@ -6974,7 +6974,7 @@ body {
             bottom: 0;
 
             @media all and (min-width: 1200px) {
-                padding: 160px 100px;
+                padding: 160px 40px;
                 height: 2646px;
             }
             
@@ -6986,7 +6986,7 @@ body {
                 
 
                 @media all and (min-width: 1200px) {
-                    width: 1342px;
+                    max-width: 1342px;
                     height: 1200px;
                     margin: 0 auto;
                 }
@@ -7291,6 +7291,7 @@ body {
                                 
                                 input[type="checkbox"]:checked + label {
                                     background: #ffb700;
+                                    border-color: transparent;
                                 }
 
                                 input[type="checkbox"]:disabled + label {
@@ -7303,6 +7304,7 @@ body {
 
                                 label {
                                     line-height: 40px;
+                                    border: 1px solid #ddd;
                                 }
 
                                 
@@ -7313,7 +7315,7 @@ body {
                                 .rem(height, 30);
                                 line-height: 40px;
                                 .rem(font-size, 8);
-                                border: 1px solid #ddd;
+                                
                                 .pointer;
                                 background: transparent;
                                 text-align: center;
@@ -7357,8 +7359,14 @@ body {
                             }
 
                             li.wheel {
+                                .relative;
                                 .rem(width, 74);
                                 .rem(height, 30);
+
+                                label {
+                                    .rem(padding-left, 10);
+                                }
+                                
 
                                 @media all and (min-width: 1200px) {
                                     width: 100px;
@@ -7368,7 +7376,9 @@ body {
                                 img {
                                     width: 20px;
                                     height: 20px;
-                                    .middle;
+                                    .absolute;
+                                    top: 10px;
+                                    left: 28px;
                                 }
                             }
                         }
