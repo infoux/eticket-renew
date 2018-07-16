@@ -149,7 +149,12 @@ $(document).ready(function() {
 
 
 
+    $("div.product button.seat").click(function() {
+        $(".seat-check div.popup").css("display", "block");
+        $(".seat-check div.popup").css("height", $(document).height())
 
+
+    });
 
 
 
