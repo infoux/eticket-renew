@@ -6960,10 +6960,11 @@ body {
 
     section.seat-check {
         .rem(font-size, 20);
+        
 
         div.popup {
             width: 100%;
-            // min-height: 100%;
+            min-height: 100%;
             margin: 0;
             background: rgba(0, 0, 0, 0.7);
             z-index: 999;
@@ -7313,6 +7314,21 @@ body {
 
                                 
                             }
+
+                            li.seat-line {
+                                .rem(width, 255);
+                                .rem(height, 25);
+                                .rem(line-height, 25);
+                                .rem(margin, 0 2);
+                                .rem(font-size, 10);
+                            
+                                @media all and (min-width: 1200px) {
+                                    width: 340px;
+                                    height: 35px;
+                                    line-height: 35px;
+                                    font-size: 12px;
+                                }
+                            }
                 
                             li.tileview-content {
                                 .rem(width, 25);
@@ -7331,13 +7347,16 @@ body {
                             }
 
                             li.m_blank {
-                                .rem(width, 10);
+                                .rem(width, 15);
                                 .rem(height, 30);
                                 margin: 0;
+                                .rem(font-size, 9);
+                                .rem(line-height, 30);
 
                                 @media all and (min-width: 1200px) {
                                     width: 20px;
                                     height: 40px;
+                                    line-height: 40px;
                                 }
                             }
 
