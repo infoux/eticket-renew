@@ -177,12 +177,45 @@
                                 <dd>
                                     <strong>전기사용료</strong>
                                     <input id="select-use" name="select-type" type="radio" checked>
-                                    <label for="select-use">사용</label>
+                                    <label class="elect-use" for="select-use">사용</label>
 
                                     <input id="select-notUse" name="select-type" type="radio" checked>
-                                    <label for="select-notUse">미사용</label>
+                                    <label class="elect-use" for="select-notUse">미사용</label>
                                 </dd>
-                                <dd><strong>동반참석자</strong>58,000원 - 0원 = 58,000원</dd>
+                                <dd>
+                                    <strong class="attend">동반참석자</strong>
+
+                                    <label for="adult">성인</label>
+                                    <select id="adult">
+                                        <option value="1">1명</option>
+                                        <option value="2">2명</option>
+                                        <option value="3">3명</option>
+                                        <option value="4">4명</option>
+                                    </select>
+
+                                    <label for="teenager">청소년</label>
+                                    <select id="teenager">
+                                        <option value="1">1명</option>
+                                        <option value="2">2명</option>
+                                        <option value="3">3명</option>
+                                        <option value="4">4명</option>
+                                    </select>
+
+                                    <label for="kids">어린이</label>
+                                    <select id="kids">
+                                        <option value="1">1명</option>
+                                        <option value="2">2명</option>
+                                        <option value="3">3명</option>
+                                        <option value="4">4명</option>
+                                    </select>
+
+                                    <div class="age-wrap">
+                                        <b>성인</b> 만 24세 이상
+                                        <b>청소년</b> 만 8세 이상 ~ 만 24세 미만
+                                        <b>어린이</b> 만 8세 미만
+                                    </div>
+                                </dd>
+
                             </dl>
                         </li>
                     </ul>
