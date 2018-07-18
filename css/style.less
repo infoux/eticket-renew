@@ -673,19 +673,6 @@ article.popup-notice {
                 }
 
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
         div.infomation {
@@ -1751,6 +1738,18 @@ body {
             }
         }
 
+        &.no-img {
+
+            div.container{
+                .rem(min-height, 593);
+                
+
+                @media all and (min-width: 1200px) {
+                    height: 620px;
+                }
+           }
+        }
+
         section.main-list {
             .center;
             background: #f7f7f7;
@@ -2216,6 +2215,163 @@ body {
             }
         }
 
+        /* camp */
+        section.camp-head {
+            .inline-block;
+            width: 100%;
+            .center;
+            background: #f7f7f7;
+
+            .container {
+                background: @white;
+                .relative;
+                .zero;
+                padding: 0;
+
+                @media all and (min-width: 1200px) {
+                    padding: 0 70px;
+                }
+
+                div.camp-wrap {
+
+                    @media all and (min-width: 1200px) {
+                        padding-top: 70px;
+                    }
+
+                    p.img {
+                        .hidden;
+                        .mapazero;
+                        width: 100%;
+                        .rem(height, 250);
+                        padding: 0 -25%;
+                        
+                        @media all and (min-width: 1200px) {
+                            width: 100%;
+                            height: 290px;
+                        }
+
+                        img {
+                            .none;
+                        }
+                    }
+
+                    div.title {
+                        width: 100%;
+                        .rem(padding, 10);
+                        
+                        @media all and (min-width: 1200px) {
+                            padding: 50px 0;
+                            .relative;
+                        }
+                       
+                        h3 {
+                            .rem(font-size, 18);
+                            .rem(margin, 20 0 10 0);
+                            .center;
+
+                            @media all and (min-width: 1200px) {
+                                .inline-block;
+                                width: 300px;
+                                .mapazero;
+                                .left;
+                                font-size: 38px;
+                                .normal;
+                            }
+                        }
+
+                        div.type {
+
+                            @media all and (min-width: 1200px) {
+                                .absolute;
+                                right: 150px;
+                                top: 60px;
+                            }
+
+                            ul {
+                                .mapazero;
+                                .no-list;
+                                .rem(width, 150);
+                                margin: 0 auto;
+                                .rem(padding-left, 15);
+
+                                @media all and (min-width: 1200px) {
+                                    width: 250px;
+                                }
+    
+                                li {
+                                    .inline-block;
+                                    
+                                    input {
+                                        .none;
+                                    }
+    
+                                    label {
+                                        .rem(margin, 0 20 0 0);
+                                        .rem(font-size, 12);
+    
+                                        @media all and (min-width: 1200px) {
+                                            font-size: 17px;
+                                            margin: 0 20px 0 0;
+                                        }
+    
+                                        &::before {
+                                            content: "";
+                                            .inline-block;
+                                            .rem(width, 6);
+                                            .rem(height, 6);
+                                            .rem(margin, 0 4 0 0);
+                                            background: #eee;
+                                            border: 6px solid @white;
+                                            border-radius: 50%;
+                                            .drop-shadow();
+    
+                                            @media all and (min-width: 1200px) {
+                                                margin: 0 10px 0 0;
+                                                border-width: 4px;
+                                                width: 10px;
+                                                height: 10px;
+                                            }
+                                        }
+                                    }
+    
+                                    input:checked + label {
+    
+                                        &::before {
+                                            background: #f3740b;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        button {
+                            .block;
+                            width: 100%;
+                            .rem(height, 30);
+                            .gradient(#ffa306, #ff8900, #ff7506);
+                            color: @white;
+                            border: none;
+                            .rem(font-size, 12);
+                            margin: 30px auto;
+                            .pointer;
+
+                            @media all and (min-width: 1200px) {
+                                .inline-block;
+                                width: 200px;
+                                height: 45px;
+                                font-size: 16px;
+                                .absolute;
+                                right: 0;
+                                top: 19px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        
+
         /* arthall */
         section.arthall-head {
             .inline-block;
@@ -2255,25 +2411,6 @@ body {
                             .none;
                         }
                     }
-
-                    // p.cultural_center {
-                    //     .hidden;
-                    //     .mapazero;
-                    //     .rem(height, 240);
-                    //     max-width: 100%;
-                    //     padding: 0 -25%;
-                    //     .center;
-
-                    //     @media all and (min-width: 1200px) {
-                    //         width: 100%;
-                    //         height: 250px;
-                    //         margin: 0;
-                    //     }
-
-                    //     img {
-                    //         .none;
-                    //     }
-                    // }
 
                     div.title {
                         width: 100%;
@@ -4265,7 +4402,19 @@ body {
                                 }
                             }
                         }
+
+                        p.camp-info {
+                            .rem(font-size, 10);
+                            .rem(line-height, 15);
+
+                            @media all and (min-width: 1200px) {
+                                font-size: 16px;
+                                line-height: 25px;
+                            }
+                        }
                     }
+
+
 
                     &#tab04 {
 
@@ -4904,6 +5053,8 @@ body {
 
                                 }
 
+                                
+
                                 div.payment {
                                     .rem(font-size, 10);
                                     .rem(padding, 10);
@@ -4997,7 +5148,7 @@ body {
                         }
 
                     }
-
+                    
 
                     div.input_box {
 
@@ -5061,6 +5212,8 @@ body {
                                 }
                             }
                         }
+
+                        
 
                         textarea {
                             .inline-block;
@@ -5217,8 +5370,6 @@ body {
                             }
 
                         }
-
-
                     }
 
 
@@ -6542,7 +6693,165 @@ body {
                                     }
                                 }
                             }
+
+                            &.camp-fellow {
+
+                                dl {
+                                    .rem(padding, 20 10);
+
+                                    @media all and (min-width: 1200px) {
+                                        padding: 30px 20px;
+                                    }
+
+                                    dt {
+                                        width: 100%;
+                                        .bold;
+                                        .rem(margin-top, 10);
+
+                                        @media all and (min-width: 1200px) {
+                                            margin: 15px 0 10px 0;
+                                            font-size: 18px;
+                                        }
+
+                                    }
+
+                                    dd {
+                                        .block;
+                                        margin: 0;
+
+                                        p {
+                                            margin: 0;
+                                            .rem(padding, 5 0);
+                                            .rem(font-size, 12);
+                                            
+                                            @media all and (min-width: 1200px) {
+                                                margin-right: 15px;
+                                                font-size: 16px;
+                                            }
+                                        }
+                                    }
+
+                                    input {
+                                        .rem(margin-bottom, 5);
+
+                                        @media all and (min-width: 1200px) {
+                                            margin-right: 40px;
+                                        }
+                                    }
+                                }
+                            }
                         }
+
+                       
+
+                        div {
+                            border: 1px solid #ccc;
+                            .rem(padding, 20);
+                            .rem(margin-bottom, 20);
+
+                            p {
+                                .rem(font-size, 11);
+                                .center;
+
+                                span {
+                                    .rem(padding, 5);
+                                }
+                            }
+
+                            div.total-wrap {
+                                .relative;
+                                background: #f4f4f4;
+                                border: none;
+                                border-radius: 7px;
+                                margin: 0;
+
+                                p {
+                                    .rem(font-size, 12);
+                                }
+
+                                select {
+                                    .block;
+                                    width: 100%;
+                                    .rem(height, 28);
+                                    border-radius: 5px;
+                                    border: 1px solid #ccc;
+                                    .rem(padding-left, 5);
+                                    .rem(font-size, 10);
+                                }
+
+                                div {
+                                    .mapazero;
+                                    .rem(width, 115);
+                                    margin: 0 auto;
+                                    border: none;
+
+                                    button {
+                                        .rem(width, 55);
+                                        .rem(height, 22);
+                                        .rem(font-size, 10);
+                                        border: none;
+                                        color: @white;
+                                        background: #333;
+                                        .rem(margin, 15 0);
+                                        .pointer;
+                                    }
+
+                                    button.ok {
+                                        background: #ff7800;
+                                    }
+                                }
+                            }
+
+                            div.info-text {
+                                border: none;
+                                .center;
+                                color: #ff7800;
+                                margin: 0;
+                                .rem(font-size, 12);
+                                .rem(padding, 20 5);
+                                .rem(line-height, 15);
+                                
+                            }
+
+                            div.discount_result {
+                                border: none;
+                                border-top: 1px dotted #ccc;
+                                margin: 0;
+                                .rem(padding, 20 0 0 0);
+                                .center;
+
+
+                                p {
+                                    .inline-block;
+                                    .rem(margin, 5 0);
+                                    .rem(font-size, 12);
+                                }
+
+                                p.minus {
+
+                                    i::before {
+                                        color: #ff7800;
+                                        .rem(margin, 0 5);
+                                        .rem(font-size, 12);
+                                    }
+                                }
+
+                                p.result {
+                                    .block;
+
+                                    i::before {
+                                        color: #ff7800;
+                                        .rem(margin, 0 5);
+                                        .rem(font-size, 12);
+                                    }
+
+                                    strong {
+                                        color: #ff7800;
+                                    }
+                                }
+                            }
+                        }
+                        
 
                         div.payment {
 
