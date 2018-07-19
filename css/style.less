@@ -7598,11 +7598,11 @@ body {
                                 border: 1px solid #fb771f;
                                 border-bottom: none;
                                 .rem(padding, 10);
-                                .rem(min-height, 70);
+                                .rem(min-height, 90);
 
                                 @media all and (min-width: 1200px) {
                                     padding: 20px;
-                                    min-height: 120px;
+                                    min-height: 200px;
                                 }
 
                                 &:last-child {
@@ -7610,23 +7610,27 @@ body {
                                 }
 
                                 img {
-                                    .rem(width, 50);
-                                    float: left;
-                                    .rem(margin-right, 10);
+                                    .absolute;
+                                    .rem(width, 60);
+                                    .rem(top, 6);
 
                                     @media all and (min-width: 1200px) {
                                         width: 120px;
+                                        .absolute;
+                                        top: 16px;
                                     }
                                 }
 
                                 h6 {
                                     .rem(font-size, 12);
                                     .rem(margin, 0 0 10);
+                                    .rem(margin-left, 80);
                                     color: #fb771f;
 
                                     @media all and (min-width: 1200px) {
                                         font-size: 18px;
                                         margin: 0 0 10px;
+                                        margin-left: 150px;
                                     }
 
                                     small {
@@ -7638,10 +7642,18 @@ body {
                                 p {
                                     .rem(font-size, 10);
                                     .rem(margin, 0 0 6);
+                                    .rem(margin-left, 80);
 
                                     @media all and (min-width: 1200px) {
                                         font-size: 14px;
                                         margin: 0 0 10px;
+                                    }
+
+                                    &.info {
+
+                                        @media all and (min-width: 1200px) {
+                                            margin-left: 150px;
+                                        }
                                     }
 
                                     &.price {
@@ -7668,7 +7680,9 @@ body {
                                         }
                                     }
                                 }
+
                             }
+                            
                         }
                     }
 
