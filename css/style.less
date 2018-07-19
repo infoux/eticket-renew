@@ -7682,14 +7682,12 @@ body {
             
             div.outline {
                 .relative;
-                .rem(height, 1100);
                 background: #fff;
                 .rem(margin, 50 15 0 15);
                 
 
                 @media all and (min-width: 1200px) {
                     max-width: 1200px;
-                    height: 1200px;
                     margin: 0 auto;
                 }
 
@@ -7754,7 +7752,7 @@ body {
                     @media all and (min-width: 1200px) {
                         width: 100%;
                         height: 60px;
-                        margin: 50px auto;
+                        margin: 0 auto 50px;
 
                         &::after {
                             content: "";
@@ -7955,17 +7953,14 @@ body {
 
                 div#orderContent {
                     width: 100%;
-                    height: 100%;
-                  
-                    @media all and (min-width: 1200px) {
-                        height: 672px;
-                    }
+                    overflow:hidden;
+                    overflow-x:scroll;
+
 
                     div.seatView_wrap {
-                        overflow-x: scroll;
                     
                         ul#seatsView {
-                            .rem(width, 850);
+                            .rem(width, 920);
                             .rem(height, 750);
                             .rem(padding, 50 30);
                             .no-list;       
@@ -7976,7 +7971,7 @@ body {
                             @media all and (min-width: 1200px) {
                                 width: 1200px;
                                 height: 930px;
-                                padding: 30px 70px;
+                                padding: 30px 58px;
                             }
 
                             li {
@@ -7984,93 +7979,39 @@ body {
                                 vertical-align: middle;
                                 .center;
                                 margin-bottom: 10px;  
-
-                                input[type="checkbox"] + label {
-                                    .block;
-                                    width: 100%;
-                                    height: 100%;
-                                    .pointer;
-                                }
-                                
-                                input[type="checkbox"]:checked + label {
-                                    background: #ffb700;
-                                    border-color: transparent;
-                                }
-
-                                input[type="checkbox"]:disabled + label {
-                                    background: url(../images/off_seat.svg) no-repeat center center;
-                                }
-
-                                input {
-                                    display: none;
-                                }
-
-                                label {
-                                    .rem(line-height, 30);
-                                    border: 1px solid #ddd;
-
-                                    @media all and (min-width: 1200px) {
-                                        line-height: 40px;
-                                    }
-                                }
-
                                 
                             }
 
-                            li.seat-line {
-                                .rem(width, 255);
-                                .rem(height, 25);
-                                .rem(line-height, 25);
-                                .rem(margin, 0 2);
-                                .rem(font-size, 10);
-                            
-                                @media all and (min-width: 1200px) {
-                                    width: 340px;
-                                    height: 35px;
-                                    line-height: 35px;
-                                    font-size: 12px;
-                                }
-                            }
-                
                             li.tileview-content {
-                                .rem(width, 25);
+                                .rem(width, 15);
                                 .rem(height, 30);
                                 line-height: 40px;
                                 .rem(font-size, 8);
                                 .rem(margin, 3 2);
                                 .pointer;
+                                border:1px solid #ccc;
                                 background: transparent;
                                 text-align: center;
 
                                 @media all and (min-width: 1200px) {
-                                    width: 35px;
+                                    width: 20px;
                                     height: 40px;
                                 }
                             }
 
+                            li.seat-line,
                             li.m_blank {
-                                .rem(width, 15);
-                                .rem(height, 30);
-                                margin: 0;
                                 .rem(font-size, 9);
                                 .rem(line-height, 30);
+                                border:none;
 
                                 @media all and (min-width: 1200px) {
-                                    width: 20px;
-                                    height: 40px;
                                     line-height: 40px;
                                 }
                             }
 
                             li.l_blank {
-                                .rem(width, 30);
-                                .rem(height, 30);
-                                margin: 0;
-
-                                @media all and (min-width: 1200px) {
-                                    width: 40px;
-                                    height: 40px;
-                                }
+                                border:none;
                             }
 
                             li.wheel {
@@ -8079,17 +8020,12 @@ body {
                                 .rem(height, 30);
 
                                 @media all and (min-width: 1200px) {
-                                    width: 76px;
+                                    width: 87px;
+                                    height: 40px;
                                 }
 
                                 label {
                                     .rem(padding-left, 10);
-                                }
-                                
-
-                                @media all and (min-width: 1200px) {
-                                    width: 87px;
-                                    height: 40px;
                                 }
 
                                 img {
@@ -8104,6 +8040,202 @@ body {
                                         height: 15px;
                                         top: 12px;
                                         left: 26px;
+                                    }
+                                }
+                            }
+
+                            li.wheel2 {
+                                .relative;
+                                .rem(width, 34);
+                                .rem(height, 30);
+
+                                @media all and (min-width: 1200px) {
+                                    width: 44px;
+                                    height: 40px;
+                                    
+                                }
+
+                                &::before {
+                                    content:"";
+                                    .inline-block;
+                                    .relative;
+                                    .rem(top, 2);
+                                    .rem(margin, 0 4 0 0);
+                                    .rem(width, 10);
+                                    .rem(height, 10);
+                                    background:url("../images/wheel.svg") no-repeat center / 100% auto;
+
+                                    @media all and (min-width: 1200px) {
+                                        top:4px;
+                                        width:16px;
+                                        height:16px;
+                                    }
+                                }
+
+                            }
+
+                            li.check {
+                                background:#ffb700;
+                                border-color:transparent;
+                            }
+
+                            li.tmp_off {
+                                background:url("../images/off_seat.svg") no-repeat #ddd center / 100% 100%;
+                                font-size:0;
+                            }
+
+                            li.res_off {
+                                background:url("../images/off_seat.svg") no-repeat #eee center / 100% 100%;
+                                font-size:0;
+                            }
+
+                            &.f2 {
+                                .rem(padding, 50 36);
+                                .rem(height, 350);
+    
+                                @media all and (min-width: 1200px) {
+                                    padding: 30px 64px;
+                                    height:420px;
+                                }
+                            }
+
+                            &.shall {
+                                
+                                .rem(padding, 50 286);
+                                .rem(height, 480);
+
+                                @media all and (min-width: 1200px) {
+                                    padding: 30px 384px;
+                                    height:520px;
+                                }
+                            }
+
+                            &.kimhall {
+                                .relative;
+                                .rem(padding, 90 40);
+                                .rem(height, 760);
+
+                                @media all and (min-width: 1200px) {
+                                    padding: 70px 60px;
+                                    height:920px;
+                                }
+
+                                li {
+
+
+                                    &.tileview-content {
+                                        .rem(width, 26);
+
+        
+                                        @media all and (min-width: 1200px) {
+                                            width: 34px;
+                                        }
+                                    }
+
+
+                                    &.wheel {
+                                        .relative;
+                                        .rem(width, 64);
+                                        .rem(height, 30);
+        
+                                        @media all and (min-width: 1200px) {
+                                            width: 87px;
+                                            height: 40px;
+                                        }
+        
+                                        label {
+                                            .rem(padding-left, 10);
+                                        }
+        
+                                        img {
+                                            .rem(width, 12);
+                                            .rem(height, 12);
+                                            .absolute;
+                                            .rem(top, 9);
+                                            .rem(left, 20);
+        
+                                            @media all and (min-width: 1200px) {
+                                                width: 15px;
+                                                height: 15px;
+                                                top: 12px;
+                                                left: 26px;
+                                            }
+                                        }
+                                    }
+        
+                                    &.wheel2 {
+                                        .relative;
+                                        .rem(width, 56);
+                                        .rem(height, 30);
+        
+                                        @media all and (min-width: 1200px) {
+                                            width: 72px;
+                                            height: 40px;
+                                            
+                                        }
+        
+                                        &::before {
+                                            content:"";
+                                            .inline-block;
+                                            .relative;
+                                            .rem(top, 2);
+                                            .rem(margin, 0 4 0 0);
+                                            .rem(width, 10);
+                                            .rem(height, 10);
+                                            background:url("../images/wheel.svg") no-repeat center / 100% auto;
+        
+                                            @media all and (min-width: 1200px) {
+                                                top:4px;
+                                                width:16px;
+                                                height:16px;
+                                            }
+                                        }
+        
+                                    }
+
+
+                                    &#titleview_scope {
+                                        .absolute;
+                                        .rem(top, 40);
+                                        .bold;
+                                        .rem(font-size, 14);
+                                        border:none;
+                                        background:#efefef;
+
+                                        @media all and (min-width: 1200px) {
+                                            top:20px;
+                                            font-size:17px;
+                                        }
+
+                                        &.lineA {
+                                            .rem(left, 40);
+                                            .rem(width, 238);
+
+                                            @media all and (min-width: 1200px) {
+                                                left:70px;
+                                                width:298px;
+                                            }
+                                        }
+
+                                        &.lineB {
+                                            .rem(left, 310);
+                                            .rem(width, 296);
+
+                                            @media all and (min-width: 1200px) {
+                                                left:410px;
+                                                width:376px;
+                                            }
+                                        }
+
+                                        &.lineC {
+                                            .rem(left, 640);
+                                            .rem(width, 234);
+
+                                            @media all and (min-width: 1200px) {
+                                                left:828px;
+                                                width:300px;
+                                            }
+                                        }
                                     }
                                 }
                             }
