@@ -5168,10 +5168,11 @@ body {
                                 border: 1px solid #ccc;
                                 border-bottom-width: 0;
                                 .rem(padding, 10);
-                                .rem(min-height, 100);
+                                .rem(min-height, 200);
 
                                 @media all and (min-width: 1200px) {
                                     padding: 20px;
+                                    min-height: 250px;
                                 }
 
                                 &.empty {
@@ -5201,6 +5202,7 @@ body {
                                 }
 
                                 dl {
+                                    .relative;
                                     .inline-block;
                                     width: 100%;
                                     .rem(font-size, 10);
@@ -5224,11 +5226,13 @@ body {
                                     }
 
                                     dd {
-                                        .rem(margin, 0 0 4);
+                                        // .rem(margin, 0 0 4);
+                                        .rem(margin-left, 105);
                                         line-height: 1.4;
 
                                         @media all and (min-width: 1200px) {
-                                            margin: 0 0 10px;
+                                            margin-left: 120px;
+                                            padding: 5px 0 0 0;
                                         }
 
                                         strong {
@@ -5243,6 +5247,21 @@ body {
                                                 font-style: normal;
                                                 color: #ff7800;
                                                 .rem(padding, 0 4);
+                                            }
+                                        }
+
+                                        &.search-img {
+                                            .rem(margin-left, 16);
+
+                                            img {
+                                                .absolute;
+                                                .rem(width, 75);
+                                                .rem(top, 35);
+
+                                                @media all and (min-width: 1200px) {
+                                                    width: 80px;
+                                                    top: 45px;
+                                                }
                                             }
                                         }
                                     }
@@ -5305,6 +5324,14 @@ body {
 
                                     @media all and (min-width: 1200px) {
                                         font-size: 24px;
+                                    }
+                                }
+
+                                .p_cancel {
+                                    .rem(margin, 15 0 0 0);
+
+                                    @media all and (min-width: 1200px) {
+                                        margin: 30px 0 0 0;
                                     }
                                 }
 
