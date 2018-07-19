@@ -4106,6 +4106,91 @@ body {
                         }
                     }
 
+                    #arthall-main {
+
+                        dl {
+                            .rem(margin-bottom, 30);
+
+                            @media all and (min-width: 1200px) {
+                                width: 100%;
+                                margin-bottom: 40px;
+    
+                                &::after {
+                                    content: "";
+                                    display: block;
+                                    clear: both;
+                                }
+                            }
+                            
+                            dt {
+                                .rem(width, 120);
+                                .bold;
+                                color: #222;
+                                .rem(padding, 4 0);
+                                .rem(font-size, 10);
+    
+                                @media all and (min-width: 1200px) {
+                                    width: 170px;
+                                    font-size: 18px;
+                                    float: left;
+                                    padding: 10px;
+                                }
+                            }
+    
+                            dd {
+                                margin: 0;
+                                .rem(padding, 4 0);
+                                .rem(font-size, 10);
+    
+                                @media all and (min-width: 1200px) {
+                                    font-size: 18px;
+                                    padding: 10px;
+                                }
+                            }
+                        }
+
+                        div {
+                            .rem(margin, 20 0);
+                            
+                            &::after {
+                                content: "";
+                                display: block;
+                                clear: both;
+                            }
+
+                            @media all and (min-width: 1200px) {
+                                margin: 30px 0;
+                            }
+
+                            p {
+                                .rem(font-size, 10);
+                                .rem(line-height, 16);
+                                .rem(margin-bottom, 20);
+
+                                @media all and (min-width: 1200px) {
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                }
+                            }
+
+                            img {
+                                width: 100%;
+
+                                @media all and (min-width: 1200px) {
+                                    width: 500px;
+                                }   
+
+                                &.only-img {
+                                    width: 100%;
+                                }
+
+                                &.right-img {
+                                    float: right;
+                                }
+                            }
+                        }
+                    }
+
                     dl#arthall-ticket-explain {
 
                         @media all and (min-width: 1200px) {
