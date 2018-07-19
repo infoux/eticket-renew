@@ -8004,16 +8004,24 @@ body {
                     
                         ul#seatsView {
                             .rem(width, 920);
-                            .rem(height, 750);
+                            .rem(min-height, 750);
                             .rem(padding, 50 30);
                             .no-list;       
                             .center;
                             .zero;
                             overflow: hidden;
 
+                            &.shall {
+                                .rem(min-heihgt, 725);
+
+                                @media all and(min-width: 1200px) {
+                                    min-height: 750px;
+                                }
+                            }
+
                             @media all and (min-width: 1200px) {
                                 width: 1200px;
-                                height: 930px;
+                                min-height: 930px;
                                 padding: 30px 58px;
                             }
 
