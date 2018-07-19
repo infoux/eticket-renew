@@ -293,6 +293,7 @@
 
                             <div>
                                 <h6>기본시설 사용료</h6>
+                                <small>(단위: 원)</small>
                                 <table class="price">
                                     <tbody>
                                         <tr>
@@ -305,7 +306,7 @@
                                         <tr>
                                             <td rowspan="4">공연장</td>
                                             <td>오전(09:00~12:00)</td>
-                                            <td>50,000원</td>
+                                            <td class="usePay">50,000원</td>
                                             <td class="center_ect" rowspan="5">
                                                 1. 토요일 오후 및 야간과 일요일, 공휴일은 평일 적용금액의 20퍼센트가산<br> 2. 공연 연습을 위한 무대사용(객석제외)은 기준액의 50퍼센트<br> ※ 공연장 초과 사용료<br> -1시간 미만 초과: 10,000원<br> -1시간 이상 초과 사용<br> -1시간당 20,000원 가산
 
@@ -314,20 +315,20 @@
                                         </tr>
                                         <tr>
                                             <td>오후(13:00~17:00)</td>
-                                            <td>50,000원</td>
+                                            <td class=" usePay">50,000원</td>
                                         </tr>
                                         <tr>
                                             <td>야간(18:00~22:00)</td>
-                                            <td>80,000원</td>
+                                            <td class="usePay">80,000원</td>
                                         </tr>
                                         <tr>
                                             <td>1일(09:00~22:00)</td>
-                                            <td>150,000원</td>
+                                            <td class="usePay">150,000원</td>
                                         </tr>
                                         <tr>
                                             <td>세미나실</td>
                                             <td>1시간당</td>
-                                            <td>5,000원</td>
+                                            <td class="usePay">5,000원</td>
                                         </tr>
 
                                     </tbody>
@@ -336,10 +337,11 @@
 
                             <div>
                                 <h6>부대시설 사용료</h6>
-                                <table class="price">
+                                <small>(단위: 원)</small>
+                                <table class="price ">
                                     <tbody>
                                         <tr>
-                                            <th colspan="2">구분</th>
+                                            <th colspan="2 ">구분</th>
                                             <th>단위</th>
                                             <th>사용료</th>
                                             <th>비고</th>
@@ -356,7 +358,7 @@
                                             <td>공연장</td>
                                             <td>1시간당</td>
                                             <td>5,000원</td>
-                                            <td class="center_ect">마이크 2대를 기본으로 추가 사용 시 1대당 5,000원 추가</td>
+                                            <td class="center_ect ">마이크 2대를 기본으로 추가 사용 시 1대당 5,000원 추가</td>
                                         </tr>
                                         <tr>
                                             <td>녹화, 방송</td>
@@ -366,7 +368,7 @@
                                             <td></td>
                                         </tr>
                                         <tr>
-                                            <td rowspan="2">냉난방</td>
+                                            <td rowspan="2 ">냉난방</td>
                                             <td>공연장</td>
                                             <td>1시간당</td>
                                             <td>20,000원</td>
@@ -385,24 +387,24 @@
 
                             <div>
                                 <h6>시설사진</h6>
-                                <img src="images/center_2.jpg" alt="김정문화회관">
-                                <img src="images/center_theater.jpg" alt="김정문화회관 공연장">
+                                <img src="images/center_2.jpg " alt="김정문화회관">
+                                <img class="m_zero" src="images/center_theater.jpg " alt="김정문화회관 공연장">
                             </div>
 
                         </div>
                     </div>
                 </div>
-                <div id="tab02" class="tab-contents">
+                <div id="tab02 " class="tab-contents ">
                     반응형임을 고려하여 지도넣어주세염
                 </div>
-                <div id="tab03" class="tab-contents qna">
+                <div id="tab03 " class="tab-contents qna ">
                     <h5>상품 문의</h5>
-                    <div class="write">
-                        <textarea placeholder="주민번호, 전화번호, 이메일 등 개인정보를 남기면 타인에 의해 도용 될 수 있습니다. 개인정보는 상품문의에 남기지 말아주세요."></textarea>
-                        <button class="submit" href="#LINK" onclick="saveQna()">문의하기</button>
+                    <div class="write ">
+                        <textarea placeholder="주민번호, 전화번호, 이메일 등 개인정보를 남기면 타인에 의해 도용 될 수 있습니다. 개인정보는 상품문의에 남기지 말아주세요. "></textarea>
+                        <button class="submit " href="#LINK " onclick="saveQna() ">문의하기</button>
                     </div>
                     <h5>상품 문의보기</h5>
-                    <div id="qnaWrap">
+                    <div id="qnaWrap ">
                         <ul>
                             <li>
                                 로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
@@ -410,15 +412,15 @@
                                     <span>16.12.21 16:51</span>
                                 </p>
 
-                                <button class="del">삭제 <i class="fa fa-times" aria-hidden="true"></i></button>
+                                <button class="del ">삭제 <i class="fa fa-times " aria-hidden="true "></i></button>
                             </li>
-                            <li class="reply">
-                                <i class="fa fa-level-up fa-rotate-90" aria-hidden="true"></i>로그인하지 않아도 문의사항 잘 저장되고 있어요~
+                            <li class="reply ">
+                                <i class="fa fa-level-up fa-rotate-90 " aria-hidden="true "></i>로그인하지 않아도 문의사항 잘 저장되고 있어요~
                                 <p>관리자 테스트
                                     <span>16.12.21 16:53</span>
                                 </p>
 
-                                <button class="del">삭제 <i class="fa fa-times" aria-hidden="true"></i></button>
+                                <button class="del ">삭제 <i class="fa fa-times " aria-hidden="true "></i></button>
                             </li>
                             <li>
                                 비회원로그인 상태임.
@@ -434,8 +436,8 @@
                                     <span>16.12.21 15:26</span>
                                 </p>
                             </li>
-                            <li class="reply">
-                                <i class="fa fa-level-up fa-rotate-90" aria-hidden="true"></i> 볼수 있네요
+                            <li class="reply ">
+                                <i class="fa fa-level-up fa-rotate-90 " aria-hidden="true "></i> 볼수 있네요
                                 <p>관리자 테스트
                                     <span>16.12.21 15:29</span>
                                 </p>
@@ -465,62 +467,62 @@
                                 </p>
                             </li>
                         </ul>
-                        <div class="pagenation">
-                            <a class="arrow" href="#">
-                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <div class="pagenation ">
+                            <a class="arrow " href="# ">
+                                <i class="fa fa-angle-left " aria-hidden="true "></i>
                             </a>
-                            <a href="#">1</a>
+                            <a href="# ">1</a>
                             <strong>2</strong>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a class="arrow" href="#">
-                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="# ">3</a>
+                            <a href="# ">4</a>
+                            <a class="arrow " href="# ">
+                                <i class="fa fa-angle-right " aria-hidden="true "></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div id="tab04" class="tab-contents">
+                <div id="tab04 " class="tab-contents ">
                     <h5>한줄평 남기기</h5>
-                    <div class="write">
-                        <div class="star">
+                    <div class="write ">
+                        <div class="star ">
                             <h6>별점선택</h6>
-                            <button class="btn star" data="1">
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <button class="btn star " data="1 ">
+                                <i class="fa fa-star-o " aria-hidden="true "></i>
                                 1점</button>
-                            <button class="btn star" data="2">
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <button class="btn star " data="2 ">
+                                <i class="fa fa-star-o " aria-hidden="true "></i>
                                 2점</button>
-                            <button class="btn star" data="3">
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <button class="btn star " data="3 ">
+                                <i class="fa fa-star-o " aria-hidden="true "></i>
                                 3점</button>
-                            <button class="btn star" data="4">
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <button class="btn star " data="4 ">
+                                <i class="fa fa-star-o " aria-hidden="true "></i>
                                 4점</button>
-                            <button class="btn star" data="5">
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <button class="btn star " data="5 ">
+                                <i class="fa fa-star-o " aria-hidden="true "></i>
                                 5점</button>
                         </div>
-                        <textarea placeholder="주민번호, 전화번호, 이메일 등 개인정보를 남기면 타인에 의해 도용 될 수 있습니다. 개인정보는 상품문의에 남기지 말아주세요."></textarea>
-                        <button class="submit" href="#LINK" onclick="saveQna()">문의하기</button>
+                        <textarea placeholder="주민번호, 전화번호, 이메일 등 개인정보를 남기면 타인에 의해 도용 될 수 있습니다. 개인정보는 상품문의에 남기지 말아주세요. "></textarea>
+                        <button class="submit " href="#LINK " onclick="saveQna() ">문의하기</button>
                     </div>
-                    <div id="commentWrap">
+                    <div id="commentWrap ">
                         <ul>
                             <li>
-                                <div class="star">
-                                    <p class="on">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                <div class="star ">
+                                    <p class="on ">
+                                        <i class="fa fa-star " aria-hidden="true "></i>
                                     </p>
-                                    <p class="on">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <p class="on ">
+                                        <i class="fa fa-star " aria-hidden="true "></i>
                                     </p>
                                     <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
                                     </p>
                                     <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
                                     </p>
                                 </div>
                                 로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
@@ -529,24 +531,24 @@
                                 </p>
 
 
-                                <button class="del">삭제 <i class="fa fa-times" aria-hidden="true"></i></button>
+                                <button class="del ">삭제 <i class="fa fa-times " aria-hidden="true "></i></button>
                             </li>
                             <li>
-                                <div class="star">
-                                    <p class="on">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                <div class="star ">
+                                    <p class="on ">
+                                        <i class="fa fa-star " aria-hidden="true "></i>
                                     </p>
-                                    <p class="on">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <p class="on ">
+                                        <i class="fa fa-star " aria-hidden="true "></i>
                                     </p>
                                     <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
                                     </p>
                                     <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
                                     </p>
                                 </div>
                                 로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
@@ -555,21 +557,21 @@
                                 </p>
                             </li>
                             <li>
-                                <div class="star">
-                                    <p class="on">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                <div class="star ">
+                                    <p class="on ">
+                                        <i class="fa fa-star " aria-hidden="true "></i>
                                     </p>
-                                    <p class="on">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <p class="on ">
+                                        <i class="fa fa-star " aria-hidden="true "></i>
                                     </p>
                                     <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
                                     </p>
                                     <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
                                     </p>
                                 </div>
                                 로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
@@ -578,21 +580,21 @@
                                 </p>
                             </li>
                             <li>
-                                <div class="star">
-                                    <p class="on">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                <div class="star ">
+                                    <p class="on ">
+                                        <i class="fa fa-star " aria-hidden="true "></i>
                                     </p>
-                                    <p class="on">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <p class="on ">
+                                        <i class="fa fa-star " aria-hidden="true "></i>
                                     </p>
                                     <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
                                     </p>
                                     <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
                                     </p>
                                 </div>
                                 로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
@@ -602,21 +604,21 @@
 
                             </li>
                             <li>
-                                <div class="star">
-                                    <p class="on">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                <div class="star ">
+                                    <p class="on ">
+                                        <i class="fa fa-star " aria-hidden="true "></i>
                                     </p>
-                                    <p class="on">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <p class="on ">
+                                        <i class="fa fa-star " aria-hidden="true "></i>
                                     </p>
                                     <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
                                     </p>
                                     <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
                                     </p>
                                 </div>
                                 로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
@@ -625,21 +627,21 @@
                                 </p>
                             </li>
                             <li>
-                                <div class="star">
-                                    <p class="on">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                <div class="star ">
+                                    <p class="on ">
+                                        <i class="fa fa-star " aria-hidden="true "></i>
                                     </p>
-                                    <p class="on">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <p class="on ">
+                                        <i class="fa fa-star " aria-hidden="true "></i>
                                     </p>
                                     <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
                                     </p>
                                     <p>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-star-o " aria-hidden="true "></i>
                                     </p>
                                 </div>
                                 로그인하지 않고 상품문의를 하면 문의DB에 사용자 아이디가 GUEST로 저장되나요? 그렇게 하게 만들었는데...
@@ -648,44 +650,44 @@
                                 </p>
                             </li>
                         </ul>
-                        <div class="pagenation">
-                            <a class="arrow" href="#">
-                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <div class="pagenation ">
+                            <a class="arrow " href="# ">
+                                <i class="fa fa-angle-left " aria-hidden="true "></i>
                             </a>
-                            <a href="#">1</a>
+                            <a href="# ">1</a>
                             <strong>2</strong>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a class="arrow" href="#">
-                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="# ">3</a>
+                            <a href="# ">4</a>
+                            <a class="arrow " href="# ">
+                                <i class="fa fa-angle-right " aria-hidden="true "></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="top-btn">
-                    <a href="#"><i class="icon-up-small-1"></i></a>
+                <div class="top-btn ">
+                    <a href="# "><i class="icon-up-small-1 "></i></a>
                 </div>
             </div>
         </section>
 
         <!-- E:mainContent -->
         <!-- S:footer -->
-        <footer id="footer">
-            <div class="container">
+        <footer id="footer ">
+            <div class="container ">
                 <h2>
                     제주특별자치도 서귀포시
                 </h2>
-                <div class="footer-util">
+                <div class="footer-util ">
                     <ul>
                         <li>
-                            <a href="">개인정보취급방침</a>
+                            <a href=" ">개인정보취급방침</a>
                         </li>
                         <li>
-                            <a href="">저작권보호정책</a>
+                            <a href=" ">저작권보호정책</a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href=" ">
                                 <i>제주안내 콜센터</i>
                                 <strong>064-120</strong>
                             </a>
@@ -706,15 +708,15 @@
                     <strong>2nd Building</strong>
                     55, Sinjung-ro, Seogwipo-si, Jeju-do. Republic of Korea 63565</p>
             </address>
-                <p class="copyright">Copyright© Seogwipo-si, All right Reserved.</p>
+                <p class="copyright ">Copyright© Seogwipo-si, All right Reserved.</p>
             </div>
         </footer>
         <!-- E:footer -->
 
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/common.js"></script>
-        <!--[if lt IE 9]> <script src="js/respond.min.js"></script> <script
-    src="js/html5shiv.js"></script> <![endif]-->
+        <script src="js/jquery-1.11.3.min.js "></script>
+        <script src="js/common.js "></script>
+        <!--[if lt IE 9]> <script src="js/respond.min.js "></script> <script
+    src="js/html5shiv.js "></script> <![endif]-->
 </body>
 
 </html>
