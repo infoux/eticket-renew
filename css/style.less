@@ -5192,6 +5192,19 @@ body {
                                     border-bottom-width: 1px;
                                 }
 
+                                .search-img {
+                                    .absolute;
+                                    .rem(width, 75);
+                                    .rem(top, 70);
+                                    .rem(left, 30);
+
+                                    @media all and (min-width: 1200px) {
+                                        width: 80px;
+                                        top: 95px;
+                                        left: 40px;
+                                    }
+                                }
+
                                 h6 {
                                     .rem(font-size, 12);
                                     .rem(margin, 0 0 10);
@@ -5202,7 +5215,6 @@ body {
                                 }
 
                                 dl {
-                                    .relative;
                                     .inline-block;
                                     width: 100%;
                                     .rem(font-size, 10);
@@ -5226,13 +5238,22 @@ body {
                                     }
 
                                     dd {
-                                        // .rem(margin, 0 0 4);
-                                        .rem(margin-left, 105);
+                                        .rem(margin-left, 100);  
                                         line-height: 1.4;
 
                                         @media all and (min-width: 1200px) {
-                                            margin-left: 120px;
+                                            margin-left: 110px;
                                             padding: 5px 0 0 0;
+                                        }
+
+                                        &.restore {
+                                            .rem(margin, 0 0 4);
+                                            margin-left: 0;
+
+                                            @media all and (min-width: 1200px) {
+                                                margin-left: 0;
+
+                                            }
                                         }
 
                                         strong {
@@ -5249,24 +5270,7 @@ body {
                                                 .rem(padding, 0 4);
                                             }
                                         }
-
-                                        &.search-img {
-                                            .rem(margin-left, 16);
-
-                                            img {
-                                                .absolute;
-                                                .rem(width, 75);
-                                                .rem(top, 35);
-
-                                                @media all and (min-width: 1200px) {
-                                                    width: 80px;
-                                                    top: 45px;
-                                                }
-                                            }
-                                        }
                                     }
-
-
                                 }
 
                                 
@@ -5328,10 +5332,10 @@ body {
                                 }
 
                                 .p_cancel {
-                                    .rem(margin, 15 0 0 0);
+                                    .rem(margin, 20 0 0 0);
 
                                     @media all and (min-width: 1200px) {
-                                        margin: 30px 0 0 0;
+                                        margin: 42px 0 0 0;
                                     }
                                 }
 
