@@ -673,19 +673,6 @@ article.popup-notice {
                 }
 
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
         div.infomation {
@@ -1749,7 +1736,24 @@ body {
 
                 }
             }
+
+            &.no-img {
+
+                div.container{
+                    .rem(min-height, 510);
+                    
+                    @media all and (min-width: 1200px) {
+                        height: 620px;
+                    }
+               }
+            }
+            
         }
+
+
+        
+
+        
 
         section.main-list {
             .center;
@@ -2216,6 +2220,163 @@ body {
             }
         }
 
+        /* camp */
+        section.camp-head {
+            .inline-block;
+            width: 100%;
+            .center;
+            background: #f7f7f7;
+
+            .container {
+                background: @white;
+                .relative;
+                .zero;
+                padding: 0;
+
+                @media all and (min-width: 1200px) {
+                    padding: 0 70px;
+                }
+
+                div.camp-wrap {
+
+                    @media all and (min-width: 1200px) {
+                        padding-top: 70px;
+                    }
+
+                    p.img {
+                        .hidden;
+                        .mapazero;
+                        width: 100%;
+                        .rem(height, 250);
+                        padding: 0 -25%;
+                        
+                        @media all and (min-width: 1200px) {
+                            width: 100%;
+                            height: 290px;
+                        }
+
+                        img {
+                            .none;
+                        }
+                    }
+
+                    div.title {
+                        width: 100%;
+                        .rem(padding, 10);
+                        
+                        @media all and (min-width: 1200px) {
+                            padding: 50px 0;
+                            .relative;
+                        }
+                       
+                        h3 {
+                            .rem(font-size, 18);
+                            .rem(margin, 20 0 10 0);
+                            .center;
+
+                            @media all and (min-width: 1200px) {
+                                .inline-block;
+                                width: 300px;
+                                .mapazero;
+                                .left;
+                                font-size: 38px;
+                                .normal;
+                            }
+                        }
+
+                        div.type {
+
+                            @media all and (min-width: 1200px) {
+                                .absolute;
+                                right: 150px;
+                                top: 60px;
+                            }
+
+                            ul {
+                                .mapazero;
+                                .no-list;
+                                .rem(width, 150);
+                                margin: 0 auto;
+                                .rem(padding-left, 15);
+
+                                @media all and (min-width: 1200px) {
+                                    width: 250px;
+                                }
+    
+                                li {
+                                    .inline-block;
+                                    
+                                    input {
+                                        .none;
+                                    }
+    
+                                    label {
+                                        .rem(margin, 0 20 0 0);
+                                        .rem(font-size, 12);
+    
+                                        @media all and (min-width: 1200px) {
+                                            font-size: 17px;
+                                            margin: 0 20px 0 0;
+                                        }
+    
+                                        &::before {
+                                            content: "";
+                                            .inline-block;
+                                            .rem(width, 6);
+                                            .rem(height, 6);
+                                            .rem(margin, 0 4 0 0);
+                                            background: #eee;
+                                            border: 6px solid @white;
+                                            border-radius: 50%;
+                                            .drop-shadow();
+    
+                                            @media all and (min-width: 1200px) {
+                                                margin: 0 10px 0 0;
+                                                border-width: 4px;
+                                                width: 10px;
+                                                height: 10px;
+                                            }
+                                        }
+                                    }
+    
+                                    input:checked + label {
+    
+                                        &::before {
+                                            background: #f3740b;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        button {
+                            .block;
+                            width: 100%;
+                            .rem(height, 30);
+                            .gradient(#ffa306, #ff8900, #ff7506);
+                            color: @white;
+                            border: none;
+                            .rem(font-size, 12);
+                            margin: 30px auto;
+                            .pointer;
+
+                            @media all and (min-width: 1200px) {
+                                .inline-block;
+                                width: 200px;
+                                height: 45px;
+                                font-size: 16px;
+                                .absolute;
+                                right: 0;
+                                top: 19px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        
+
         /* arthall */
         section.arthall-head {
             .inline-block;
@@ -2255,25 +2416,6 @@ body {
                             .none;
                         }
                     }
-
-                    // p.cultural_center {
-                    //     .hidden;
-                    //     .mapazero;
-                    //     .rem(height, 240);
-                    //     max-width: 100%;
-                    //     padding: 0 -25%;
-                    //     .center;
-
-                    //     @media all and (min-width: 1200px) {
-                    //         width: 100%;
-                    //         height: 250px;
-                    //         margin: 0;
-                    //     }
-
-                    //     img {
-                    //         .none;
-                    //     }
-                    // }
 
                     div.title {
                         width: 100%;
@@ -4265,7 +4407,19 @@ body {
                                 }
                             }
                         }
+
+                        p.camp-info {
+                            .rem(font-size, 10);
+                            .rem(line-height, 15);
+
+                            @media all and (min-width: 1200px) {
+                                font-size: 16px;
+                                line-height: 25px;
+                            }
+                        }
                     }
+
+
 
                     &#tab04 {
 
@@ -4902,7 +5056,10 @@ body {
                                         }
                                     }
 
+
                                 }
+
+                                
 
                                 div.payment {
                                     .rem(font-size, 10);
@@ -4996,9 +5153,12 @@ body {
                             }
                         }
 
+                        &.camp-product {
+                            
+                        }
+                        
                     }
-
-
+                    
                     div.input_box {
 
                         h4 {
@@ -5061,6 +5221,8 @@ body {
                                 }
                             }
                         }
+
+                        
 
                         textarea {
                             .inline-block;
@@ -5217,8 +5379,6 @@ body {
                             }
 
                         }
-
-
                     }
 
 
@@ -6413,6 +6573,156 @@ body {
                                 }
                             }
 
+                            &.camp-product {
+
+                                li {
+                                    
+
+                                    @media all and (min-width: 1200px) {
+                                        height: 350px;
+                                    }
+                                
+                                    h6 {
+                                        width: 100%;
+                                        border-bottom: 1px solid #ccc;
+                                        .rem(padding, 0 0 10 5);
+
+                                        @media all and (min-width: 1200px) {
+                                            padding: 0 0 20px 10px;
+                                        }
+                                    }
+
+                                    dl {
+                                        .rem(padding, 0 0 0 5);
+                                        .rem(font-size, 10);
+                                        
+                                        @media all and (min-width: 1200px) {
+                                            font-size: 16px;
+                                            padding: 0 0 0 10px;
+                                        }
+
+                                        dd{
+                                            width: 100%;
+                                            .rem(margin, 10 0);
+
+                                            @media all and (min-width: 1200px) {
+                                                margin: 20px 0;
+                                            }
+
+                                            strong {
+                                                .inline-block;
+                                                .rem(width, 80);
+
+                                                &.attend {
+                                                    .block;
+                                                    .rem(padding-bottom, 10);
+
+                                                    @media all and (min-width: 1200px) {
+                                                        .inline-block;
+                                                    }
+                                                }
+
+                                                @media all and (min-width: 1200px) {
+                                                    .inline-block;
+                                                }
+                                            }
+
+                                            label {
+                                                .rem(margin-right, 2);
+                                                .rem(line-height, 16);
+                                                .rem(font-size, 10);
+
+                                                @media all and (min-width: 1200px) {
+                                                    font-size: 16px;
+                                                    margin-right: 5px;
+                                                }
+                                            }
+
+                                            select {
+                                                .rem(width, 34);
+                                                .rem(margin-right, 10);
+                                                border-radius: 4px;
+
+                                                @media all and (min-width: 1200px) {
+                                                    width: 80px;
+                                                    padding: 2px;
+                                                }
+                                            }
+
+                                            input {
+                                                .none;
+                                            }
+
+                                            label.elect-use {
+                                                .rem(margin, 0 20 0 0);
+                                                .rem(font-size, 10);
+                                                .rem(padding, 0 0 8 0);
+            
+                                                @media all and (min-width: 1200px) {
+                                                    font-size: 17px;
+                                                    margin: 0 20px 0 0;
+                                                }
+
+                                                &::before {
+                                                    content: "";
+                                                    .inline-block;
+                                                    .rem(width, 4.5);
+                                                    .rem(height, 4.5);
+                                                    .rem(margin, 0 4 0 0);
+                                                    background: #eee;
+                                                    border: 6px solid @white;
+                                                    border-radius: 50%;
+                                                    .drop-shadow();
+            
+                                                    @media all and (min-width: 1200px) {
+                                                        margin: 0 10px 0 0;
+                                                        border-width: 4px;
+                                                        width: 10px;
+                                                        height: 10px;
+                                                    }
+                                                }
+                                            }
+                                            
+                                            input:checked + label {
+        
+                                                &::before {
+                                                    background: #f3740b;
+                                                }
+                                            }
+
+                                            div.age-wrap {
+                                                background: #f4f4f4;
+                                                width: 100%;
+                                                .rem(height, 50);
+                                                .rem(padding, 10);
+                                                border-radius: 8px;
+                                                .rem(margin-top, 10);
+
+                                                @media all and (min-width: 1200px) {
+                                                    width: 480px;
+                                                    height: 40px;
+                                                    .center;
+                                                    border-radius: 50px;
+                                                    padding: 10px;
+                                                    font-size: 14px;
+                                                    .absolute;
+                                                    bottom: 30px;
+                                                    left: 125px;
+                                                }
+
+                                                b {
+                                                    .rem(margin, 5);
+
+                                                    &:first-child {
+                                                        margin: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
                         }
 
                         div.input_box {
@@ -6542,7 +6852,241 @@ body {
                                     }
                                 }
                             }
+
+                            &.camp-fellow {
+
+                                dl {
+                                    .rem(padding, 20 10);
+
+                                    @media all and (min-width: 1200px) {
+                                        padding: 30px 20px;
+                                    }
+
+                                    dt {
+                                        width: 100%;
+                                        .bold;
+                                        .rem(margin-top, 10);
+
+                                        @media all and (min-width: 1200px) {
+                                            margin: 15px 0 10px 0;
+                                            font-size: 18px;
+                                        }
+
+                                    }
+
+                                    dd {
+                                        .block;
+                                        margin: 0;
+
+                                        p {
+                                            margin: 0;
+                                            .rem(padding, 5 0);
+                                            .rem(font-size, 12);
+                                            
+                                            @media all and (min-width: 1200px) {
+                                                margin-right: 15px;
+                                                font-size: 16px;
+                                            }
+                                        }
+                                    }
+
+                                    input {
+                                        .rem(margin-bottom, 5);
+
+                                        @media all and (min-width: 1200px) {
+                                            margin-right: 40px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            /* camp-discount */
+                            &.camp-discount {
+
+                                div {
+                                    border: 1px solid #ccc;
+                                    .rem(padding, 20);
+                                    .rem(margin-bottom, 20);
+
+                                    p {
+                                        .rem(font-size, 11);
+                                        .center;
+
+                                        @media all and (min-width: 1200px) {
+                                            font-size: 16px;
+                                            margin-bottom: 30px;
+                                        }
+
+                                        span {
+                                            .rem(padding, 5);
+
+                                            @media all and (min-width: 1200px) {
+                                                padding: 8px;
+                                            }
+                                        }
+                                    }
+
+                                    div.total-wrap {
+                                        .relative;
+                                        background: #f4f4f4;
+                                        border: none;
+                                        border-radius: 7px;
+                                        margin: 0;
+
+                                        @media all and (min-width: 1200px) {
+                                            border-radius: 40px;
+                                            padding: 5px;
+                                            height: 80px;
+                                            line-height: 40px;
+                                            .center;
+                                        }
+
+                                        p {
+                                            .rem(font-size, 12);
+
+                                            @media all and (min-width: 1200px) {
+                                                .inline-block;
+                                                font-size: 16px;
+                                                margin-right: 10px;
+                                            }
+
+                                            strong {
+
+                                                @media all and (min-width: 1200px) {
+                                                    margin: 0 5px;
+                                                }
+                                            }
+                                        }
+
+                                        select {
+                                            .block;
+                                            width: 100%;
+                                            .rem(height, 28);
+                                            border-radius: 5px;
+                                            border: 1px solid #ccc;
+                                            .rem(padding-left, 5);
+                                            .rem(font-size, 10);
+
+                                            @media all and (min-width: 1200px) {
+                                                .inline-block;
+                                                width: 280px;
+                                                height: 40px;
+                                                font-size: 14px;
+                                                padding: 4px;
+
+                                            }
+                                        }
+
+                                        div {
+                                            .mapazero;
+                                            .rem(width, 115);
+                                            margin: 0 auto;
+                                            border: none;
+
+                                            @media all and (min-width: 1200px) {
+                                                .inline-block;  
+                                                width: 160px; 
+                                            }
+
+                                            button {
+                                                .rem(width, 55);
+                                                .rem(height, 22);
+                                                .rem(font-size, 10);
+                                                border: none;
+                                                color: @white;
+                                                background: #333;
+                                                .rem(margin, 15 0);
+                                                .pointer;
+
+                                                @media all and (min-width: 1200px) {
+                                                    width: 65px;
+                                                    height: 30px;
+                                                    font-size: 12px;
+                                                }
+                                            }
+
+                                            button.ok {
+                                                background: #ff7800;
+                                            }
+                                        }
+                                    }
+
+                                    div.info-text {
+                                        border: none;
+                                        .center;
+                                        color: #ff7800;
+                                        margin: 0;
+                                        .rem(font-size, 12);
+                                        .rem(padding, 20 5);
+                                        .rem(line-height, 15);
+
+                                        @media all and (min-width: 1200px) {
+                                                font-size: 14px;
+                                                margin: 15px 0;
+                                        }
+                                    
+                                    }
+
+                                    div.discount_result {
+                                        border: none;
+                                        border-top: 1px dotted #ccc;
+                                        margin: 0;
+                                        .rem(padding, 20 0 0 0);
+                                        .center;
+
+
+                                        p {
+                                            .inline-block;
+                                            .rem(margin, 5 0);
+                                            .rem(font-size, 12);
+
+                                            @media all and (min-width: 1200px) {
+                                                font-size: 16px;   
+                                            }
+                                        }
+
+                                        p.minus {
+
+                                            i::before {
+                                                color: #ff7800;
+                                                .rem(margin, 0 5);
+                                                .rem(font-size, 12);
+
+                                                @media all and (min-width: 1200px) {
+                                                    font-size: 16px;
+                                                    margin: 0 10px;
+                                                }
+                                            }
+                                        }
+
+                                        p.result {
+                                            .block;
+
+                                            @media all and (min-width: 1200px) {
+                                                .inline-block;
+                                            }
+
+                                            i::before {
+                                                color: #ff7800;
+                                                .rem(margin, 0 5);
+                                                .rem(font-size, 12);
+
+                                                @media all and (min-width: 1200px) {
+                                                    font-size: 16px;
+                                                    margin: 0 10px;
+                                                }
+                                            }
+
+                                            strong {
+                                                color: #ff7800;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
+
+                        
 
                         div.payment {
 
@@ -6960,10 +7504,11 @@ body {
 
     section.seat-check {
         .rem(font-size, 20);
+        
 
         div.popup {
             width: 100%;
-            // min-height: 100%;
+            min-height: 100%;
             margin: 0;
             background: rgba(0, 0, 0, 0.7);
             z-index: 999;
@@ -7313,6 +7858,21 @@ body {
 
                                 
                             }
+
+                            li.seat-line {
+                                .rem(width, 255);
+                                .rem(height, 25);
+                                .rem(line-height, 25);
+                                .rem(margin, 0 2);
+                                .rem(font-size, 10);
+                            
+                                @media all and (min-width: 1200px) {
+                                    width: 340px;
+                                    height: 35px;
+                                    line-height: 35px;
+                                    font-size: 12px;
+                                }
+                            }
                 
                             li.tileview-content {
                                 .rem(width, 25);
@@ -7331,13 +7891,16 @@ body {
                             }
 
                             li.m_blank {
-                                .rem(width, 10);
+                                .rem(width, 15);
                                 .rem(height, 30);
                                 margin: 0;
+                                .rem(font-size, 9);
+                                .rem(line-height, 30);
 
                                 @media all and (min-width: 1200px) {
                                     width: 20px;
                                     height: 40px;
+                                    line-height: 40px;
                                 }
                             }
 

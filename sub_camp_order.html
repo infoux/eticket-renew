@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>서귀포시 E-Ticket</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- S:skip_navi -->
+    <div class="skip_navi">
+        <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
+        <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+        <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+    </div>
+    <!-- E:skip_navi -->
+    <!-- S:header -->
+    <header id="header">
+        <div class="container">
+
+            <h1>
+                <a href="">서귀포시 E-Ticket</a>
+            </h1>
+
+            <button class="mobileMenu">메뉴열기
+                    <i class="icon-menu" aria-hidden="true"></i>
+                </button>
+        </div>
+        <!-- S:main_menu -->
+        <nav id="main-menu">
+            <div class="container">
+                <ul class="util-menu">
+                    <li class="mypage"><a href="">마이페이지</a></li>
+                    <li class="login"><a href="">로그인</a></li>
+                    <li class="customer"><a href=""><i class="icon-user-o" aria-hidden="true"></i>고객센터</a></li>
+                </ul>
+                <ul class="menu-list">
+                    <li>
+                        <h2>
+                            <a href="http://daum.net">휴양숙박시설</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a class="active" href="">서귀포자연휴양림</a>
+                            </li>
+                            <li>
+                                <a href="">붉은오름자연휴양림</a>
+                            </li>
+                            <li>
+                                <a href="">서귀포치유의숲</a>
+                            </li>
+                            <li>
+                                <a href="">모구리야영장</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="#">공연예매</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">예술의전당</a>
+                            </li>
+                            <li>
+                                <a href="">김정문화회관</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="#">문화시설</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">이중섭미술관</a>
+                            </li>
+                            <li>
+                                <a href="">기당미술관</a>
+                            </li>
+                            <li>
+                                <a href="">서복전시관</a>
+                            </li>
+                            <li>
+                                <a href="">소암기념관</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="#">관광지</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">천지연폭포</a>
+                            </li>
+                            <li>
+                                <a href="">천제연폭포</a>
+                            </li>
+                            <li>
+                                <a href="">정방폭포</a>
+                            </li>
+                            <li>
+                                <a href="">주상절리대</a>
+                            </li>
+                            <li>
+                                <a href="">산방산암벽식물지대</a>
+                            </li>
+                            <li>
+                                <a href="">감귤박물관</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="#">커뮤니티</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="">이용후기</a>
+                            </li>
+                            <li>
+                                <a href="">FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="check">
+                        <h2>
+                            <a href="#">
+                                <i class="icon-check" aria-hidden="true"></i>예약확인</a>
+                        </h2>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <!-- E:main_menu -->
+    </header>
+    <!-- E:header -->
+    <!-- S:mainContent -->
+    <div id="content">
+        <section class="sub order step">
+            <ul class="sub_navigation">
+                <li>HOME</li>
+                <li><strong>주문/결제</strong></li>
+            </ul>
+            <div class="container">
+                <h3>주문/결제</h3>
+                <ul>
+                    <li> <strong>01.</strong> 장바구니 <i class="fa fa-angle-right" aria-hidden="true"></i> </li>
+                    <li class="active"> <strong>02.</strong> 주문/결제 <i class="fa fa-angle-right" aria-hidden="true"></i> </li>
+                    <li> <strong>03.</strong> 주문완료 </li>
+                </ul>
+            </div>
+        </section>
+        <section class="sub order sheet">
+            <div class="container">
+                <h4>상품주문내역</h4>
+                <div class="product camp-product">
+                    <ul>
+                        <li>
+                            <h6>모구리야영장</h6>
+
+                            <dl>
+                                <dd><strong>예약구역</strong>F23</dd>
+                                <dd><strong>예약일자</strong>[2박 3일] 2018.06.26 ~ 2018.06.28</dd>
+                                <dd>
+                                    <strong>전기사용료</strong>
+                                    <input id="select-use" name="select-type" type="radio" checked>
+                                    <label class="elect-use" for="select-use">사용</label>
+
+                                    <input id="select-notUse" name="select-type" type="radio" checked>
+                                    <label class="elect-use" for="select-notUse">미사용</label>
+                                </dd>
+                                <dd>
+                                    <strong class="attend">동반참석자</strong>
+
+                                    <label for="adult">성인</label>
+                                    <select id="adult">
+                                        <option value="1">1명</option>
+                                        <option value="2">2명</option>
+                                        <option value="3">3명</option>
+                                        <option value="4">4명</option>
+                                    </select>
+
+                                    <label for="teenager">청소년</label>
+                                    <select id="teenager">
+                                        <option value="1">1명</option>
+                                        <option value="2">2명</option>
+                                        <option value="3">3명</option>
+                                        <option value="4">4명</option>
+                                    </select>
+
+                                    <label for="kids">어린이</label>
+                                    <select id="kids">
+                                        <option value="1">1명</option>
+                                        <option value="2">2명</option>
+                                        <option value="3">3명</option>
+                                        <option value="4">4명</option>
+                                    </select>
+
+                                    <div class="age-wrap">
+                                        <b>성인</b> 만 24세 이상
+                                        <b>청소년</b> 만 8세 이상 ~ 만 24세 미만
+                                        <b>어린이</b> 만 8세 미만
+                                    </div>
+                                </dd>
+
+                            </dl>
+                        </li>
+                    </ul>
+                    <p class="total"> 합계금액 <strong>74,000원</strong></p>
+                </div>
+
+                <div class="input_box camp-discount">
+                    <h5>할인내역</h5>
+
+                    <div>
+                        <p>F23 <span>/</span> [2박 3일] 2018.06.26 ~ 2018.06.28</p>
+
+
+                        <div class="total-wrap">
+                            <p class="price">합계금액
+                                <strong>000,000원</strong>
+                            </p>
+
+                            <select>
+                                <option>할인선택</option>
+                                <option>[특별할인] 30%할인</option>
+                                <option>[특별할인] 20%할인</option>
+                            </select>
+
+                            <div>
+                                <button class="btn ok">적용</button>
+                                <button class="btn cancle">적용취소</button>
+                            </div>
+                        </div>
+
+                        <div class="info-text">
+                            선택하신 날짜중 성수기,주말요금에 포함되는 날짜에는 할인 적용이 되지 않습니다.
+                        </div>
+
+                        <div class="discount_result">
+                            <p>상품금액
+                                <strong>58,000원</strong>
+                            </p>
+                            <p class="minus">
+                                <i class="fa fa-minus-circle" aria-hidden="true"></i>할인금액
+                                <strong>5,000원</strong>
+                            </p>
+                            <p class="result">
+                                <i class="fa fa-pause-circle fa-rotate-90" aria-hidden="true"></i>최종결제금액
+                                <strong>58,000원</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="input_box essential">
+                    <h5>주문자 정보 <small>필수입력</small></h5>
+                    <dl>
+                        <dt>주문자</dt>
+                        <dd>
+                            <input type="text"> </dd> <dt>핸드폰</dt>
+                        <dd>
+                            <input type="text">
+                            <p> <i class="fa fa-info-circle" aria-hidden="true"></i> "-"제외, 숫자만 입력. 핸드폰번호 오입력시 예약확인 SMS발송이 되지 않습니다. </p>
+                        </dd>
+                        <dt>E-MAIL</dt>
+                        <dd class="mail_select">
+                            <input type="text" class="at"><strong>@</strong>
+                            <input type="text">
+                            <select>
+                                <option>직접입력</option>
+                            </select>
+                        </dd>
+                        <dt>비밀번호</dt>
+                        <dd>
+                            <input type="text">
+                            <p> <i class="fa fa-info-circle" aria-hidden="true"></i> 6~8자 영문, 숫자, 특수문자(!,@,#,$,%,^,~,#,_,-,+,=,{,},[,])등을 조합하여 입력하십시오. </p>
+                        </dd> <dt>비밀번호 확인</dt>
+                        <dd>
+                            <input type="text">
+                            <p> <i class="fa fa-info-circle" aria-hidden="true"></i> 비밀번호는 예약확인시 사용되므로 기억하셔야 합니다. </p>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="input_box fellow camp-fellow">
+                    <h5>동승자 정보</h5>
+                    <dl>
+                        <dt>성인</dt>
+                        <dd>
+                            <p>이름</p>
+                            <input type="text">
+
+                            <p>생년월일</p>
+                            <input type="text">
+                        </dd>
+
+                        <dt>청소년</dt>
+                        <dd>
+                            <p>이름</p>
+                            <input type="text">
+
+                            <p>생년월일</p>
+                            <input type="text">
+                        </dd>
+
+                        <dt>어린이</dt>
+                        <dd>
+                            <p>이름</p>
+                            <input type="text">
+
+                            <p>생년월일</p>
+                            <input type="text">
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="payment">
+                    <h5>결제방법</h5>
+                    <ul class="tabs">
+                        <li><a class="active" data="tab01">신용/체크카드</a></li>
+                        <li><a data="tab02">실시간 계좌이체</a></li>
+
+                    </ul>
+                    <div id="tab01" class="tab-contents active">
+                        <h6>개인정보 수집 및 이용동의</h6>
+                        <div class="scroll">
+                            <p>수집한 개인정보를 다음의 목적으로 보유하고 활용합니다.</p>
+                            <p>1. 개인정보의 수집ㆍ이용 목적</p>
+                            <p>- 온라인 예약신청 관리 및 예약서비스 제공</p>
+                            <p>2. 수집ㆍ이용하려는 개인정보의 항목</p>
+                            <p>- 성명, 주소, 이메일, 연락처, 금융계좌()</p>
+                            <p>3. 개인정보의 보유 및 이용기간 : 3년</p>
+                            <p>(보존이유 : 산림 문화ㆍ휴양에 관한 법률 제17조에 의한 예약자관리)</p>
+                            <p>4. 이용자는 개인정보 수집 및 이용 동의에 대한 거부 권리가 있습니다.</p>
+                            <p>단, 개인정보 수집·이용에 동의를 하지 않으실 경우에는 예약이 제한됩니다. </p>
+                        </div>
+                        <p class="agree">
+                            <label for="agree01">개인정보 제공에 동의합니다.</label>
+                            <input id="agree01" type="checkbox"> </p>
+                        <h6>위약금 안내</h6>
+                        <div class="scroll">
+                            <p>-천재지변 등으로 인하여 자연휴양림 시설물 사용이 어렵다고 판단될 때 : 전액환급 </p>
+                            <p>-자연휴양림의 사정으로 인하여 시설을 사용할 수 없는 경우 : 전액환급(이 경우 사용일부터 5일 전까지 통보하여야 한다)</p>
+                            <p>-사용일부터 3일 전까지 예약을 취소한 경우 : 전액환급</p>
+                            <p>-사용일부터 2일 전까지 예약을 취소한 경우 : 총 사용료의 90퍼센트에 해당하는 금액을 환급</p>
+                            <p>-사용일부터 1일 전까지 예약을 취소한 경우 : 총 사용료의 80퍼센트에 해당하는 금액을 환급</p>
+                            <p>-사용일 당일에 예약을 취소하거나 취소하지 않은 상태에서 입실하지 않은 경우 : 총 사용료의 70퍼센트에 해당하는 금액을 환급</p>
+                            <p>-예약 취소시 환불 계좌는 입금자와 계좌번호, 예금주가 동일하여야 합니다.</p>
+                        </div>
+                        <p class="agree">
+                            <label for="agree02">위의 위약금 내용을 확인 하였습니다.</label>
+                            <input id="agree02" type="checkbox"> </p>
+                        <div class="btn-area">
+                            <ul>
+                                <li>상품금액 <strong>58,000원</strong></li>
+                                <li><i class="fa fa-minus-circle" aria-hidden="true"></i>할인금액 <strong>1,000원</strong></li>
+                                <li class="result"><i class="fa fa-pause-circle fa-rotate-90" aria-hidden="true"></i>최종결제금액 <strong>57,000원</strong></li>
+                            </ul> <a class="btn ok" href="">카드결제하기</a> <a class="btn cancle" href="">취소하기</a> </div>
+                    </div>
+                    <div id="tab02" class="tab-contents">
+                        <h6>개인정보 수집 및 이용동의</h6>
+                        <div class="scroll">
+                            <p>수집한 개인정보를 다음의 목적으로 보유하고 활용합니다.</p>
+                            <p>1. 개인정보의 수집ㆍ이용 목적</p>
+                            <p>- 온라인 예약신청 관리 및 예약서비스 제공</p>
+                            <p>2. 수집ㆍ이용하려는 개인정보의 항목</p>
+                            <p>- 성명, 주소, 이메일, 연락처, 금융계좌()</p>
+                            <p>3. 개인정보의 보유 및 이용기간 : 3년</p>
+                            <p>(보존이유 : 산림 문화ㆍ휴양에 관한 법률 제17조에 의한 예약자관리)</p>
+                            <p>4. 이용자는 개인정보 수집 및 이용 동의에 대한 거부 권리가 있습니다.</p>
+                            <p>단, 개인정보 수집·이용에 동의를 하지 않으실 경우에는 예약이 제한됩니다. </p>
+                        </div>
+                        <p class="agree">
+                            <label for="agree01">개인정보 제공에 동의합니다.</label>
+                            <input id="agree01" type="checkbox"> </p>
+                        <h6>위약금 안내</h6>
+                        <div class="scroll">
+                            <p>-천재지변 등으로 인하여 자연휴양림 시설물 사용이 어렵다고 판단될 때 : 전액환급 </p>
+                            <p>-자연휴양림의 사정으로 인하여 시설을 사용할 수 없는 경우 : 전액환급(이 경우 사용일부터 5일 전까지 통보하여야 한다)</p>
+                            <p>-사용일부터 3일 전까지 예약을 취소한 경우 : 전액환급</p>
+                            <p>-사용일부터 2일 전까지 예약을 취소한 경우 : 총 사용료의 90퍼센트에 해당하는 금액을 환급</p>
+                            <p>-사용일부터 1일 전까지 예약을 취소한 경우 : 총 사용료의 80퍼센트에 해당하는 금액을 환급</p>
+                            <p>-사용일 당일에 예약을 취소하거나 취소하지 않은 상태에서 입실하지 않은 경우 : 총 사용료의 70퍼센트에 해당하는 금액을 환급</p>
+                            <p>-예약 취소시 환불 계좌는 입금자와 계좌번호, 예금주가 동일하여야 합니다.</p>
+                        </div>
+                        <p class="agree">
+                            <label for="agree02">위의 위약금 내용을 확인 하였습니다.</label>
+                            <input id="agree02" type="checkbox"> </p>
+                        <div class="btn-area">
+                            <ul>
+                                <li>상품금액 <strong>58,000원</strong></li>
+                                <li><i class="fa fa-minus-circle" aria-hidden="true"></i>할인금액 <strong>1,000원</strong></li>
+                                <li class="result"><i class="fa fa-pause-circle fa-rotate-90" aria-hidden="true"></i>최종결제금액 <strong>57,000원</strong></li>
+                            </ul>
+                            <a class="btn ok" href="">계좌이체 결제하기</a>
+                            <a class="btn cancle" href="">취소하기</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+
+        </div>
+        <!-- E:mainContent -->
+        <!-- S:footer -->
+        <footer id="footer">
+            <div class="container">
+                <h2>
+                    제주특별자치도 서귀포시
+                </h2>
+                <div class="footer-util">
+                    <ul>
+                        <li>
+                            <a href="">개인정보취급방침</a>
+                        </li>
+                        <li>
+                            <a href="">저작권보호정책</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>제주안내 콜센터</i>
+                                <strong>064-120</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <address>
+                <p>
+                    <strong>제1청사</strong>
+                    (63584) 제주특별자치도 서귀포시 중앙로 105(서홍동)</p>
+                <p>
+                    <strong>제2청사</strong>
+                    (63565) 제주특별자치도 서귀포시 신중로 55(법환동)</p>
+                <p>
+                    <strong>1st Building</strong>
+                    105, Jungang-ro, Seogwipo-si, Jeju-do. Republic of Korea 63584</p>
+                <p>
+                    <strong>2nd Building</strong>
+                    55, Sinjung-ro, Seogwipo-si, Jeju-do. Republic of Korea 63565</p>
+            </address>
+                <p class="copyright">Copyright© Seogwipo-si, All right Reserved.</p>
+            </div>
+        </footer>
+        <!-- E:footer -->
+
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/common.js"></script>
+        <!--[if lt IE 9]> <script src="js/respond.min.js"></script> <script
+    src="js/html5shiv.js"></script> <![endif]-->
+</body>
+
+</html
