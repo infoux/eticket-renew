@@ -5168,11 +5168,11 @@ body {
                                 border: 1px solid #ccc;
                                 border-bottom-width: 0;
                                 .rem(padding, 10);
-                                .rem(min-height, 200);
+                                .rem(min-height, 150);
 
                                 @media all and (min-width: 1200px) {
                                     padding: 20px;
-                                    min-height: 250px;
+                                    min-height: 170px;
                                 }
 
                                 &.empty {
@@ -5186,6 +5186,22 @@ body {
                                         font-size: 18px;
                                     }
 
+                                }
+
+                                &.order_cancel {
+                                    .rem(min-height, 220);
+
+                                    @media all and (min-width: 1200px) {
+                                        min-height: 280px;
+                                    }
+
+                                    p.price {
+                                        .rem(padding-top, 70);
+
+                                        @media all and (min-width: 1200px) {
+                                            padding-top: 90px;
+                                        }
+                                    }
                                 }
 
                                 &:last-child {
@@ -5238,21 +5254,17 @@ body {
                                     }
 
                                     dd {
-                                        .rem(margin-left, 100);  
-                                        line-height: 1.4;
-
-                                        @media all and (min-width: 1200px) {
-                                            margin-left: 110px;
-                                            padding: 5px 0 0 0;
-                                        }
+                                       
+                                        .rem(margin, 0 0 4);
+                                        margin-left: 0;
 
                                         &.restore {
-                                            .rem(margin, 0 0 4);
-                                            margin-left: 0;
+                                            .rem(margin-left, 100);  
+                                            line-height: 1.4;
 
                                             @media all and (min-width: 1200px) {
-                                                margin-left: 0;
-
+                                                margin-left: 110px;
+                                                padding: 5px 0 0 0;
                                             }
                                         }
 
@@ -5328,14 +5340,6 @@ body {
 
                                     @media all and (min-width: 1200px) {
                                         font-size: 24px;
-                                    }
-                                }
-
-                                .p_cancel {
-                                    .rem(margin, 20 0 0 0);
-
-                                    @media all and (min-width: 1200px) {
-                                        margin: 42px 0 0 0;
                                     }
                                 }
 
