@@ -5197,7 +5197,6 @@ body {
                     }
 
                     div.stageInfo {
-                        .relative;
                         .rem(min-height, 200);
 
                         @media all and (min-width: 1200px) {
@@ -5205,7 +5204,8 @@ body {
                         }
 
                         dl {
-                            .rem(min-height, 200);
+                            .relative;
+                            .rem(min-height, 150);
                             .rem(margin-top, 30);
 
                             dt {
@@ -5220,7 +5220,6 @@ body {
                             }
 
                             dd {
-                                
                                 .rem(margin, 10 0);
                                 .rem(font-size, 12);
                                 
@@ -5233,25 +5232,36 @@ body {
                                     .rem(margin-right, 20);
                                     .normal;
                                 }
+
+                                &.seatCheck_btn {
+                                    .absolute;
+                                    .rem(top, 42);
+                                    .rem(left, 100);
+
+                                    @media all and (min-width: 1200px) {
+                                        top: 48px;
+                                    }
+
+                                    button {
+                                        .inline-block;
+                                        border: none;
+                                        .rem(margin, 4 2);
+                                        border-radius: 5px;
+                                        .rem(padding, 5 15);
+                                        .pointer;
+                                        background: #ff7800;
+                                        color: @white;
+                                        .rem(font-size, 8);
+            
+                                        @media all and (min-width: 1200px) {
+                                            top: 88px;
+                                        }
+                                    }
+                                }
                             }
                         }
 
-                        button {
-                            .absolute;
-                            .rem(top, 78);
-                            .rem(left, 85);
-                            border: none;
-                            border-radius: 5px;
-                            .rem(padding, 5 15);
-                            .pointer;
-                            background: #ff7800;
-                            color: @white;
-                            .rem(font-size, 8);
-
-                            @media all and (min-width: 1200px) {
-                                top: 88px;
-                            }
-                        }
+                        
                         
                     }
 
@@ -5604,7 +5614,7 @@ body {
                                 .zero;
 
                                 @media all and (min-width: 1200px) {
-                                    margin:0 0 20px 120px;
+                                    margin:0 0 15px 120px;
                                 }
 
                                 input[type="text"],
@@ -6761,6 +6771,19 @@ body {
                                         }
                                     }
 
+                                    p.small_title {
+                                        .rem(font-size, 8);
+                                        .absolute;
+                                        .rem(right, 10);
+                                        .rem(top, 5);
+
+                                        @media all and (min-width: 1200px) {
+                                            top: 10px;
+                                            right: 20px;
+                                            font-size: 14px;
+                                        }
+                                    }
+
                                     div {
                                         .inline-block;
                                         float: right;
@@ -7051,7 +7074,85 @@ body {
 
                         }
 
+                        div#sale_box {
+
+                            dd {
+
+                                input {
+                                    .rem(width, 15);
+                                    .rem(height, 15);
+
+                                    @media all and (min-width: 1200px) {
+                                         
+                                    }
+                                }
+
+                                label {
+                                    .rem(font-size, 10);
+                                    .rem(margin-left, 5);
+                                    .rem(line-height, 16);
+                                    .top;
+                                }
+                            }
+
+                            dd.additional {
+                                margin: 0;
+                                border-top: 1px dotted #ccc;
+                                .rem(padding, 20 10 25 10);
+
+                                p {
+
+                                }
+                            }
+                        }
+
                         div.input_box {
+
+                            &.userInfo {
+
+                                dt.border_name {
+                                    .rem(padding-top, 30);
+                                    border-top: 1px dotted #ccc;
+
+                                    &:first-child {
+                                        border: none;
+                                    }
+                                }
+
+                                input#discount_check {
+                                    .rem(width, 15);
+                                    .rem(height, 15);
+                                }
+
+                                label {
+                                    .rem(font-size, 10);
+                                    .rem(margin-left, 5);
+                                    .rem(line-height, 16);
+                                    .top;
+                                }
+
+                                dd.userInfo_btn {
+                                    .center;
+                                    
+                                    button {
+                                        .rem(font-size, 10);
+                                        .rem(width, 90);
+                                        .rem(height, 25);
+                                        .rem(margin, 5);
+                                        .pointer;
+                                        border: none;
+                                        color: @white;
+
+                                        &.ok {
+                                            .gradient(#ffad00, #ff8b00, #ff7506);
+                                        }
+
+                                        &.notJoin {
+                                            .gradient(#5d5d5d, #545454, #4c4c4c);
+                                        }
+                                    }
+                                }
+                             }
 
                             dl {
                                 .inline-block;
@@ -7088,8 +7189,6 @@ body {
                                     input[type="password"] {
                                         width: 100%;
                                         border: 1px solid #ccc;
-                                        // background: #f4f4f4;
-                                        // border: none;
                                         .rem(padding, 10);
                                         .rem(font-size, 10);
 
