@@ -5077,6 +5077,28 @@ body {
                             margin: 20px 0;
                         }
 
+                        &.stage_inquiry {
+
+                            input[type="text"] {
+                                .inline-block;
+                                border: none;
+                                .bottom;
+                                .rem(padding, 0 10);
+                                .rem(height, 32);
+                                .rem(font-size, 10);
+                                .rem(margin, 6 0 0);
+                                .remCalc(width, 124);
+                                .middle;
+
+                                @media all and (min-width: 1200px) {
+                                    width: 160px;
+                                    margin: 0;
+                                    font-size: 16px;
+                                    height: 42px;
+                                }
+                            }
+                        }
+
                         input[type="text"] {
                             .inline-block;
                             border: none;
@@ -5135,7 +5157,7 @@ body {
                                 .absolute;
                                 .rem(right, 20);
                                 .rem(top, 20);
-                                .rem(font-size, 14);
+                                .rem(font-size, 12);
                                 .middle;
                                 color: @white;
                                 background: #333;
@@ -5152,6 +5174,85 @@ body {
                             }
 
                         }
+
+                        select {
+                            width: 100%;
+                            .rem(height, 30);
+                            .rem(margin-top, 10);
+                            .rem(font-size, 10);
+                            .rem(padding, 0 4);
+                            color: #777;
+
+                            @media all and(min-width: 1200px) {
+                                .absolute;
+                                width: 170px;
+                                height: 38px;
+                                top: 21px;
+                                border: none;
+                                margin: 0 0 0 20px;
+                                font-size: 16px;
+                                padding: 0 5px;
+                            }
+                        }
+                    }
+
+                    div.stageInfo {
+                        .relative;
+                        .rem(min-height, 200);
+
+                        @media all and (min-width: 1200px) {
+                            min-height: 250px;
+                        }
+
+                        dl {
+                            .rem(min-height, 200);
+                            .rem(margin-top, 30);
+
+                            dt {
+                                width: 100%;
+                                .rem(margin, 0 0 20 0);
+                                .rem(font-size, 14);
+                                .bold;
+
+                                @media all and (min-width: 1200px) {
+                                    font-size: 18px;
+                                }
+                            }
+
+                            dd {
+                                
+                                .rem(margin, 10 0);
+                                .rem(font-size, 12);
+                                
+                                @media all and (min-width: 1200px) {
+                                    font-size: 14px;
+                                }
+
+                                strong {
+                                    
+                                    .rem(margin-right, 20);
+                                    .normal;
+                                }
+                            }
+                        }
+
+                        button {
+                            .absolute;
+                            .rem(top, 78);
+                            .rem(left, 85);
+                            border: none;
+                            border-radius: 5px;
+                            .rem(padding, 5 15);
+                            .pointer;
+                            background: #ff7800;
+                            color: @white;
+                            .rem(font-size, 8);
+
+                            @media all and (min-width: 1200px) {
+                                top: 88px;
+                            }
+                        }
+                        
                     }
 
                     div.product {

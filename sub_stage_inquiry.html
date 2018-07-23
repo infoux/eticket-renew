@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>서귀포시 E-Ticket</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- S:skip_navi -->
+    <div class="skip_navi">
+        <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
+        <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+        <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+    </div>
+    <!-- E:skip_navi -->
+    <!-- S:header -->
+    <header id="header">
+        <div class="container">
+
+            <h1>
+                <a href="">서귀포시 E-Ticket</a>
+            </h1>
+
+            <button class="mobileMenu">메뉴열기
+                    <i class="icon-menu" aria-hidden="true"></i>
+                </button>
+        </div>
+        <!-- S:main_menu -->
+        <nav id="main-menu">
+            <div class="container">
+                <ul class="util-menu">
+                    <li class="mypage"><a href="">마이페이지</a></li>
+                    <li class="login"><a href="">로그인</a></li>
+                    <li class="customer"><a href=""><i class="icon-user-o" aria-hidden="true"></i>고객센터</a></li>
+                </ul>
+                <ul class="menu-list">
+                    <li>
+                        <h2>
+                            <a href="http://daum.net">휴양숙박시설</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a class="active" href="">서귀포자연휴양림</a>
+                            </li>
+                            <li>
+                                <a href="">붉은오름자연휴양림</a>
+                            </li>
+                            <li>
+                                <a href="">서귀포치유의숲</a>
+                            </li>
+                            <li>
+                                <a href="">모구리야영장</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="#">공연예매</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">예술의전당</a>
+                            </li>
+                            <li>
+                                <a href="">김정문화회관</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="#">문화시설</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">이중섭미술관</a>
+                            </li>
+                            <li>
+                                <a href="">기당미술관</a>
+                            </li>
+                            <li>
+                                <a href="">서복전시관</a>
+                            </li>
+                            <li>
+                                <a href="">소암기념관</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="#">관광지</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">천지연폭포</a>
+                            </li>
+                            <li>
+                                <a href="">천제연폭포</a>
+                            </li>
+                            <li>
+                                <a href="">정방폭포</a>
+                            </li>
+                            <li>
+                                <a href="">주상절리대</a>
+                            </li>
+                            <li>
+                                <a href="">산방산암벽식물지대</a>
+                            </li>
+                            <li>
+                                <a href="">감귤박물관</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="#">커뮤니티</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="">이용후기</a>
+                            </li>
+                            <li>
+                                <a href="">FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="check">
+                        <h2>
+                            <a href="#">
+                                <i class="icon-check" aria-hidden="true"></i>예약확인</a>
+                        </h2>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <!-- E:main_menu -->
+    </header>
+    <!-- E:header -->
+    <!-- S:mainContent -->
+    <div id="content">
+        <section class="sub mypage">
+            <ul class="sub_navigation">
+                <li>HOME</li>
+                <li><strong>공연 정보 조회</strong></li>
+            </ul>
+            <div class="container">
+
+                <div class="aside_content">
+                    <h4>공연조회</h4>
+
+
+                    <div id="buyListPage">
+
+                        <div class="search stage_inquiry">
+                            <input type="text" id="sDate" placeholder="시작일선택">
+                            <button class="btn day">시작일선택<i class="fa fa-calendar-check-o" aria-hidden="true"></i></button>
+                            <strong>~</strong>
+                            <input type="text" id="eDate" placeholder="종료일선택">
+                            <button class="btn day">종료일선택<i class="fa fa-calendar-check-o" aria-hidden="true"></i></button>
+                            <button class="btn search">조회하기</button>
+                            <select>
+                                <option value="예술의전당">예술의전당</option>
+                                <option value="김정문화회관">김정문화회관</option>
+                            </select>
+                        </div>
+
+                        <div class="stageInfo">
+                            <dl>
+                                <dt>여름이야기</dt>
+                                <dd><strong>공연일시</strong>2018-07-23 (월)</dd>
+                                <dd><strong>공연시간</strong>3시</dd>
+                                <dd><strong>좌석</strong>23A</dd>
+                            </dl>
+                            <button>좌석확인하기</button>
+                        </div>
+
+
+
+                    </div>
+                </div>
+        </section>
+
+        </div>
+        <!-- E:mainContent -->
+        <!-- S:footer -->
+        <footer id="footer">
+            <div class="container ">
+                <h2>
+                    제주특별자치도 서귀포시
+                </h2>
+                <div class="footer-util ">
+                    <ul>
+                        <li>
+                            <a href=" ">개인정보취급방침</a>
+                        </li>
+                        <li>
+                            <a href=" ">저작권보호정책</a>
+                        </li>
+                        <li>
+                            <a href=" ">
+                                <i>제주안내 콜센터</i>
+                                <strong>064-120</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <address>
+                <p>
+                    <strong>제1청사</strong>
+                    (63584) 제주특별자치도 서귀포시 중앙로 105(서홍동)</p>
+                <p>
+                    <strong>제2청사</strong>
+                    (63565) 제주특별자치도 서귀포시 신중로 55(법환동)</p>
+                <p>
+                    <strong>1st Building</strong>
+                    105, Jungang-ro, Seogwipo-si, Jeju-do. Republic of Korea 63584</p>
+                <p>
+                    <strong>2nd Building</strong>
+                    55, Sinjung-ro, Seogwipo-si, Jeju-do. Republic of Korea 63565</p>
+            </address>
+                <p class="copyright ">Copyright© Seogwipo-si, All right Reserved.</p>
+            </div>
+        </footer>
+        <!-- E:footer -->
+
+        <script src="js/jquery-1.11.3.min.js "></script>
+        <script src="js/common.js "></script>
+        <!--[if lt IE 9]> <script src="js/respond.min.js "></script> <script
+    src="js/html5shiv.js "></script> <![endif]-->
+</body>
+
+</html>
