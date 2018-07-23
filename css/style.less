@@ -5207,6 +5207,7 @@ body {
                             .relative;
                             .rem(min-height, 150);
                             .rem(margin-top, 30);
+                            .rem(min-width, 380);
 
                             dt {
                                 width: 100%;
@@ -5233,29 +5234,19 @@ body {
                                     .normal;
                                 }
 
-                                &.seatCheck_btn {
-                                    .absolute;
-                                    .rem(top, 42);
-                                    .rem(left, 100);
-
+                                button {
+                                    .inline-block;
+                                    border: none;
+                                    .rem(margin, 4 2);
+                                    border-radius: 5px;
+                                    .rem(padding, 5 15);
+                                    .pointer;
+                                    background: #ff7800;
+                                    color: @white;
+                                    .rem(font-size, 8);
+        
                                     @media all and (min-width: 1200px) {
-                                        top: 48px;
-                                    }
-
-                                    button {
-                                        .inline-block;
-                                        border: none;
-                                        .rem(margin, 4 2);
-                                        border-radius: 5px;
-                                        .rem(padding, 5 15);
-                                        .pointer;
-                                        background: #ff7800;
-                                        color: @white;
-                                        .rem(font-size, 8);
-            
-                                        @media all and (min-width: 1200px) {
-                                            top: 88px;
-                                        }
+                                        top: 88px;
                                     }
                                 }
                             }
