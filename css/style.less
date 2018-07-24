@@ -7181,7 +7181,7 @@ body {
                                                 .top;
                                             }
                                             
-                                            button {
+                                            input {
                                                 .rem(font-size, 10);
                                                 .rem(width, 90);
                                                 .rem(height, 25);
@@ -7193,15 +7193,22 @@ body {
                                                 &.ok {
                                                     .gradient(#ffad00, #ff8b00, #ff7506);
                                                 }
+                                            }
 
-                                                &.notJoin {
-                                                    .gradient(#5d5d5d, #545454, #4c4c4c);
-                                                }
+                                            div.notJoin {
+                                                .inline-block;
+                                                .rem(width, 80);
+                                                .rem(height, 25);
+                                                color: @white;
+                                                .rem(line-height, 25);
+                                                .rem(font-size, 10);
+                                                .gradient(#5d5d5d, #545454, #4c4c4c);
+                                                margin: 0;
+                                            }
 
-                                                @media all and (min-width: 1200px) {
-                                                    font-size: 14px;
-                                                    height: 30px;
-                                                }
+                                            @media all and (min-width: 1200px) {
+                                                font-size: 14px;
+                                                height: 30px;
                                             }
                                         }
                                     }
