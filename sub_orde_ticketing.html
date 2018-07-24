@@ -216,8 +216,8 @@
                         </dd>
                         <dd class="additional">
                             <div>
-                                <p>＊ 감면대상자는 입장권 예매수령시 및 입장시 감면관련 증명서를 필히 지참하셔야 하오며, 미지참시에는 감면혜택을 받을 수 없습니다.</p>
-                                <p>＊ 장애인 동반 보호자할인은 1~3급만 가능합니다.</p>
+                                <p>＊감면대상자는 입장권 예매수령시 및 입장시 감면관련 증명서를 필히 지참하셔야 하오며, 미지참시에는 감면혜택을 받을 수 없습니다.</p>
+                                <p>＊장애인 동반 보호자할인은 1~3급만 가능합니다.</p>
                             </div>
                         </dd>
                     </dl>
@@ -225,49 +225,44 @@
                 </div>
 
                 <div class="input_box userInfo">
-                    <h5>입장객/문화사랑 회원정보 <small>필수선택</small></h5>
+                    <h5>입장객/문화사랑 회원정보 <small>(＊필수입력)</small></h5>
                     <dl>
-                        <dt class="border_name">이름</dt>
-                        <dd>
-                            <input type="text">
-                        </dd>
-                        <dt>생년월일</dt>
-                        <dd>
-                            <input type="text">
-                        </dd>
-                        <dt>핸드폰</dt>
-                        <dd>
-                            <input type="text">
-                        </dd>
-                        <dd>
-                            <input id="discount_check" type="checkbox">
-                            <label for="discount_check">문화사랑회원할인 적용 시 선택(30% 할인 - 중복할인 안됨)</label>
-                        </dd>
-                        <dd class="userInfo_btn">
-                            <button class="ok">확인</button>
-                            <button class="notJoin">미가입</button>
-                        </dd>
+                        <div>
+                            <dt class="border_name">이름/생년월일(*)</dt>
+                            <dd>
+                                <input type="text">
+                                <input type="text">
+                                <p class="phone">핸드폰</p>
+                                <input id="phone_number" type="text">
+                            </dd>
+                            <dd class="check_wrap">
+                                <input id="discount_check" type="checkbox">
+                                <label for="discount_check">문화사랑회원할인 적용 시 선택(30% 할인 - 중복할인 안됨)</label>
+                            </dd>
+                            <dd class="userInfo_btn">
+                                <button class="ok">확인</button>
+                                <button class="notJoin">미가입</button>
+                            </dd>
+                        </div>
 
-                        <dt class="border_name">이름</dt>
-                        <dd>
-                            <input type="text">
-                        </dd>
-                        <dt>생년월일</dt>
-                        <dd>
-                            <input type="text">
-                        </dd>
-                        <dt>핸드폰</dt>
-                        <dd>
-                            <input type="text">
-                        </dd>
-                        <dd>
-                            <input id="discount_check" type="checkbox">
-                            <label for="discount_check">문화사랑회원할인 적용 시 선택(30% 할인 - 중복할인 안됨)</label>
-                        </dd>
-                        <dd class="userInfo_btn">
-                            <button class="ok">확인</button>
-                            <button class="notJoin">미가입</button>
-                        </dd>
+                        <div>
+                            <dt class="border_name">이름/생년월일(*)</dt>
+                            <dd>
+                                <input type="text">
+                                <input type="text">
+                                <p class="phone">핸드폰</p>
+                                <input id="phone_number" type="text">
+                            </dd>
+                            <dd class="check_wrap">
+                                <input id="discount_check" type="checkbox">
+                                <label for="discount_check">문화사랑회원할인 적용 시 선택(30% 할인 - 중복할인 안됨)</label>
+                            </dd>
+                            <dd class="userInfo_btn">
+                                <button class="ok">확인</button>
+                                <button class="notJoin">미가입</button>
+                            </dd>
+                        </div>
+
                     </dl>
 
                 </div>
@@ -370,80 +365,80 @@
                         <p class="agree">
                             <label for="agree02">위의 유의사항 내용을 확인 하였습니다.</label>
                             <input id="agree02" type="checkbox"> </p>
-                        <p><strong>※예매된 티켓은 공연당일 로비 안내데스크에서 배부합니다.</strong></p>
+                        <p class="desk"><strong>※예매된 티켓은 공연당일 로비 안내데스크에서 배부합니다.</p>
                         <div class="btn-area">
                             <ul>
                                 <li>상품금액 <strong>58,000원</strong></li>
-                                <li><i class="fa fa-minus-circle" aria-hidden="true"></i>할인금액 <strong>1,000원</strong></li>
-                                <li class="result"><i class="fa fa-pause-circle fa-rotate-90" aria-hidden="true"></i>최종결제금액 <strong>57,000원</strong></li>
+                            <li><i class="fa fa-minus-circle" aria-hidden="true"></i>할인금액 <strong>1,000원</strong></li>
+                            <li class="result"><i class="fa fa-pause-circle fa-rotate-90" aria-hidden="true"></i>최종결제금액 <strong>57,000원</strong></li>
                             </ul> <a class="btn ok" href="">카드결제하기</a> <a class="btn cancle" href="">취소하기</a> </div>
-                    </div>
-                    <div id="tab02" class="tab-contents">
-                        <h6>개인정보 수집 및 이용동의</h6>
-                        <div class="scroll">
-                            <p>수집한 개인정보를 다음의 목적으로 보유하고 활용합니다.</p>
-                            <p>1. 개인정보의 수집ㆍ이용 목적</p>
-                            <p>- 온라인 예약신청 관리 및 예약서비스 제공</p>
-                            <p>2. 수집ㆍ이용하려는 개인정보의 항목</p>
-                            <p>- 성명, 주소, 이메일, 연락처, 금융계좌()</p>
-                            <p>3. 개인정보의 보유 및 이용기간 : 3년</p>
-                            <p>(보존이유 : 산림 문화ㆍ휴양에 관한 법률 제17조에 의한 예약자관리)</p>
-                            <p>4. 이용자는 개인정보 수집 및 이용 동의에 대한 거부 권리가 있습니다.</p>
-                            <p>단, 개인정보 수집·이용에 동의를 하지 않으실 경우에는 예약이 제한됩니다. </p>
-                        </div>
-                        <p class="agree">
-                            <label for="agree01">개인정보 제공에 동의합니다.</label>
-                            <input id="agree01" type="checkbox"> </p>
-                        <h6>위약금 안내</h6>
-                        <div class="scroll">
-                            <p>-천재지변 등으로 인하여 자연휴양림 시설물 사용이 어렵다고 판단될 때 : 전액환급 </p>
-                            <p>-자연휴양림의 사정으로 인하여 시설을 사용할 수 없는 경우 : 전액환급(이 경우 사용일부터 5일 전까지 통보하여야 한다)</p>
-                            <p>-사용일부터 3일 전까지 예약을 취소한 경우 : 전액환급</p>
-                            <p>-사용일부터 2일 전까지 예약을 취소한 경우 : 총 사용료의 90퍼센트에 해당하는 금액을 환급</p>
-                            <p>-사용일부터 1일 전까지 예약을 취소한 경우 : 총 사용료의 80퍼센트에 해당하는 금액을 환급</p>
-                            <p>-사용일 당일에 예약을 취소하거나 취소하지 않은 상태에서 입실하지 않은 경우 : 총 사용료의 70퍼센트에 해당하는 금액을 환급</p>
-                            <p>-예약 취소시 환불 계좌는 입금자와 계좌번호, 예금주가 동일하여야 합니다.</p>
-                        </div>
-                        <p class="agree">
-                            <label for="agree02">위의 위약금 내용을 확인 하였습니다.</label>
-                            <input id="agree02" type="checkbox"> </p>
-                        <div class="btn-area">
-                            <ul>
-                                <li>상품금액 <strong>58,000원</strong></li>
-                                <li><i class="fa fa-minus-circle" aria-hidden="true"></i>할인금액 <strong>1,000원</strong></li>
-                                <li class="result"><i class="fa fa-pause-circle fa-rotate-90" aria-hidden="true"></i>최종결제금액 <strong>57,000원</strong></li>
-                            </ul> <a class="btn ok" href="">계좌이체 결제하기</a> <a class="btn cancle" href="">취소하기</a> </div>
-                    </div>
                 </div>
+                <div id="tab02" class="tab-contents">
+                    <h6>개인정보 수집 및 이용동의</h6>
+                    <div class="scroll">
+                        <p>수집한 개인정보를 다음의 목적으로 보유하고 활용합니다.</p>
+                        <p>1. 개인정보의 수집ㆍ이용 목적</p>
+                        <p>- 온라인 예약신청 관리 및 예약서비스 제공</p>
+                        <p>2. 수집ㆍ이용하려는 개인정보의 항목</p>
+                        <p>- 성명, 주소, 이메일, 연락처, 금융계좌()</p>
+                        <p>3. 개인정보의 보유 및 이용기간 : 3년</p>
+                        <p>(보존이유 : 산림 문화ㆍ휴양에 관한 법률 제17조에 의한 예약자관리)</p>
+                        <p>4. 이용자는 개인정보 수집 및 이용 동의에 대한 거부 권리가 있습니다.</p>
+                        <p>단, 개인정보 수집·이용에 동의를 하지 않으실 경우에는 예약이 제한됩니다. </p>
+                    </div>
+                    <p class="agree">
+                        <label for="agree01">개인정보 제공에 동의합니다.</label>
+                        <input id="agree01" type="checkbox"> </p>
+                    <h6>위약금 안내</h6>
+                    <div class="scroll">
+                        <p>-천재지변 등으로 인하여 자연휴양림 시설물 사용이 어렵다고 판단될 때 : 전액환급 </p>
+                        <p>-자연휴양림의 사정으로 인하여 시설을 사용할 수 없는 경우 : 전액환급(이 경우 사용일부터 5일 전까지 통보하여야 한다)</p>
+                        <p>-사용일부터 3일 전까지 예약을 취소한 경우 : 전액환급</p>
+                        <p>-사용일부터 2일 전까지 예약을 취소한 경우 : 총 사용료의 90퍼센트에 해당하는 금액을 환급</p>
+                        <p>-사용일부터 1일 전까지 예약을 취소한 경우 : 총 사용료의 80퍼센트에 해당하는 금액을 환급</p>
+                        <p>-사용일 당일에 예약을 취소하거나 취소하지 않은 상태에서 입실하지 않은 경우 : 총 사용료의 70퍼센트에 해당하는 금액을 환급</p>
+                        <p>-예약 취소시 환불 계좌는 입금자와 계좌번호, 예금주가 동일하여야 합니다.</p>
+                    </div>
+                    <p class="agree">
+                        <label for="agree02">위의 위약금 내용을 확인 하였습니다.</label>
+                        <input id="agree02" type="checkbox"> </p>
+                    <div class="btn-area">
+                        <ul>
+                            <li>상품금액 <strong>58,000원</strong></li>
+                            <li><i class="fa fa-minus-circle" aria-hidden="true"></i>할인금액 <strong>1,000원</strong></li>
+                            <li class="result"><i class="fa fa-pause-circle fa-rotate-90" aria-hidden="true"></i>최종결제금액 <strong>57,000원</strong></li>
+                        </ul> <a class="btn ok" href="">계좌이체 결제하기</a> <a class="btn cancle" href="">취소하기</a> </div>
+                </div>
+            </div>
         </section>
 
 
 
-        </div>
-        <!-- E:mainContent -->
-        <!-- S:footer -->
-        <footer id="footer">
-            <div class="container">
-                <h2>
-                    제주특별자치도 서귀포시
-                </h2>
-                <div class="footer-util">
-                    <ul>
-                        <li>
-                            <a href="">개인정보취급방침</a>
-                        </li>
-                        <li>
-                            <a href="">저작권보호정책</a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i>제주안내 콜센터</i>
-                                <strong>064-120</strong>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <address>
+    </div>
+    <!-- E:mainContent -->
+    <!-- S:footer -->
+    <footer id="footer">
+        <div class="container">
+            <h2>
+                제주특별자치도 서귀포시
+            </h2>
+            <div class="footer-util">
+                <ul>
+                    <li>
+                        <a href="">개인정보취급방침</a>
+                    </li>
+                    <li>
+                        <a href="">저작권보호정책</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i>제주안내 콜센터</i>
+                            <strong>064-120</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <address>
                 <p>
                     <strong>제1청사</strong>
                     (63584) 제주특별자치도 서귀포시 중앙로 105(서홍동)</p>
@@ -457,14 +452,14 @@
                     <strong>2nd Building</strong>
                     55, Sinjung-ro, Seogwipo-si, Jeju-do. Republic of Korea 63565</p>
             </address>
-                <p class="copyright">Copyright© Seogwipo-si, All right Reserved.</p>
-            </div>
-        </footer>
-        <!-- E:footer -->
+            <p class="copyright">Copyright© Seogwipo-si, All right Reserved.</p>
+        </div>
+    </footer>
+    <!-- E:footer -->
 
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/common.js"></script>
-        <!--[if lt IE 9]> <script src="js/respond.min.js"></script> <script
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+    <!--[if lt IE 9]> <script src="js/respond.min.js"></script> <script
     src="js/html5shiv.js"></script> <![endif]-->
 </body>
 

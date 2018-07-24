@@ -7072,10 +7072,6 @@ body {
                                 input {
                                     .rem(width, 15);
                                     .rem(height, 15);
-
-                                    @media all and (min-width: 1200px) {
-                                         
-                                    }
                                 }
 
                                 label {
@@ -7083,6 +7079,10 @@ body {
                                     .rem(margin-left, 5);
                                     .rem(line-height, 16);
                                     .top;
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size: 14px;
+                                    }
                                 }
                             }
 
@@ -7091,9 +7091,10 @@ body {
                                 border-top: 1px dotted #ccc;
                                 .rem(padding, 20 10 25 10);
 
-                                p {
-
+                                @media all and (min-width: 1200px) {
+                                    padding: 25px 10px 15px 10px;
                                 }
+                            
                             }
                         }
 
@@ -7101,45 +7102,107 @@ body {
 
                             &.userInfo {
 
-                                dt.border_name {
-                                    .rem(padding-top, 30);
-                                    border-top: 1px dotted #ccc;
+                                dl {
+                                    .relative;
+                                    border-color: #fb771f;
 
-                                    &:first-child {
-                                        border: none;
+                                    ::after {
+                                        content: "";
+                                        display: block;
+                                        clear: both;
                                     }
-                                }
-
-                                input#discount_check {
-                                    .rem(width, 15);
-                                    .rem(height, 15);
-                                }
-
-                                label {
-                                    .rem(font-size, 10);
-                                    .rem(margin-left, 5);
-                                    .rem(line-height, 16);
-                                    .top;
-                                }
-
-                                dd.userInfo_btn {
-                                    .center;
-                                    
-                                    button {
-                                        .rem(font-size, 10);
-                                        .rem(width, 90);
-                                        .rem(height, 25);
-                                        .rem(margin, 5);
-                                        .pointer;
-                                        border: none;
-                                        color: @white;
-
-                                        &.ok {
-                                            .gradient(#ffad00, #ff8b00, #ff7506);
+                                
+                                    div {
+                                        .rem(margin-top, 20);
+                                        border-bottom: 1px dotted #ccc;
+                                        
+                                        &:last-child {
+                                            border: none;
+                                            margin-top: 30px;
                                         }
 
-                                        &.notJoin {
-                                            .gradient(#5d5d5d, #545454, #4c4c4c);
+                                        dd{
+
+                                            &.check_wrap {
+
+                                                @media all and (min-width: 1200px) {
+                                                    width: 400px;
+                                                    float: left;
+                                                    margin-top: 15px;
+                                                }
+                                            }
+
+                                            input[type="text"] {
+                                                .inline-block;
+                                                .rem(margin-top, 6);
+
+                                                @media all and (min-width: 1200px) {
+                                                    margin: 0 8px 0 0;
+                                                }
+                                            }
+
+                                            input#discount_check {
+                                                .rem(width, 15);
+                                                .rem(height, 15);
+                                            }
+
+                                            label {
+                                                .rem(font-size, 10);
+                                                .rem(margin-left, 5);
+                                                .rem(line-height, 16);
+                                                .top;
+
+                                                @media all and (min-width: 1200px) {
+                                                    font-size: 14px;
+                                                }
+                                            }
+
+                                            p.phone {
+                                                .rem(font-size, 12);
+                                                color: #000;
+                                                
+                                                @media all and (min-width: 1200px) {
+                                                    margin: 0 10px 0 20px;;
+                                                    color: #222;
+                                                    font-size: 16px;
+                                                    height: 30px;
+                                                    line-height: 10px;
+                                                }
+                                            }
+                                        }
+
+                                        dd.userInfo_btn {
+                                            .center;
+
+                                            @media all and (min-width: 1200px) {
+                                                margin: 0;
+                                                width: 250px;
+                                                float: right;
+                                                .top;
+                                            }
+                                            
+                                            button {
+                                                .rem(font-size, 10);
+                                                .rem(width, 90);
+                                                .rem(height, 25);
+                                                .rem(margin, 5);
+                                                .pointer;
+                                                border: none;
+                                                color: @white;
+
+                                                &.ok {
+                                                    .gradient(#ffad00, #ff8b00, #ff7506);
+                                                }
+
+                                                &.notJoin {
+                                                    .gradient(#5d5d5d, #545454, #4c4c4c);
+                                                }
+
+                                                @media all and (min-width: 1200px) {
+                                                    font-size: 14px;
+                                                    height: 30px;
+                                                }
+                                            }
                                         }
                                     }
                                 }
