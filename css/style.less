@@ -2994,6 +2994,35 @@ body {
                             }
 
                         }
+
+                        a {
+                            .block;
+                            .rem(font-size, 10);
+                            color: @white;
+                            background: #f3740b;
+                            .rem(width, 120);
+                            .rem(height, 20);
+                            .rem(line-height, 20);
+                            margin: 0 auto;
+                            border-radius: 20px;
+                            .rem(padding, 0 5);
+
+                            @media all and (min-width: 1200px) {
+                                width: 150px;
+                                height: 25px;
+                                line-height: 25px;
+                                font-size: 12px;
+                                .center;
+                                .absolute;
+                                right: 0;
+                                top: 10px;
+                            }
+
+                            i::before {
+                                .rem(padding-right, 5);
+                                margin: 0;
+                            }
+                        }
                     }
                 }
 
