@@ -1980,7 +1980,7 @@ body {
                         .inline-block;
                         .top;
                         width: 58%;
-                        padding: 20px 50px 20px 20px;
+                        padding: 20px 20px 20px 20px;
 
                     }
 
@@ -2036,11 +2036,11 @@ body {
                                 z-index: 100;
                                 background: @white;
                                 .rem(font-size, 12);
-                                .rem(padding, 0 8 0 0);
+                                .rem(padding, 0 5 0 0);
                                 font-weight: 100;
 
                                 @media all and (min-width: 1200px) {
-                                    font-size: 18px;
+                                    font-size: 16px;
                                 }
                             }
 
@@ -2053,10 +2053,11 @@ body {
                                 text-decoration: none;
                                 .bold;
                                 color: #404040;
-                                .rem(padding, 0 0 0 8);
+                                .rem(padding, 0 0 0 5);
 
                                 @media all and (min-width: 1200px) {
-                                    font-size: 18px;
+                                    font-size: 16px;
+                                    padding: 0 20px 0 0;
                                 }
                             }
 
@@ -8717,18 +8718,21 @@ body {
                             width: 100%;
                             margin-top: 16px;
 
-                            a {
+                            div {
                                 background: #323232;
+                                .center;
                                 .relative;
 
                                 @media all and (min-width: 1200px) {
                                     background: none;
                                     border: 1px solid #414141;
-                                    margin-top: 20px;
+                                    margin-top: 30px;
                                 }
 
                                 i {
                                     font-style: normal;
+                                    .rem(font-size, 12);
+                                    .rem(padding, 0 3);
 
                                     @media all and (min-width: 1200px) {
                                         .inline-block;
