@@ -8386,30 +8386,21 @@ body {
 
                             li.wheel {
                                 .relative;
-                                .rem(width, 64);
-                                .rem(height, 30);
+                                line-height:1;
 
-                                @media all and (min-width: 1200px) {
-                                    width: 87px;
-                                    height: 40px;
-                                }
-
-                                label {
-                                    .rem(padding-left, 10);
-                                }
-
-                                img {
-                                    .rem(width, 12);
-                                    .rem(height, 12);
-                                    .absolute;
-                                    .rem(top, 9);
-                                    .rem(left, 20);
+                                &::before {
+                                    content:"";
+                                    .inline-block;
+                                    .relative;
+                                    .rem(margin, 4 0 4 0);
+                                    .rem(width, 10);
+                                    .rem(height, 10);
+                                    background:url("../images/wheel.svg") no-repeat center / 100% auto;
 
                                     @media all and (min-width: 1200px) {
-                                        width: 15px;
-                                        height: 15px;
-                                        top: 12px;
-                                        left: 26px;
+                                        top:4px;
+                                        width:14px;
+                                        height:14px;
                                     }
                                 }
                             }
