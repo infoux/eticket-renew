@@ -7129,6 +7129,10 @@ body {
 
                             dd {
 
+                                select {
+                                    border-color: #ccc;
+                                }
+
                                 input {
                                     .rem(width, 15);
                                     .rem(height, 15);
@@ -7183,12 +7187,17 @@ body {
 
                                         dd{
 
+                                            @media all and (min-width: 1200px) {
+                                                margin-bottom: 25px;
+                                            }
+
                                             &.check_wrap {
 
                                                 @media all and (min-width: 1200px) {
                                                     width: 400px;
+                                                    height: 54px;
                                                     float: left;
-                                                    margin-top: 15px;
+                                                    margin-top: 7px;
                                                 }
                                             }
 
@@ -7198,6 +7207,43 @@ body {
 
                                                 @media all and (min-width: 1200px) {
                                                     margin: 0 8px 0 0;
+                                                    width: 230px;
+                                                }
+
+                                                &.name {
+                                                    
+                                                    @media all and (min-width: 1200px) {
+                                                        width: 207px;
+                                                    }
+                                                }
+                                            }
+
+                                            select.birthDtY {
+                                                .inline-block;
+                                                width: calc(100%/2.07);
+                                                .rem(height, 30);
+                                                .rem(margin, 8 7 8 0);
+                                                border: 1px solid #ccc;
+
+                                                @media all and (min-width: 1200px) {
+                                                    width: 170px;
+                                                    height: 40px;
+                                                    .top;
+                                                    margin: 0 7px 0 0;
+                                                }
+                                            }
+
+                                            select.birthDtM {
+                                                width: calc(100%/2.07);
+                                                .rem(height, 30);
+                                                .rem(margin, 8 0 8 0);
+                                                border: 1px solid #ccc;
+
+                                                @media all and (min-width: 1200px) {
+                                                    width: 170px;
+                                                    height: 40px;
+                                                    .top;
+                                                    margin: 0;
                                                 }
                                             }
 
@@ -7240,7 +7286,7 @@ body {
                                                 margin: 0;
                                                 width: 250px;
                                                 float: right;
-                                                .top;
+                                            
                                             }
                                             
                                             input {
