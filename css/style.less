@@ -2437,41 +2437,46 @@ body {
 
                             @media all and (min-width: 1200px) {
                                 .inline-block;
-                                width: 300px;
+                                width: 100%;
                                 .mapazero;
                                 .left;
                                 font-size: 38px;
                                 .normal;
                             }
+
+                            small {
+                                .rem(font-size, 12);
+                                .block;
+                                .rem(width, 185);
+                                .rem(height, 25);
+                                .rem(line-height, 25);
+                                border-radius: 30px;
+                                .rem(margin, 10 auto);
+                                background: #eee;
+                                color:#666;
+
+                                @media all and (min-width: 1200px) {
+                                    .inline-block;
+                                    font-size: 18px;
+                                    background: none;
+                                    width: 207px;
+                                    .absolute;
+                                    right: 0;
+                                    .bold;
+                                }
+                                
+
+                                b {
+                                    color: #ff7800;
+                                    .rem(padding, 0 5);
+
+                                    @media all and (min-width: 1200px) {
+                                        padding: 0 0 0 5px;
+                                    }
+                                }
+                            }
                         }
 
-                        h4 {
-                            .rem(font-size, 12);
-                            .center;
-                            .rem(width, 185);
-                            .rem(height, 25);
-                            .rem(line-height, 25);
-                            border-radius: 30px;
-                            margin: 0 auto;
-                            background: #eee;
-                            color: #666;
-
-                            b{
-                                .rem(padding, 5);
-                                color: #ff7800;
-                                .bold;
-                            }
-
-                            @media all and (min-width: 1200px) {
-                                .inline-block;
-                                font-size: 18px;
-                                background: none;
-                                width: 200px;
-                                .absolute;
-                                right: 0;
-                                top: 65px;
-                            }
-                        }
                     }
                 }
 
@@ -2528,6 +2533,8 @@ body {
                             .relative;
                             width: calc(~"(50% - 5px)");
                             .center;
+                            .top;
+                            word-break: normal;
 
                             @media all and (min-width: 1200px) {
                                 width:calc(~"(100% - 20px) / 4");
