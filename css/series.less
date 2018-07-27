@@ -3641,6 +3641,17 @@ body {
                             .rem(padding, 4);
                             white-space: normal;
 
+                            @media all and (min-width: 1200px) {
+                                width: 360px;
+                            }
+
+                            &.full {
+                                @media all and (min-width: 1200px) {
+                                    width: 100%;
+                                    margin: 0;
+                                }
+                            }
+
                            span {
                                width: 100%;
                                .block;
@@ -3692,7 +3703,7 @@ body {
                         @media all and (min-width: 1200px) {
                             width: 200px;
                             height: 30px;
-                            margin-bottom: 30px;
+                            bottom: 50px;
                             margin-left: -90px;
                         }
 
