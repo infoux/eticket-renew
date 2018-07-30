@@ -660,7 +660,7 @@ article.popup-notice {
 
             select.staOption {
                 .relative;
-                .rem(padding, 0 10);
+                .rem(padding, 0 0 0 10);
                 .rem(font-size, 14);
                 .rem(height, 36);
                 top: 0;
@@ -726,8 +726,9 @@ article.popup-notice {
             border-top: 2px solid #ff7800;
 
             @media all and (min-width: 1200px) {
-                overflow-x: hidden;
+                overflow-y: hidden;
                 margin-top: 20px;
+                overflow-x: scroll;
             }
 
             table {
@@ -736,7 +737,7 @@ article.popup-notice {
                 background: @white;
 
                 @media all and (min-width: 1200px) {
-                    widows: 100%;
+                    width: 100%;
                     table-layout: fixed;
                 }
 
@@ -1194,7 +1195,7 @@ body {
                             }
 
                             &.login {
-                                left:0;
+                                right: 150px;
                             }
 
                             &.customer {
@@ -1980,7 +1981,7 @@ body {
                         .inline-block;
                         .top;
                         width: 58%;
-                        padding: 20px 50px 20px 20px;
+                        padding: 20px 20px 20px 20px;
 
                     }
 
@@ -2036,11 +2037,11 @@ body {
                                 z-index: 100;
                                 background: @white;
                                 .rem(font-size, 12);
-                                .rem(padding, 0 8 0 0);
+                                .rem(padding, 0 5 0 0);
                                 font-weight: 100;
 
                                 @media all and (min-width: 1200px) {
-                                    font-size: 18px;
+                                    font-size: 16px;
                                 }
                             }
 
@@ -2053,10 +2054,11 @@ body {
                                 text-decoration: none;
                                 .bold;
                                 color: #404040;
-                                .rem(padding, 0 0 0 8);
+                                .rem(padding, 0 0 0 5);
 
                                 @media all and (min-width: 1200px) {
-                                    font-size: 18px;
+                                    font-size: 16px;
+                                    padding: 0 20px 0 0;
                                 }
                             }
 
@@ -2436,41 +2438,46 @@ body {
 
                             @media all and (min-width: 1200px) {
                                 .inline-block;
-                                width: 300px;
+                                width: 100%;
                                 .mapazero;
                                 .left;
                                 font-size: 38px;
                                 .normal;
                             }
+
+                            small {
+                                .rem(font-size, 12);
+                                .block;
+                                .rem(width, 185);
+                                .rem(height, 25);
+                                .rem(line-height, 25);
+                                border-radius: 30px;
+                                .rem(margin, 10 auto);
+                                background: #eee;
+                                color:#666;
+
+                                @media all and (min-width: 1200px) {
+                                    .inline-block;
+                                    font-size: 18px;
+                                    background: none;
+                                    width: 207px;
+                                    .absolute;
+                                    right: 0;
+                                    .bold;
+                                }
+                                
+
+                                b {
+                                    color: #ff7800;
+                                    .rem(padding, 0 5);
+
+                                    @media all and (min-width: 1200px) {
+                                        padding: 0 0 0 5px;
+                                    }
+                                }
+                            }
                         }
 
-                        h4 {
-                            .rem(font-size, 12);
-                            .center;
-                            .rem(width, 185);
-                            .rem(height, 25);
-                            .rem(line-height, 25);
-                            border-radius: 30px;
-                            margin: 0 auto;
-                            background: #eee;
-                            color: #666;
-
-                            b{
-                                .rem(padding, 5);
-                                color: #ff7800;
-                                .bold;
-                            }
-
-                            @media all and (min-width: 1200px) {
-                                .inline-block;
-                                font-size: 18px;
-                                background: none;
-                                width: 200px;
-                                .absolute;
-                                right: 0;
-                                top: 65px;
-                            }
-                        }
                     }
                 }
 
@@ -2527,6 +2534,8 @@ body {
                             .relative;
                             width: calc(~"(50% - 5px)");
                             .center;
+                            .top;
+                            word-break: normal;
 
                             @media all and (min-width: 1200px) {
                                 width:calc(~"(100% - 20px) / 4");
@@ -2992,6 +3001,35 @@ body {
                                 .ellipse;
                             }
 
+                        }
+
+                        a {
+                            .block;
+                            .rem(font-size, 10);
+                            color: @white;
+                            background: #f3740b;
+                            .rem(width, 120);
+                            .rem(height, 20);
+                            .rem(line-height, 20);
+                            margin: 0 auto;
+                            border-radius: 20px;
+                            .rem(padding, 0 5);
+
+                            @media all and (min-width: 1200px) {
+                                width: 150px;
+                                height: 25px;
+                                line-height: 25px;
+                                font-size: 12px;
+                                .center;
+                                .absolute;
+                                right: 0;
+                                top: 10px;
+                            }
+
+                            i::before {
+                                .rem(padding-right, 5);
+                                margin: 0;
+                            }
                         }
                     }
                 }
@@ -3883,12 +3921,26 @@ body {
                             @media all and (min-width: 1200px) {
                                 width: 120px;
                             }
+                            
                         }
 
                         dd {
                             margin: 0;
                             .rem(padding, 4);
                             white-space: normal;
+                            
+
+                            @media all and (min-width: 1200px) {
+                                width: 360px;
+                            }
+
+                            &.full {
+                                @media all and (min-width: 1200px) {
+                                    width: 100%;
+                                    margin: 0;
+                                }
+                            }
+                            
 
                            span {
                                width: 100%;
@@ -3941,7 +3993,7 @@ body {
                         @media all and (min-width: 1200px) {
                             width: 200px;
                             height: 30px;
-                            margin-bottom: 30px;
+                            bottom: 50px;
                             margin-left: -90px;
                         }
 
@@ -4026,6 +4078,22 @@ body {
                         @media all and (min-width: 1200px) {
                             font-size: 14px;
                             margin: 0 0 30px;
+                        }
+
+                        &.__se_tbl_ext {
+
+                            th {
+                                border-right: 1px solid #ccc;
+
+                                // &:last-child {
+                                //     border-right: 1px solid #ccc;
+                                // }
+                            }
+                            
+                            td {
+                                border-right: none;
+                                border-left: 1px solid #ccc;
+                            }
                         }
 
                         tbody {
@@ -5042,8 +5110,8 @@ body {
 
                             label {
                                 .block;
-                                .rem(font-size, 12);
-                                .rem(padding, 10);
+                                .rem(font-size, 9);
+                                .rem(padding, 8);
                                 border: none;
                                 background: @white;
                                 border-radius: 5px;
@@ -5107,7 +5175,7 @@ body {
                             .rem(height, 32);
                             .rem(font-size, 10);
                             .rem(margin, 6 0 0);
-                            .remCalc(width, 140);
+                            .remCalc(width, 125);
                             .middle;
 
                             @media all and (min-width: 1200px) {
@@ -5135,15 +5203,17 @@ body {
                             &.day {
                                 .inline-block;
                                 .bottom;
-                                .rem(width, 60);
+                                .rem(width, 50);
                                 .rem(height, 32);
                                 border: none;
                                 background: #252c3a;
                                 padding: 10px;
                                 outline: none;
+                                .rem(margin-right, 15);
 
                                 @media all and (min-width: 1200px) {
                                     height: 42px;
+                                    margin-right: 0;
                                 }
 
                                 i {
@@ -5489,6 +5559,8 @@ body {
                                 }
                             }
                         }
+
+                        
                         
                     }
                     
@@ -5806,6 +5878,7 @@ body {
                                 }
                             }
                         }
+                        
 
                         p.total {
                             .relative;
@@ -6886,6 +6959,27 @@ body {
                                 }
                             }
 
+                            a {
+                                .block;
+                                .rem(width, 80);
+                                .rem(height, 22);
+                                .rem(line-height, 22);
+                                background: #ff7800;
+                                color: @white;
+                                .center;    
+                                border: none;
+                                margin: 20px auto 10px auto;
+                                .rem(font-size, 10);
+
+                                @media all and (min-width: 1200px) {
+                                    font-size: 14px;
+                                    width: 110px;
+                                    height: 30px;
+                                    line-height: 30px;
+                                }
+                            }
+    
+
                             p.total {
                                 .relative;
                                 .rem(padding, 10 0);
@@ -7075,6 +7169,10 @@ body {
 
                             dd {
 
+                                select {
+                                    border-color: #ccc;
+                                }
+
                                 input {
                                     .rem(width, 15);
                                     .rem(height, 15);
@@ -7129,12 +7227,17 @@ body {
 
                                         dd{
 
+                                            @media all and (min-width: 1200px) {
+                                                margin-bottom: 25px;
+                                            }
+
                                             &.check_wrap {
 
                                                 @media all and (min-width: 1200px) {
                                                     width: 400px;
+                                                    height: 54px;
                                                     float: left;
-                                                    margin-top: 15px;
+                                                    margin-top: 7px;
                                                 }
                                             }
 
@@ -7144,6 +7247,38 @@ body {
 
                                                 @media all and (min-width: 1200px) {
                                                     margin: 0 8px 0 0;
+                                                    width: 230px;
+                                                }
+                                            }
+
+                                            select.birthDtY {
+                                                .inline-block;
+                                                width: calc(100%/2);
+                                                .rem(height, 30);
+                                                .rem(margin, 8 0 8 0);
+                                                border: 1px solid #ccc;
+                                                border-right: none;
+
+                                                @media all and (min-width: 1200px) {
+                                                    width: 158px;
+                                                    height: 40px;
+                                                    .top;
+                                                    margin: 0 7px 0 0;
+                                                    border-right: 1px solid #ccc;
+                                                }
+                                            }
+
+                                            select.birthDtM {
+                                                width: calc(100%/2);
+                                                .rem(height, 30);
+                                                .rem(margin, 8 0 8 0);
+                                                border: 1px solid #ccc;
+
+                                                @media all and (min-width: 1200px) {
+                                                    width: 158px;
+                                                    height: 40px;
+                                                    .top;
+                                                    margin: 0;
                                                 }
                                             }
 
@@ -7179,37 +7314,40 @@ body {
 
                                         dd.userInfo_btn {
                                             .center;
+                                            .rem(height, 40);
+                                            .rem(margin-bottom, 20);
 
                                             @media all and (min-width: 1200px) {
                                                 margin: 0;
                                                 width: 250px;
                                                 float: right;
-                                                .top;
+                                            
                                             }
                                             
                                             input {
                                                 .rem(font-size, 10);
                                                 .rem(width, 90);
                                                 .rem(height, 25);
-                                                .rem(margin, 5);
+                                                .rem(margin, 0 5);
                                                 .pointer;
                                                 border: none;
                                                 color: @white;
 
                                                 &.ok {
-                                                    .gradient(#ffad00, #ff8b00, #ff7506);
+                                                    background: #ff7800;
                                                 }
                                             }
 
                                             div.notJoin {
                                                 .inline-block;
                                                 .rem(width, 80);
-                                                .rem(height, 25);
+                                                .rem(height, 25.8);
                                                 color: @white;
                                                 .rem(line-height, 25);
                                                 .rem(font-size, 10);
                                                 .gradient(#5d5d5d, #545454, #4c4c4c);
                                                 margin: 0;
+                                                .top;                                                
                                             }
 
                                             @media all and (min-width: 1200px) {
@@ -7910,10 +8048,16 @@ body {
                                 border-bottom: none;
                                 .rem(padding, 10);
                                 .rem(min-height, 90);
+                                .rem(padding-left, 80);
 
                                 @media all and (min-width: 1200px) {
                                     padding: 20px;
                                     min-height: 200px;
+                                    padding-left: 150px;
+                                }
+
+                                &.order_img {
+                                    .rem(padding, 20);
                                 }
 
                                 &:last-child {
@@ -7924,24 +8068,25 @@ body {
                                     .absolute;
                                     .rem(width, 60);
                                     .rem(top, 6);
+                                    .rem(left, 6);
 
                                     @media all and (min-width: 1200px) {
                                         width: 120px;
-                                        .absolute;
                                         top: 16px;
+                                        left: 10px;
                                     }
                                 }
 
                                 h6 {
                                     .rem(font-size, 12);
                                     .rem(margin, 0 0 10);
-                                    .rem(margin-left, 80);
+                                
                                     color: #fb771f;
 
                                     @media all and (min-width: 1200px) {
                                         font-size: 18px;
                                         margin: 0 0 10px;
-                                        margin-left: 150px;
+                                      
                                     }
 
                                     small {
@@ -7953,19 +8098,13 @@ body {
                                 p {
                                     .rem(font-size, 10);
                                     .rem(margin, 0 0 6);
-                                    .rem(margin-left, 80);
+                        
 
                                     @media all and (min-width: 1200px) {
                                         font-size: 14px;
                                         margin: 0 0 10px;
                                     }
 
-                                    &.info {
-
-                                        @media all and (min-width: 1200px) {
-                                            margin-left: 150px;
-                                        }
-                                    }
 
                                     &.price {
                                         color: #fb771f;
@@ -8717,18 +8856,21 @@ body {
                             width: 100%;
                             margin-top: 16px;
 
-                            a {
+                            div {
                                 background: #323232;
+                                .center;
                                 .relative;
 
                                 @media all and (min-width: 1200px) {
                                     background: none;
                                     border: 1px solid #414141;
-                                    margin-top: 20px;
+                                    margin-top: 30px;
                                 }
 
                                 i {
                                     font-style: normal;
+                                    .rem(font-size, 12);
+                                    .rem(padding, 0 3);
 
                                     @media all and (min-width: 1200px) {
                                         .inline-block;
