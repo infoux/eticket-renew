@@ -660,7 +660,7 @@ article.popup-notice {
 
             select.staOption {
                 .relative;
-                .rem(padding, 0 10);
+                .rem(padding, 0 0 0 10);
                 .rem(font-size, 14);
                 .rem(height, 36);
                 top: 0;
@@ -726,8 +726,9 @@ article.popup-notice {
             border-top: 2px solid #ff7800;
 
             @media all and (min-width: 1200px) {
-                overflow-x: hidden;
+                overflow-y: hidden;
                 margin-top: 20px;
+                overflow-x: scroll;
             }
 
             table {
@@ -4082,9 +4083,11 @@ body {
                         &.__se_tbl_ext {
 
                             th {
-                                &:last-child {
-                                    border-right: 1px solid #ccc;
-                                }
+                                border-right: 1px solid #ccc;
+
+                                // &:last-child {
+                                //     border-right: 1px solid #ccc;
+                                // }
                             }
                             
                             td {
@@ -8045,10 +8048,16 @@ body {
                                 border-bottom: none;
                                 .rem(padding, 10);
                                 .rem(min-height, 90);
+                                .rem(padding-left, 80);
 
                                 @media all and (min-width: 1200px) {
                                     padding: 20px;
                                     min-height: 200px;
+                                    padding-left: 150px;
+                                }
+
+                                &.order_img {
+                                    .rem(padding, 20);
                                 }
 
                                 &:last-child {
@@ -8059,24 +8068,25 @@ body {
                                     .absolute;
                                     .rem(width, 60);
                                     .rem(top, 6);
+                                    .rem(left, 6);
 
                                     @media all and (min-width: 1200px) {
                                         width: 120px;
-                                        .absolute;
                                         top: 16px;
+                                        left: 10px;
                                     }
                                 }
 
                                 h6 {
                                     .rem(font-size, 12);
                                     .rem(margin, 0 0 10);
-                                    .rem(margin-left, 80);
+                                
                                     color: #fb771f;
 
                                     @media all and (min-width: 1200px) {
                                         font-size: 18px;
                                         margin: 0 0 10px;
-                                        margin-left: 150px;
+                                      
                                     }
 
                                     small {
@@ -8088,19 +8098,13 @@ body {
                                 p {
                                     .rem(font-size, 10);
                                     .rem(margin, 0 0 6);
-                                    .rem(margin-left, 80);
+                        
 
                                     @media all and (min-width: 1200px) {
                                         font-size: 14px;
                                         margin: 0 0 10px;
                                     }
 
-                                    &.info {
-
-                                        @media all and (min-width: 1200px) {
-                                            margin-left: 150px;
-                                        }
-                                    }
 
                                     &.price {
                                         color: #fb771f;
