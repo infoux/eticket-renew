@@ -190,7 +190,7 @@
             </div>
         </section>
 
-        <div class="loadingPop">
+        <div class="camp-popup">
             <p>
                 <i class="fa fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
                 <h2>데이터를 불러오는 중 입니다.</h2>
@@ -200,49 +200,72 @@
         <div class="lodge_div bg popup">
             <div class="outline">
                 <button class="close">창닫기
-                        <i class="fa fa-times" aria-hidden="true"></i>
-                    </button>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
                 <ul class="tabs">
                     <li>
-                        <a class="active" data="tab01">숙박일자 선택</a>
+                        <a class="active" data="tab01">데크</a>
                     </li>
                     <li>
-                        <a data="tab02">시설이용일자 선택</a>
+                        <a data="tab02">숙박권</a>
                     </li>
                 </ul>
                 <div id="tab01" class="tab-data active">
+
+                    <div class="list-wrap">
+                        <div class="select-list">
+                            <h3>선택구역확인</h3>
+                            <select>
+                                <option>구역선택</option>
+                                <option>F구역</option>
+                                <option>H구역</option>
+                                <option>I구역</option>
+                                <option>S구역</option>
+                            </select>
+                            <div>
+                                <img src="images/moguri_family.png" alt="">
+                                <!-- <img src="images/moguri_hanla.png" alt="">
+                                <img src="images/moguri_sanbang.png" alt="">
+                                <img src="images/moguri_sunrise.png" alt=""> -->
+                            </div>
+                        </div>
+
+
+                        <div class="reservation-list">
+                            <h3>예약내역확인</h3>
+                            <dl>
+                                <dd><strong>예약구역</strong>F23</dd>
+                                <dd><strong>예약일자</strong>[2박3일] 2018.07.29 ~ 2018.07.31</dd>
+                                <dd><strong>숙박요금</strong>45,000원</dd>
+                            </dl>
+                            <button>예약하기</button>
+                        </div>
+
+                    </div>
+
                     <h5>
                         <button class="prev">
-                                    <i class="fa fa-angle-left" aria-hidden="true"></i>이전달</button>
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>이전달
+                        </button>
                         <strong>2017년 12월</strong>
                         <button class="next">다음달
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                </button>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </button>
                     </h5>
-                    <!-- <div class="selectArea">
-                        <select class="staOption" name="staPerson" id="person" style="display: block;">
-                                    <option value="">인실 전체</option>
-                                    <option value="4">
-                                        4인실</option>
-                                    <option value="5">
-                                        5인실</option>
-                                    <option value="6">
-                                        6인실</option>
-                                    <option value="8">
-                                        8인실</option>
-                                    <option value="25">
-                                        25인실</option>
-                                </select>
-                    </div> -->
+
                     <div class="infomation">
                         <p class="complete">
-                            <i class="fa fa-times" aria-hidden="true"></i>예약됨</p>
+                            <i class="fa fa-times" aria-hidden="true"></i>예약됨
+                        </p>
                         <p class="off">
-                            <i class="fa fa-lock" aria-hidden="true"></i>예약불가</p>
+                            <i class="fa fa-lock" aria-hidden="true"></i>예약불가
+                        </p>
                         <p class="on">
-                            <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                            <i class="fa fa-home" aria-hidden="true"></i>예약가능
+                        </p>
                         <p class="wheelchair">
-                            <i class="fa fa-wheelchair-alt" aria-hidden="true"></i>장애인 예약가능</p>
+                            <i class="fa fa-wheelchair-alt" aria-hidden="true"></i>장애인 예약가능
+                        </p>
                     </div>
                     <div class="table-cover">
                         <table cellspacing="0">
@@ -341,40 +364,47 @@
                                     <td>산림휴양관(동백동) 101호 [6인실]</td>
                                     <td>
                                         <p class="complete">
-                                            <i class="fa fa-times" aria-hidden="true"></i>예약됨</p>
+                                            <i class="fa fa-times" aria-hidden="true"></i>예약됨
+                                        </p>
                                     </td>
                                     <td>
                                         <p class="off">
-                                            <i class="fa fa-lock" aria-hidden="true"></i>예약불가</p>
+                                            <i class="fa fa-lock" aria-hidden="true"></i>예약불가
+                                        </p>
                                     </td>
                                     <td>
                                         <a href="">
                                             <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능
+                                            </p>
                                         </a>
                                     </td>
                                     <td>
                                         <a href="">
                                             <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능
+                                            </p>
                                         </a>
                                     </td>
                                     <td>
                                         <a href="">
                                             <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능
+                                            </p>
                                         </a>
                                     </td>
                                     <td>
                                         <a href="">
                                             <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능
+                                            </p>
                                         </a>
                                     </td>
                                     <td>
                                         <a href="">
                                             <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능
+                                            </p>
                                         </a>
                                     </td>
                                     <td>
@@ -3688,6 +3718,18 @@
                     </div>
                 </div>
                 <div id="tab02" class="tab-data">
+                    <div class="list-wrap">
+                        <img src="images/camp.jpg" alt="">
+                        <div class="reservation-list">
+                            <h3>예약내역확인</h3>
+                            <dl>
+                                <dd><strong>예약구역</strong>F23</dd>
+                                <dd><strong>예약일자</strong>[2박3일] 2018.07.29 ~ 2018.07.31</dd>
+                                <dd><strong>숙박요금</strong>45,000원</dd>
+                            </dl>
+                            <button>예약하기</button>
+                        </div>
+                    </div>
                     <h5>
                         <button class="prev">
                                     <i class="fa fa-angle-left" aria-hidden="true"></i>이전달</button>
@@ -3799,8 +3841,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>삼나무동 연산홍(1층) sdfasdf asdf asdf</td>
-                                    <td>1sdf01</td>
+                                    <td>삼나무동 연산홍(1층)</td>
 
                                     <td>
                                         <p class="complete">
@@ -3809,6 +3850,18 @@
                                     <td>
                                         <p class="off">
                                             <i class="fa fa-lock" aria-hidden="true"></i>예약불가</p>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
                                     </td>
                                     <td>
                                         <a href="">
@@ -4134,162 +4187,6 @@
                                                 <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
                                         </a>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td>삼나무동 연산홍(1층)</td>
-
-                                    <td>
-                                        <p class="complete">
-                                            <i class="fa fa-times" aria-hidden="true"></i>예약됨</p>
-                                    </td>
-                                    <td>
-                                        <p class="off">
-                                            <i class="fa fa-lock" aria-hidden="true"></i>예약불가</p>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
                                     <td>
                                         <a href="">
                                             <p class="on">
@@ -4325,162 +4222,6 @@
                                             <p class="on">
                                                 <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
                                         </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="">
-                                            <p class="on">
-                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>삼나무동 연산홍(1층)</td>
-
-                                    <td>
-                                        <p class="complete">
-                                            <i class="fa fa-times" aria-hidden="true"></i>예약됨</p>
-                                    </td>
-                                    <td>
-                                        <p class="off">
-                                            <i class="fa fa-lock" aria-hidden="true"></i>예약불가</p>
                                     </td>
                                     <td>
                                         <a href="">
@@ -4806,6 +4547,18 @@
                                                 <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
                                         </a>
                                     </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>삼나무동 연산홍(1층)</td>
@@ -4817,6 +4570,378 @@
                                     <td>
                                         <p class="off">
                                             <i class="fa fa-lock" aria-hidden="true"></i>예약불가</p>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>삼나무동 연산홍(1층)</td>
+
+                                    <td>
+                                        <p class="complete">
+                                            <i class="fa fa-times" aria-hidden="true"></i>예약됨</p>
+                                    </td>
+                                    <td>
+                                        <p class="off">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>예약불가</p>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>삼나무동 연산홍(1층)</td>
+
+                                    <td>
+                                        <p class="complete">
+                                            <i class="fa fa-times" aria-hidden="true"></i>예약됨</p>
+                                    </td>
+                                    <td>
+                                        <p class="off">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>예약불가</p>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                            <p class="on">
+                                                <i class="fa fa-home" aria-hidden="true"></i>예약가능</p>
+                                        </a>
                                     </td>
                                     <td>
                                         <a href="">

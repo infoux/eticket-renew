@@ -151,6 +151,13 @@ $(document).ready(function() {
 
     });
 
+    $(".camp-head .title button").click(function() {
+        $('body').scrollTop(0);
+        $("div.lodge_div").css("display", "block");
+        $('div.popup').css("height", $(document).height())
+
+    });
+
 
 
     $("div.product button.seat").click(function() {
