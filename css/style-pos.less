@@ -3989,12 +3989,8 @@ body {
                     p {
                         margin: 0;
                         .center;
-
-                        @media all and (min-width: 1200px) {
-                            display: inline;
-                            font-size:1vw;
-                            
-                        }
+                        display: inline;
+                        font-size:1vw;
 
                         span {
                             display: inline;
@@ -4020,16 +4016,16 @@ body {
                         div {
                             
                             .inline-block;
+                            white-space:nowrap;
                             margin:0 0 0 1vw;
 
-
                             p.square { 
-                                .block;
-                                margin:1vh auto 0.4vh;
+                                .inline-block;
+                                .bottom;
+                                margin:0 0.4vw 1.8vh 1.2vw;
                                 background: #ffb700;
                                 width: 1vw;
                                 height: 1vw;
-
                             }
 
                             p.two {
@@ -4059,12 +4055,8 @@ body {
                 }
 
                 div.area_move {
-                    width: 100%;
-                    .center;
 
-                    @media all and (min-width: 1200px) {
-                        .none;
-                    }
+                    .none;
 
                     span {
                         .gradient(#5d5d5d, #545454, #4c4c4c);
@@ -4134,11 +4126,9 @@ body {
                             li.seat-line,
                             li.m_blank {
                                 background:none;
+                                font-size:18px;
+                                color:@white;
 
-                                @media all and (min-width: 1200px) {
-                                    font-size:18px;
-                                    color:@white;
-                                }
                             }
 
                             li.l_blank {
@@ -4149,18 +4139,19 @@ body {
                             li.wheel {
                                 .relative;
                                 line-height:1;
+                                font-size:0.8vw;
 
 
 
                                 &::before {
                                     content:"";
-                                    .inline-block;
+                                    .block;
                                     .relative;
+                                    margin:0.2vh auto 0.2vh;
                                     background:url("../images/wheel.svg") no-repeat center / 100% auto;
-
-                                        top:0.1vh;
-                                        width:16px;
-                                        height:16px;
+                                    top:0.1vh;
+                                    width:16px;
+                                    height:16px;
                                 }
                             }
 
@@ -4173,12 +4164,9 @@ body {
                                     .inline-block;
                                     .relative;
                                     background:url("../images/wheel.svg") no-repeat center / 100% auto;
-
-                                    @media all and (min-width: 1200px) {
-                                        top:4px;
-                                        width:16px;
-                                        height:16px;
-                                    }
+                                    top:4px;
+                                    width:16px;
+                                    height:16px;
                                 }
 
                             }
@@ -4220,8 +4208,7 @@ body {
 
                             &.shall {
                                 
-                                .rem(padding, 50 286);
-                                .rem(height, 480);
+                                padding: 5vh 4vw;
 
                                 li {
                                     &.tileview-content {
@@ -4241,9 +4228,10 @@ body {
 
                             &.kimhall {
                                 .relative;
+                                .left;
 
 
-                                padding: 5vh 8.8vw;
+                                padding: 5vh 8.8vw 5vh;
     
                                 li {
                                     &.tileview-content {
@@ -4254,7 +4242,7 @@ body {
 
                                     &.wheel2 {
 
-                                        width:calc(~"((100% - 100px) / 14) + 0.26%");
+                                        width:calc(~"((100% - (100px / 2)) / 28) * 2");
                                     }
 
 
