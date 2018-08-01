@@ -1,8 +1,8 @@
 // out: ./style.css, compress: true, sourceMap: false
-// @import "normalize.css";
+@import "normalize.css";
 @import "rem.less";
-// @import "font-awesome.min.css";
-// @import "fontello.css";
+@import "font-awesome.min.css";
+@import "fontello.css";
 
 
 
@@ -569,6 +569,20 @@ article.popup-notice {
             width: 1200px;
         }
 
+        &.camptabs {
+            background: #72b044;
+
+            li {
+                a {
+
+                    &.active {
+                        background: #f2f2f2;
+                        color: #222;
+                    }
+                }
+            }
+        }
+
         li {
             .inline-block;
             .top;
@@ -608,6 +622,18 @@ article.popup-notice {
 
         &.active {
             .inline-block;
+        }
+
+        &.camp-popup {
+            background: #f2f2f2;
+
+            h5 {
+                background: #f2f2f2;
+            }
+
+            .infomation {
+                background: #f2f2f2;
+            }
         }
 
         div.list-wrap {
@@ -654,7 +680,7 @@ article.popup-notice {
                 select {
                     .rem(width, 120);
                     .rem(height, 25);
-                    border-color: #ccc;
+                    border-color: #ddd;
                     border-radius: 5px;
                     .rem(padding, 5);
                     .rem(font-size, 10);
@@ -662,6 +688,8 @@ article.popup-notice {
                     .rem(top, 12);
                     .rem(right, 15);
                     .pointer;
+                    .bold;
+                    color: #ff7800;
 
                     @media all and (min-width: 1200px) {
                         width: 200px;
@@ -692,7 +720,30 @@ article.popup-notice {
                 }
             }
 
+            p.camp-image {
+                .hidden;
+                .mapazero;
+                width: 100%;
+                .rem(height, 180);
+
+                border: 1px solid #f2f2f2;
+                .rem(margin-bottom, 15);
+                border-radius: 8px;
+
+                @media all and (min-width: 1200px) {
+                    width: 560px;
+                    height: 350px;
+                    margin: 0 20px 0 10px;
+                    float: left;
+                }
+
+                img {
+                    .none;
+                }
+            }
+
             div.reservation-list {
+                .relative;
                 background: @white;
                 border: 1px solid #f5f5f5;
                 border-radius: 8px;
@@ -715,6 +766,11 @@ article.popup-notice {
                     @media all and (min-width: 1200px) {
                         font-size: 20px;
                         padding: 5px 5px 15px 5px;
+                    }
+
+                    span {
+                        border-top: 3px solid #f3ba00;
+                        .rem(padding-top, 15);
                     }
                 }
 
@@ -4189,6 +4245,7 @@ body {
                     .rem(margin, 14 0);
                     margin: 1rem 0;
                     background: #f2f2f2;
+
 
                     li {
                         .inline-block;

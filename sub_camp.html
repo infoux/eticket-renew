@@ -190,7 +190,7 @@
             </div>
         </section>
 
-        <div class="camp-popup">
+        <div class="loadingPop">
             <p>
                 <i class="fa fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
                 <h2>데이터를 불러오는 중 입니다.</h2>
@@ -202,7 +202,7 @@
                 <button class="close">창닫기
                     <i class="fa fa-times" aria-hidden="true"></i>
                 </button>
-                <ul class="tabs">
+                <ul class="tabs camptabs">
                     <li>
                         <a class="active" data="tab01">데크</a>
                     </li>
@@ -210,7 +210,7 @@
                         <a data="tab02">숙박권</a>
                     </li>
                 </ul>
-                <div id="tab01" class="tab-data active">
+                <div id="tab01" class="tab-data active camp-popup">
 
                     <div class="list-wrap">
                         <div class="select-list">
@@ -232,7 +232,7 @@
 
 
                         <div class="reservation-list">
-                            <h3>예약내역확인</h3>
+                            <h3><span>예약</span>내역확인</h3>
                             <dl>
                                 <dd><strong>예약구역</strong>F23</dd>
                                 <dd><strong>예약일자</strong>[2박3일] 2018.07.29 ~ 2018.07.31</dd>
@@ -3717,11 +3717,13 @@
                         </table>
                     </div>
                 </div>
-                <div id="tab02" class="tab-data">
+                <div id="tab02" class="tab-data camp-popup">
                     <div class="list-wrap">
-                        <img src="images/camp.jpg" alt="">
+                        <p class="camp-image">
+                            <img src="images/moguri.jpg" alt="">
+                        </p>
                         <div class="reservation-list">
-                            <h3>예약내역확인</h3>
+                            <h3><span>예약</span>내역확인</h3>
                             <dl>
                                 <dd><strong>예약구역</strong>F23</dd>
                                 <dd><strong>예약일자</strong>[2박3일] 2018.07.29 ~ 2018.07.31</dd>

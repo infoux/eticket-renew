@@ -102,6 +102,9 @@ $(document).ready(function() {
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat top / cover");
     });
 
+    $("div.camp-popup p.camp-image").each(function() {
+        $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
+    });
 
     $(".main-issue .image").each(function() {
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
