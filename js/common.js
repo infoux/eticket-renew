@@ -242,6 +242,31 @@ $(document).ready(function() {
 
         }
 
+        try {
+
+            var h = $(window).scrollTop();
+            var hm = $(".tab-data.active .table-cover").offset().top;
+            var hm2 = $(".tab-data.active tbody").height() + 280;
+            if (h > hm && h < hm2) {
+                $(".active .table-cover").addClass("moguri_fix");
+                $(".active .moguri_fix thead th:nth-child(2)").css("margin-left", gtt);
+            } else {
+                $(".active .table-cover").removeClass("moguri_fix");
+                $(".active thead th:nth-child(2)").attr("style", "");
+            }
+
+            $(".active .moguri_fix thead th:nth-child(n+2)").css("width", $(".active .moguri_fix tbody td:last-child p").width() + 1);
+
+            $(".active .moguri_fix thead th.fix").css("width", $(".active .moguri_fix tbody td:first-child").width());
+
+            var y = $(".tab-data.active .table-cover").offset().top;
+            var ym = $(".tab-data.active tbody").height() + 280;
+
+
+        } catch (e) {
+
+        }
+
 
 
 
