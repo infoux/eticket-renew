@@ -8270,7 +8270,7 @@ body {
 
                         h4 {
                             .center;
-                            .rem(font-size, 14);
+                            .rem(font-size, 12);
                             .rem(margin, 10 0 20);
 
                             @media all and (min-width: 1200px) {
@@ -8287,7 +8287,7 @@ body {
 
 
                             input {
-                                width: 100%;
+                                width: calc(~"100% - 150px");
                                 border: 1px solid #ccc;
                                 border-right-color:transparent;
                                 .rem(padding, 10);
@@ -8304,6 +8304,7 @@ body {
                                 .rem(font-size, 10);
                                 border-color:transparent;
                                 color:@white;
+                                background: #999;
 
                                 @media all and (min-width: 1200px) {
                                     background:#ff7800;
