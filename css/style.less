@@ -668,12 +668,12 @@ article.popup-notice {
                     margin: 0;
                     .absolute;
                     .rem(top, 18);
-                    .rem(left, 15);
+                    .rem(left, 10);
 
                     @media all and (min-width: 1200px) {
                         font-size: 24px;
                         top: 40px;
-                        left: 55px;
+                        left: 20px;
                     }
                 }
 
@@ -686,7 +686,7 @@ article.popup-notice {
                     .rem(font-size, 10);
                     .absolute;
                     .rem(top, 12);
-                    .rem(right, 15);
+                    .rem(right, 10);
                     .pointer;
                     .bold;
                     color: #ff7800;
@@ -697,24 +697,73 @@ article.popup-notice {
                         font-size: 14px;
                         padding: 5px;
                         top: 30px;
-                        left: 360px;
+                        left: 380px;
                     }
                 }
 
-                div {
+                div.camp-img-wrap {
+                    .relative;
+                    .block;
                     width: 100%;
-                    .rem(margin, 50 0 10 0);
+                    .middle;
+                    .rem(margin-top, 50);
 
                     @media all and (min-width: 1200px) {
-                        width: 500px;
-                        margin: 120px 0 50px 40px;
+                        width: 560px;
+                        height: 348px;
+                        margin-top: 70px;
                     }
 
-                    img{
-                        width: 100%;
+                    p {
+                        &.main-img {
+                            width: 100%;
+                            .rem(height, 250);
+                            border-radius: 8px;
 
-                        @media all and (min-width: 1200px) {
+                            @media all and (min-width: 1200px) {
+                                height: 348px;
+                            }
 
+                            img {
+                                .none;
+                            } 
+                        }   
+                        
+                        &.big-img {
+                            .rem(margin-top, 80);
+
+                            img {
+                                width: 100%;
+
+                                @media all and (min-width: 1200px) {
+                                    margin-top: 80px;
+                                }      
+                            }
+                        }
+
+                        &.big01 {
+
+
+                            img {
+                                width: 100%;
+
+                                @media all and (min-width: 1200px) {
+                                    margin-top: 50px;
+                                }      
+                            }
+                        }
+
+                        &.big02 {
+
+
+                            img {
+                                width: 100%;
+
+
+                                @media all and (min-width: 1200px) {
+                                    margin-top: 10px;
+                                }      
+                            }
                         }
                     }
                 }
@@ -722,10 +771,10 @@ article.popup-notice {
 
             p.camp-image {
                 .hidden;
+                .block;
                 .mapazero;
                 width: 100%;
                 .rem(height, 180);
-
                 border: 1px solid #f2f2f2;
                 .rem(margin-bottom, 15);
                 border-radius: 8px;
@@ -754,6 +803,13 @@ article.popup-notice {
                     height: 350px;
                     .inline-block;
                 }
+
+                &.reservation_tab01 {
+
+                    @media all and (min-width: 1200px) {
+                        margin-top: 68px;
+                    }
+                }
                 
                 h3 {
                     .rem(font-size, 12);
@@ -781,7 +837,7 @@ article.popup-notice {
 
                     @media all and (min-width: 1200px) {
                         font-size: 18px;
-                        margin: 50px 0 50px 5px;
+                        margin: 70px 0 70px 5px;
                     }
 
                     dd {

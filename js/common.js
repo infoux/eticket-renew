@@ -106,6 +106,10 @@ $(document).ready(function() {
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
     });
 
+    $("div.camp-popup div.camp-img-wrap p.main-img").each(function() {
+        $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
+    });
+
     $(".main-issue .image").each(function() {
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
     });
