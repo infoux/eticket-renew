@@ -710,62 +710,20 @@ article.popup-notice {
 
                     @media all and (min-width: 1200px) {
                         width: 560px;
-                        height: 348px;
+                        height: 350px;
+                        line-height: 350px;
                         margin-top: 70px;
                     }
 
-                    p {
-                        &.main-img {
-                            width: 100%;
-                            .rem(height, 250);
-                            border-radius: 8px;
+                  
+                    img {
+                        width: 100%;
+                        border-radius: 8px;
 
-                            @media all and (min-width: 1200px) {
-                                height: 348px;
-                            }
-
-                            img {
-                                .none;
-                            } 
-                        }   
-                        
-                        &.big-img {
-                            .rem(margin-top, 80);
-
-                            img {
-                                width: 100%;
-
-                                @media all and (min-width: 1200px) {
-                                    margin-top: 80px;
-                                }      
-                            }
-                        }
-
-                        &.big01 {
-
-
-                            img {
-                                width: 100%;
-
-                                @media all and (min-width: 1200px) {
-                                    margin-top: 50px;
-                                }      
-                            }
-                        }
-
-                        &.big02 {
-
-
-                            img {
-                                width: 100%;
-
-
-                                @media all and (min-width: 1200px) {
-                                    margin-top: 10px;
-                                }      
-                            }
-                        }
-                    }
+                        @media all and (min-width: 1200px) {
+                            .middle;
+                        } 
+                    }      
                 }
             }
 
@@ -800,7 +758,7 @@ article.popup-notice {
 
                 @media all and (min-width: 1200px) {
                     width: 550px;
-                    height: 350px;
+                    height: 368px;
                     .inline-block;
                 }
 
@@ -837,7 +795,7 @@ article.popup-notice {
 
                     @media all and (min-width: 1200px) {
                         font-size: 18px;
-                        margin: 70px 0 70px 5px;
+                        margin: 50px 0 50px 5px;
                     }
 
                     dd {
@@ -852,8 +810,61 @@ article.popup-notice {
                             margin-bottom: 0;
                         }
 
+                        span {
+                            .rem(margin, 0 10);
+                        }
+
                         strong {
                             .rem(margin-right, 15);
+                            .rem(width, 60);
+
+                            &.oneday {
+                                .inline-block;
+                                .top;
+                                .rem(line-height, 20);
+                                .rem(font-size, 10);
+                                .center;
+                                background: #f4f4f4;
+                                // .rem(min-width, 40);
+                                margin-right: 0;
+        
+                                @media all and (min-width: 1200px) {
+                                    line-height: 26px;
+                                    font-size: 14px;
+                                    min-width: 60px;
+                                    height: 26px;
+                                }
+                            }
+                        }
+
+                        button {
+                            border: none;
+                            .zero;
+                            .mapazero;
+                            background: #ff7800;
+                            color: @white;
+                            .rem(width, 18);
+                            .rem(height, 20);
+                            border-radius: 0;
+                            .pointer;
+    
+                            @media all and (min-width: 1200px) {
+                                width: 26px;
+                                height: 26px;
+                            }
+    
+                            i {
+                                .rem(font-size, 12);
+                                .rem(line-height, 20);
+    
+                                @media all and (min-width: 1200px) {
+                                    line-height: 26px;
+                                }
+    
+                                &::before {
+                                    .mapazero;
+                                }
+                            }
                         }
                     }
                 }
