@@ -1066,29 +1066,6 @@ article.popup-notice {
                             }
                         }
                     }
-
-                    // &.moguri_fix {
-
-                    //     tr {
-
-                    //         th {
-
-                    //             &:first-child {
-                    //                 .rem(width, 220);
-                    //                 border-left: 1px solid #ccc;
-                    //                 .rem(line-height, 40);
-                    //                 .rem(padding, 0 10);
-
-                    //                 @media all and (min-width: 1200px) {
-
-                    //                     line-height: 50px;
-                    //                     padding: 0 10px;
-                    //                 }
-
-                    //             }
-                    //         }
-                    //     }
-                    // }
                 }
 
                 tbody {
@@ -1199,46 +1176,7 @@ article.popup-notice {
                 }
             }
 
-            &.moguri_fix {
-                .rem(padding-top, 40);
-
-                table {
-                    thead {
-                        .fixed;
-                        z-index: 30;
-                        .rem(left, 10);
-                        .rem(right, 10);
-                        top: 0;
-                        white-space: nowrap;
-                        overflow: hidden;
-
-                        @media all and (min-width: 1200px) {
-                            width: 1200px;
-                            left: 50%;
-                            margin-left: -600px;
-                            right: auto;
-                        }
-
-                        tr {
-                            .block;
-                            .center;
-                            .zero;
-
-                            th:first-child {
-                                .rem(left, 0);
-                                .rem(width, 200);
-
-                                @media all and (min-width: 1200px) {
-                                    width: 251px !important;
-                                }
-
-                            }
-                        }
-                    }
-                }
-            }
-
-            // &.fixT {
+            // &.moguri_fix {
             //     .rem(padding-top, 40);
 
             //     table {
@@ -1265,9 +1203,10 @@ article.popup-notice {
 
             //                 th:first-child {
             //                     .rem(left, 0);
+            //                     .rem(width, 200);
 
             //                     @media all and (min-width: 1200px) {
-            //                         width: 192px !important;
+            //                         width: 251px !important;
             //                     }
 
             //                 }
@@ -1275,6 +1214,44 @@ article.popup-notice {
             //         }
             //     }
             // }
+
+            &.fixT {
+                .rem(padding-top, 40);
+
+                table {
+                    thead {
+                        .fixed;
+                        z-index: 30;
+                        .rem(left, 10);
+                        .rem(right, 10);
+                        top: 0;
+                        white-space: nowrap;
+                        overflow: hidden;
+
+                        @media all and (min-width: 1200px) {
+                            width: 1200px;
+                            left: 50%;
+                            margin-left: -600px;
+                            right: auto;
+                        }
+
+                        tr {
+                            .block;
+                            .center;
+                            .zero;
+
+                            th:first-child {
+                                .rem(left, 0);
+
+                                @media all and (min-width: 1200px) {
+                                    width: 192px !important;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
 
             &.fixOn {
                 .rem(padding-left, 160);
@@ -7538,6 +7515,14 @@ body {
 
                                                     &:first-child {
                                                         margin: 0;
+                                                    }
+                                                }
+
+                                                &.top-btn {
+
+                                                    @media all and (min-width: 1200px) {
+                                                        .absolute;
+                                                        bottom: 70px;
                                                     }
                                                 }
                                             }
