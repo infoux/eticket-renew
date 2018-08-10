@@ -7377,9 +7377,8 @@ body {
 
                                 li {
                                     
-
                                     @media all and (min-width: 1200px) {
-                                        height: 350px;
+                                        // height: 350px;
                                     }
                                 
                                     h6 {
@@ -7406,7 +7405,7 @@ body {
                                             .rem(margin, 10 0);
 
                                             @media all and (min-width: 1200px) {
-                                                margin: 20px 0;
+                                                margin: 20px 0 0 0;
                                             }
 
                                             strong {
@@ -7490,42 +7489,41 @@ body {
                                                 }
                                             }
 
-                                            div.age-wrap {
-                                                background: #f4f4f4;
-                                                width: 100%;
-                                                .rem(height, 50);
-                                                .rem(padding, 10);
-                                                border-radius: 8px;
-                                                .rem(margin-top, 10);
+                                            
+                                        }
+                                    }
 
-                                                @media all and (min-width: 1200px) {
-                                                    width: 480px;
-                                                    height: 40px;
-                                                    .center;
-                                                    border-radius: 50px;
-                                                    padding: 10px;
-                                                    font-size: 14px;
-                                                    .absolute;
-                                                    bottom: 30px;
-                                                    left: 125px;
-                                                }
+                                    div.age-wrap {
+                                        background: #f4f4f4;
+                                        width: 100%;
+                                        .rem(height, 50);
+                                        .rem(padding, 10);
+                                        border-radius: 8px;
+                                        .rem(margin-top, 10);
 
-                                                b {
-                                                    .rem(margin, 5);
+                                        @media all and (min-width: 1200px) {
+                                            width: 480px;
+                                            height: 40px;
+                                            .center;
+                                            border-radius: 50px;
+                                            padding: 10px;
+                                            font-size: 14px;
+                                            margin-right: 430px;
+                                        }
 
-                                                    &:first-child {
-                                                        margin: 0;
-                                                    }
-                                                }
+                                        p{
+                                            .inline-block;
+                                            margin: 0;
+                                            line-height: 22px;
 
-                                                &.top-btn {
+                                            b {
+                                                .rem(margin, 5);
 
-                                                    @media all and (min-width: 1200px) {
-                                                        .absolute;
-                                                        bottom: 70px;
-                                                    }
+                                                &:first-child {
+                                                    margin: 0;
                                                 }
                                             }
+
                                         }
                                     }
                                 }
