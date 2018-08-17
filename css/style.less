@@ -2637,9 +2637,9 @@ body {
                             ul {
                                 .mapazero;
                                 .no-list;
-                                .rem(width, 150);
+                                .rem(width, 160);
                                 margin: 0 auto;
-                                .rem(padding-left, 15);
+                                .rem(padding-left, 20);
 
                                 @media all and (min-width: 1200px) {
                                     width: 250px;
@@ -2647,18 +2647,29 @@ body {
     
                                 li {
                                     .inline-block;
+                                    .rem(width, 80);
+
+                                    &:first-child {
+                                        .rem(width, 60);
+                                    }
+
+                                    @media all and (min-width: 1200px) {
+                                        width: 120px;
+
+                                        &:first-child {
+                                            width: 80px;
+                                        }
+                                    }
                                     
                                     input {
                                         .none;
                                     }
     
                                     label {
-                                        .rem(margin, 0 20 0 0);
                                         .rem(font-size, 12);
     
                                         @media all and (min-width: 1200px) {
                                             font-size: 17px;
-                                            margin: 0 20px 0 0;
                                         }
     
                                         &::before {
