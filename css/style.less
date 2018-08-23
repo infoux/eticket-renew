@@ -1023,7 +1023,7 @@ article.popup-notice {
                             .inline-block;
                             background: #efefef;
                             .normal;
-                            .rem(padding, 6 10);
+                            .rem(padding, 6 0);
                             border: 1px solid #ccc;
                             border-left: none;
                             border-top: none;
@@ -1039,7 +1039,7 @@ article.popup-notice {
                             }
 
                             &:first-child {
-                                .rem(width, 200);
+                                .rem(width, 140);
                                 border-left: 1px solid #ccc;
                                 .rem(line-height, 40);
                                 .rem(padding, 0 10);
@@ -1051,6 +1051,24 @@ article.popup-notice {
                                 }
 
                             }
+
+                            &.camp_title {
+
+                                &:first-child {
+                                    .rem(width, 200);
+                                    border-left: 1px solid #ccc;
+                                    .rem(line-height, 40);
+                                    .rem(padding, 0 10);
+    
+                                    @media all and (min-width: 1200px) {
+    
+                                        line-height: 50px;
+                                        padding: 0 10px;
+                                    }
+    
+                                }
+                            }
+                            
 
                             &.sat {
                                 color: #0066cc;
