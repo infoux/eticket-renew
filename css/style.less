@@ -7446,6 +7446,7 @@ body {
 
                                                 &.attend {
                                                     .block;
+                                                    .rem(width, 75);
                                                     .rem(padding-bottom, 10);
 
                                                     @media all and (min-width: 1200px) {
@@ -7459,7 +7460,6 @@ body {
                                             }
 
                                             label {
-                                                .rem(margin-right, 2);
                                                 .rem(line-height, 16);
                                                 .rem(font-size, 10);
 
@@ -7470,8 +7470,8 @@ body {
                                             }
 
                                             select {
-                                                .rem(width, 34);
-                                                .rem(margin-right, 10);
+                                                .rem(width, 42);
+                                                .rem(margin-right, 5);
                                                 border-radius: 4px;
 
                                                 @media all and (min-width: 1200px) {
@@ -7529,7 +7529,7 @@ body {
                                         background: #f4f4f4;
                                         width: 100%;
                                         .rem(height, 50);
-                                        .rem(padding, 10);
+                                        .rem(padding, 10 5);
                                         border-radius: 8px;
                                         .rem(margin-top, 10);
 
@@ -7544,9 +7544,8 @@ body {
                                         }
 
                                         p{
+                                            .rem(margin, 0 5 3 0);
                                             .inline-block;
-                                            margin: 0;
-                                            line-height: 22px;
 
                                             b {
                                                 .rem(margin, 5);
@@ -9409,7 +9408,6 @@ body {
             .rem(height, 50);
             .left;
             .rem(padding, 8 0 0 10);
-            
             background: url("../images/mobile-check.png") no-repeat center / 100%;
 
             strong {
@@ -9418,14 +9416,13 @@ body {
                 .rem(width, 62);
                 .rem(height, 17);
                 background: url("../images/mobile-check.svg") no-repeat center / 100%;
-
             }
 
             @media all and (min-width: 1200px) {
                 .none;
             }
 
-        }
+        } 
 
     }
 }

@@ -326,4 +326,12 @@ $(document).ready(function() {
     $("select#resArea").change(function() {
         $(this).parent().find("label").text($(this).find('option:selected').text());
     });
+
+
+    $("input, select").focus(function() {
+            $("#footer a.check").hide();
+        },
+        function() {
+            $("#footer a.check").show();
+        });
 });
