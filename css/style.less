@@ -1011,6 +1011,7 @@ article.popup-notice {
                 .inline-block;
                 white-space: nowrap;
                 background: @white;
+                border-spacing:0;
 
                 @media all and (min-width: 1200px) {
                     width: 100%;
@@ -1021,6 +1022,7 @@ article.popup-notice {
                     tr {
                         th {
                             .inline-block;
+                            .top;
                             background: #efefef;
                             .normal;
                             .rem(padding, 6 0);
@@ -1028,7 +1030,7 @@ article.popup-notice {
                             border-left: none;
                             border-top: none;
                             .rem(height, 40);
-                            .rem(width, 40);
+                            width:50px;
                             .rem(font-size, 12);
 
                             @media all and (min-width: 1200px) {
@@ -1036,6 +1038,7 @@ article.popup-notice {
                                 padding: 10px 0;
                                 height: 50px;
                                 font-size: 16px;
+                                width:34px;
                             }
 
                             &:first-child {
@@ -1068,15 +1071,16 @@ article.popup-notice {
                 }
 
                 tbody {
+                    float:left;
                     tr {
                         &:hover {
                             background:#eee;
                         }
                         td {
-
+                            .top;
                             .inline-block;
                             .relative;
-                            .rem(width, 40);
+                            width:50px;
                             color: #ccc;
                             border: 1px solid #ccc;
                             border-left: none;
@@ -1109,7 +1113,7 @@ article.popup-notice {
                             }
 
                             p {
-                                .inline-block;
+                                .flex;
                                 .zero;
                                 background: #eee;
                                 .absolute;
