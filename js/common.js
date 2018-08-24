@@ -230,9 +230,12 @@ $(document).ready(function() {
                 $(".active thead th:nth-child(2)").attr("style", "");
             }
 
-            $(".active .fixT thead th:nth-child(n+2)").css("width", $(".active .fixT tbody td:last-child p").width() + 1);
+            //$(".active .fixT thead th:nth-child(n+2)").css("width", $(".active .fixT tbody td:last-child p").width() + 1);
 
-            $(".active .fixT thead th.fix").css("width", $(".active .fixT tbody td:first-child").width());
+
+
+
+            //$(".active .fixT thead th.fix").css("width", $(".active .fixT tbody td:first-child").width());
 
             var y = $(".tab-data.active .table-cover").offset().top;
             var ym = $(".tab-data.active tbody").height() + 280;
