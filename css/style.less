@@ -1034,11 +1034,9 @@ article.popup-notice {
                             .rem(font-size, 12);
 
                             @media all and (min-width: 1200px) {
-                                display: table-cell;
                                 padding: 10px 0;
                                 height: 50px;
                                 font-size: 16px;
-                                width:34px;
                             }
 
                             &:first-child {
@@ -1091,7 +1089,7 @@ article.popup-notice {
                             .rem(font-size, 12);
 
                             @media all and (min-width: 1200px) {
-                                display: table-cell;
+
                                 font-size: 14px;
                                 height: 50px;
                                 line-height: 50px;
@@ -1115,6 +1113,7 @@ article.popup-notice {
                             p {
                                 .flex;
                                 .zero;
+                                
                                 background: #eee;
                                 .absolute;
                                 .full-position;
@@ -1149,7 +1148,7 @@ article.popup-notice {
                                     .rem(font-size, 14);
 
                                     @media all and (min-width: 1200px) {
-                                        font-size: 20px;
+                                        font-size: 18px;
                                         .relative;
                                         top: 6px;
                                     }
@@ -1158,11 +1157,47 @@ article.popup-notice {
                         }
                     }
                 }
+
+                @media all and (min-width: 1200px) {
+                    &.c28 {
+                        th,
+                        td {
+                            width:calc(~"(1200px - 300px) / 28");
+                            .hidden;
+                        }
+                    }
+
+                    &.c29 {
+                        th,
+                        td {
+                            width:calc(~"(1200px - 300px) / 29");
+                            .hidden;
+                        }
+                    }
+
+                    &.c30 {
+                        th,
+                        td {
+                            width:calc(~"(1200px - 300px) / 30");
+                            .hidden;
+                        }
+                    }
+
+                    &.c31 {
+                        th,
+                        td {
+                            width:calc(~"(1200px - 300px) / 31");
+                            .hidden;
+                        }
+                    }
+
+
+    
+                }
+
             }
 
             &.fixT {
-                .rem(padding-top, 40);
-
                 table {
                     thead {
                         .fixed;
@@ -1228,8 +1263,9 @@ article.popup-notice {
 
             }
 
+
+
         }
-    }
 }
 
 /* style */

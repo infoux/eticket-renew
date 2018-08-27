@@ -150,7 +150,19 @@ $(document).ready(function() {
     $(".ticket .calendar h3").click(function() {
         $('body').scrollTop(0);
         $("div.lodge_div").css("display", "block");
-        $('div.popup').css("height", $(document).height())
+        $('div.popup').css("height", $(document).height());
+
+
+        if ($('div.popup .active div.table-cover thead th').length == 29) {
+            $('div.popup .active div.table-cover table').addClass("c28");
+        } else if ($('div.popup .active div.table-cover thead th').length == 30) {
+            $('div.popup .active div.table-cover table').addClass("c29");
+        } else if ($('div.popup .active div.table-cover thead th').length == 31) {
+            $('div.popup .active div.table-cover table').addClass("c30");
+        } else if ($('div.popup .active div.table-cover thead th').length == 32) {
+            $('div.popup .active div.table-cover table').addClass("c31");
+        }
+
 
     });
 
@@ -230,12 +242,6 @@ $(document).ready(function() {
                 $(".active thead th:nth-child(2)").attr("style", "");
             }
 
-            //$(".active .fixT thead th:nth-child(n+2)").css("width", $(".active .fixT tbody td:last-child p").width() + 1);
-
-
-
-
-            //$(".active .fixT thead th.fix").css("width", $(".active .fixT tbody td:first-child").width());
 
             var y = $(".tab-data.active .table-cover").offset().top;
             var ym = $(".tab-data.active tbody").height() + 280;
