@@ -169,7 +169,17 @@ $(document).ready(function() {
     $(".camp-head .title button").click(function() {
         $('body').scrollTop(0);
         $("div.lodge_div").css("display", "block");
-        $('div.popup').css("height", $(document).height())
+        $('div.popup').css("height", $(document).height());
+
+        if ($('div.popup .active div.table-cover thead th').length == 29) {
+            $('div.popup .active div.table-cover table').addClass("c28");
+        } else if ($('div.popup .active div.table-cover thead th').length == 30) {
+            $('div.popup .active div.table-cover table').addClass("c29");
+        } else if ($('div.popup .active div.table-cover thead th').length == 31) {
+            $('div.popup .active div.table-cover table').addClass("c30");
+        } else if ($('div.popup .active div.table-cover thead th').length == 32) {
+            $('div.popup .active div.table-cover table').addClass("c31");
+        }
 
     });
 
