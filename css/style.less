@@ -7610,11 +7610,10 @@ body {
 
                                             select.birthDtY {
                                                 .inline-block;
-                                                width: calc(100%/2);
+                                                width: calc(~"(100% - 5px) / 3");
                                                 .rem(height, 30);
-                                                .rem(margin, 8 0 8 0);
+                                                .rem(margin, 8 10 8 0);
                                                 border: 1px solid #ccc;
-                                                border-right: none;
 
                                                 @media all and (min-width: 1200px) {
                                                     width: 158px;
@@ -7626,13 +7625,29 @@ body {
                                             }
 
                                             select.birthDtM {
-                                                width: calc(100%/2);
+                                                width: calc(~"(100% - 80px) / 3");
+                                                // width: calc(100%/3);
+                                                .rem(height, 30);
+                                                .rem(margin, 8 10 8 0);
+                                                border: 1px solid #ccc;
+
+                                                @media all and (min-width: 1200px) {
+                                                    width: 75px;
+                                                    height: 40px;
+                                                    .top;
+                                                    margin: 0 7px 0 0;
+                                                }
+                                            }
+
+                                            select.birthDtD {
+                                                width: calc(~"(100% - 80px) / 3");
+                                                // width: calc(100%/3);
                                                 .rem(height, 30);
                                                 .rem(margin, 8 0 8 0);
                                                 border: 1px solid #ccc;
 
                                                 @media all and (min-width: 1200px) {
-                                                    width: 158px;
+                                                    width: 75px;
                                                     height: 40px;
                                                     .top;
                                                     margin: 0;
@@ -7656,10 +7671,12 @@ body {
                                             }
 
                                             p.phone {
+                                                .block;
                                                 .rem(font-size, 12);
                                                 color: #000;
                                                 
                                                 @media all and (min-width: 1200px) {
+                                                    .inline-block;
                                                     margin: 0 10px 0 20px;;
                                                     color: #222;
                                                     font-size: 16px;
