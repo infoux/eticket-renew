@@ -2535,9 +2535,41 @@ body {
                             right: 0;
                         }
 
+                        a {
+                            .block;
+                            .rem(font-size, 10);
+                            color: #f3740b;
+                            .rem(width, 110);
+                            .rem(height, 20);
+                            .rem(line-height, 20);
+                            .absolute;
+                            .rem(top, 16);
+                            right: 50%;
+                            .rem(margin-right, -55);
+
+                            @media all and (min-width: 1200px) {
+                                background: #f3740b;
+                                color: @white;
+                                border-radius: 20px;
+                                width: 150px;
+                                height: 25px;
+                                line-height: 25px;
+                                font-size: 12px;
+                                .center;
+                                right: 115px;
+                                top: 0;
+                            }
+
+                            i::before {
+                                .rem(padding-right, 5);
+                                margin: 0;
+                            }
+                        }
+
+
                         h3 {
                             display: inline-block;
-                            .rem(padding, 30 0 0 0);
+                            .rem(padding, 40 0 0 0);
                             width: 100%;
                             margin: 0;
                             font-weight: 200;
