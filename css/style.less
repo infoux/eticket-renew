@@ -677,15 +677,16 @@ article.popup-notice {
                 }
 
                 select {
-                    .rem(width, 120);
+                    .rem(width, 70);
                     .rem(height, 25);
+                    .rem(line-height, 25);
                     border-color: #ddd;
                     border-radius: 5px;
-                    .rem(padding, 5);
                     .rem(font-size, 10);
+                    .rem(padding, 0 3);
                     .absolute;
                     .rem(top, 12);
-                    .rem(right, 10);
+                    .rem(right, 75);
                     .pointer;
                     .bold;
                     color: #ff7800;
@@ -696,7 +697,30 @@ article.popup-notice {
                         font-size: 14px;
                         padding: 5px;
                         top: 30px;
-                        left: 380px;
+                        left: 260px;
+                    }
+                }
+
+                a {
+                    .block;
+                    background: #ff7800;
+                    color: @white;
+                    .rem(font-size, 10);
+                    .rem(width, 60);
+                    .rem(height, 25);
+                    .rem(line-height, 25);
+                    border-radius: 5px;
+                    .absolute;
+                    .rem(top, 12);
+                    .rem(right, 10);
+
+                    @media all and (min-width: 1200px) {
+                        font-size: 16px;
+                        width: 110px;
+                        height: 38px;
+                        line-height: 38px;
+                        top: 30px;
+                        left: 470px;
                     }
                 }
 
@@ -2601,6 +2625,40 @@ body {
                                 .left;
                                 font-size: 38px;
                                 .normal;
+                            }
+                        }
+
+                        a {
+                            .block;
+                            .rem(font-size, 10);
+                            color: @white;
+                            background: #f3740b;
+                            .rem(width, 120);
+                            .rem(height, 20);
+                            .rem(line-height, 20);
+                            .rem(margin, 0 auto 10 auto);
+                            border-radius: 20px;
+                            .rem(padding, 0 5);
+
+                            @media all and (min-width: 1200px) {
+                                width: 150px;
+                                height: 25px;
+                                line-height: 25px;
+                                font-size: 12px;
+                                .center;
+                                .absolute;
+                                left: 220px;
+                                top: 60px;
+                                padding: 0 10px;
+                            }
+
+                            i::before {
+                                .rem(padding, 0 5 0 0);
+                                margin: 0;
+
+                                @media all and (min-width: 1200px) {
+                                    padding-right: 5px;
+                                }
                             }
                         }
 
