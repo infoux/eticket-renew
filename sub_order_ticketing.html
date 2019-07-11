@@ -186,7 +186,7 @@
                 <div class="input_box" id="sale_box">
                     <h5>할인선택</h5>
                     <dl>
-                        <dt>좌석 : LB</dt>
+                        <dt>좌석 : N10</dt>
                         <dd>
                             <select>
                                 <option value="">==적용할 할인을 선택하세요==</option>
@@ -209,11 +209,24 @@
                                 <option value="">자원봉사마일리지 - 할인률: 50%</option>
                                 <option value="">만13세~만24세(2005년~1994년) - 할인률: 30%</option>
                                 <option value="">예술인패스소지자 - 할인률: 30%</option>
+                                <option value="">문화사랑회원할인 - 할인률: 30%(중복할인 안됨)</option>
                             </select>
                         </dd>
-                        <dd>
+                        <!-- <dd>
                             <input id="discount_check" type="checkbox">
                             <label for="discount_check">문화사랑회원할인 적용 시 선택(30% 할인 - 중복할인 안됨)</label>
+                        </dd> -->
+                        <dd class="name_info appear">
+                            <div>
+                                <p>이름</p>
+                                <input type="text">
+                                <p class="number">핸드폰</p>
+                                <input type="text" placeholder="'-' 제외한 숫자만 입력하세요.">
+                            </div>
+                        </dd>
+                        <dd class="userInfo_btn">
+                            <input class="ok" type="button" value="확인">
+                            <div class="notJoin">미가입</div>
                         </dd>
                         <dd class="additional">
                             <div>
