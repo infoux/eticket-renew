@@ -459,6 +459,7 @@ article.popup-notice {
 
         @media all and (min-width: 1200px) {
             width: 500px;
+            margin: 0 5px 20px 5px;
         }
 
         h1 {
@@ -504,13 +505,16 @@ article.popup-notice {
         div.text {
             background:@white;
             .rem(margin, 0 10 10);
-            .rem(min-height, 300);
+            .rem(min-height, 450);
             .rem(font-size, 12);
             .rem(padding, 20);
-    
+            
     
             @media all and (min-width: 1200px) {
                 font-size:14px;
+                height: 500px;
+                overflow-x: auto;
+                overflow-y: auto;
             }
         }
     }
