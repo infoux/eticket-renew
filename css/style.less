@@ -444,70 +444,76 @@ article.popup-notice {
     width:100%;
     .remCalc(max-width, 20);
     .rem(margin, 10);
-    background:#ff8200;
-    .drop-shadow();
 
     @media all and (min-width: 1200px) {
-        left:50%;
         top:280px;
-        width:500px;
-        margin:0 0 0 -250px;
+        text-align: center;
     }
 
-    h1 {
-        .relative;
-        color:@white;
-        .rem(font-size, 16);
-        margin:0;
-        .rem(line-height, 40);
-        .rem(padding, 0 10);
+    div.popup_wrap {
+        width: 100%;
+        .inline-block;
+        background:#ff8200;
+        .rem(margin-bottom, 20);
+        .drop-shadow();
 
         @media all and (min-width: 1200px) {
-            font-size:22px;
-            padding:0 10px;
-            line-height:50px;
+            width: 500px;
         }
 
-        button {
-            .absolute;
-            .rem(right, 10);
-            .rem(top, 10);
-            border:none;
-            background:none;
-            .mapazero;
-            .zero;
+        h1 {
+            .relative;
             color:@white;
-            .pointer;
-
+            .rem(font-size, 16);
+            margin:0;
+            .rem(line-height, 40);
+            .rem(padding, 0 10);
+    
             @media all and (min-width: 1200px) {
-                right:20px;
-                top:10px;
+                font-size:22px;
+                padding:0 10px;
+                line-height:50px;
             }
-
-            i {
-                .rem(font-size, 16);
-
+    
+            button {
+                .absolute;
+                .rem(right, 10);
+                .rem(top, 10);
+                border:none;
+                background:none;
+                .mapazero;
+                .zero;
+                color:@white;
+                .pointer;
+    
                 @media all and (min-width: 1200px) {
-                    font-size:24px;
+                    right:20px;
+                    top:10px;
+                }
+    
+                i {
+                    .rem(font-size, 16);
+    
+                    @media all and (min-width: 1200px) {
+                        font-size:24px;
+                    }
                 }
             }
         }
-    }
-
-    div.text {
-        background:@white;
-        .rem(margin, 0 10 10);
-        .rem(min-height, 300);
-        .rem(font-size, 12);
-        .rem(padding, 20);
-
-
-        @media all and (min-width: 1200px) {
-            font-size:14px;
+    
+        div.text {
+            background:@white;
+            .rem(margin, 0 10 10);
+            .rem(min-height, 300);
+            .rem(font-size, 12);
+            .rem(padding, 20);
+    
+    
+            @media all and (min-width: 1200px) {
+                font-size:14px;
+            }
         }
     }
-
-
 }
 
 
