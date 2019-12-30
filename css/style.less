@@ -4278,7 +4278,8 @@ body {
                     width: 100%;
                     .rem(padding, 10);
                     word-break: keep-all;
-                    border-top: 1px solid #c4c4c4;
+                    border-top: 1px solid #ff7800;
+                    border-bottom: 1px solid #ececec;
                     .rem(font-size, 12);
                     color: #555;
                     line-height: 1.6;
@@ -4331,6 +4332,90 @@ body {
                             }
                         }
                     }
+                }
+
+                div.autopick {
+
+                    .rem(padding, 20 0);
+
+
+                    h5 {
+                        .rem(margin, 10 0);
+                        .rem(font-size, 14);
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 25px;
+                            margin: 20px 0;
+                        }
+
+                        strong {
+                            color: #ff7800;
+                        }
+                    }
+
+                    ul.list {
+                        .inline-block;
+                        .no-list;
+                        .mapazero;
+                        width:100%;
+                        .zero;
+                        border:5px solid #ececec;
+                        .rem(padding, 5);
+
+                        @media all and (min-width: 1200px) {
+                            .rem(padding, 15 10);
+                        }
+
+
+                        li {
+                            .inline-block;
+                            width:50%;
+                            .rem(padding, 5);
+                            .rem(font-size, 14);
+                            .center;
+
+                            @media all and (min-width: 1200px) {
+                                .rem(padding, 10);
+                                width:25%;
+                            }
+
+                            p.photo {
+                                .mapazero;
+                                .rem(max-height, 220);
+                                .hidden;
+
+                                img {
+                                    min-width:100%;
+                                    max-width:100%;
+                                }
+                            }
+
+                            h6 {
+                                .rem(margin, 5 0);
+                                .rem(font-size, 12);
+                                .ellipse;
+
+                                @media all and (min-width: 1200px) {
+                                    .rem(margin, 10 0 5);
+                                    .rem(font-size, 16);
+                                }
+                            }
+
+                            p.price {
+                                .bold;
+                                .rem(margin, 0 0 5);
+                                .rem(font-size, 10);
+                                color:#ff7800;
+
+                                @media all and (min-width: 1200px) {
+                                    .mapazero;
+                                    .rem(font-size, 14);
+                                }
+                            }
+                        }
+                    }
+
+
                 }
 
                 /* arthall-explain */
