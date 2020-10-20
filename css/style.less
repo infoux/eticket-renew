@@ -479,16 +479,18 @@ article.popup-notice {
             button {
                 .absolute;
                 .rem(right, 10);
-                .rem(top, 10);
+                .rem(top, 7);
                 border:none;
                 background:none;
                 .mapazero;
                 .zero;
                 color:@white;
                 .pointer;
+                background: #555;
+                .rem(padding, 3 5 5 5);
     
                 @media all and (min-width: 1200px) {
-                    right:20px;
+                    right: 10px;
                     top:10px;
                 }
     
@@ -505,9 +507,10 @@ article.popup-notice {
         div.text {
             background:@white;
             .rem(margin, 0 10 10);
-            .rem(min-height, 450);
+            .rem(min-height, 300);
             .rem(font-size, 12);
             .rem(padding, 20);
+            word-break: break-all;
             
     
             @media all and (min-width: 1200px) {
